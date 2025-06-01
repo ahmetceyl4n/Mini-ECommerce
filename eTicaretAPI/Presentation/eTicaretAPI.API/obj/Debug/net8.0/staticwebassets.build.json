@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "YTCG3SAqJyPzdD4jxJJx1AEoItXZN1ofDY7iuq1DOyk=",
+  "Source": "eTicaretAPI.API",
+  "BasePath": "_content/eTicaretAPI.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
