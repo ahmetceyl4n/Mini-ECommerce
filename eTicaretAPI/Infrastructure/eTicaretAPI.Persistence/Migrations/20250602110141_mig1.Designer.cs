@@ -12,8 +12,8 @@ using eTicaretAPI.Persistence.Contexts;
 namespace eTicaretAPI.Persistence.Migrations
 {
     [DbContext(typeof(eTicaretAPIDbContext))]
-    [Migration("20250526123323_mig_1")]
-    partial class mig_1
+    [Migration("20250602110141_mig1")]
+    partial class mig1
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -53,6 +53,9 @@ namespace eTicaretAPI.Persistence.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<DateTime>("UpdatedDate")
+                        .HasColumnType("timestamp with time zone");
+
                     b.HasKey("ID");
 
                     b.ToTable("Customers");
@@ -71,16 +74,19 @@ namespace eTicaretAPI.Persistence.Migrations
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<Guid>("CustomerID")
+                    b.Property<Guid>("CustomerId")
                         .HasColumnType("uuid");
 
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<DateTime>("UpdatedDate")
+                        .HasColumnType("timestamp with time zone");
+
                     b.HasKey("ID");
 
-                    b.HasIndex("CustomerID");
+                    b.HasIndex("CustomerId");
 
                     b.ToTable("Orders");
                 });
@@ -103,6 +109,9 @@ namespace eTicaretAPI.Persistence.Migrations
 
                     b.Property<int>("Stock")
                         .HasColumnType("integer");
+
+                    b.Property<DateTime>("UpdatedDate")
+                        .HasColumnType("timestamp with time zone");
 
                     b.HasKey("ID");
 
@@ -128,7 +137,7 @@ namespace eTicaretAPI.Persistence.Migrations
                 {
                     b.HasOne("eTicaretAPI.Domain.Entities.Customer", "Customer")
                         .WithMany("Orders")
-                        .HasForeignKey("CustomerID")
+                        .HasForeignKey("CustomerId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

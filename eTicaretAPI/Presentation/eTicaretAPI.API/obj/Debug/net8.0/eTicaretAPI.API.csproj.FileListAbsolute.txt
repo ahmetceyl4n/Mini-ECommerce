@@ -148,3 +148,4 @@ C:\Users\furka\VisualStudioProjects\studio\eTicaretUygulaması\eTicaretAPI\Prese
 C:\Users\furka\VisualStudioProjects\studio\eTicaretUygulaması\eTicaretAPI\Presentation\eTicaretAPI.API\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Abstractions.dll
 C:\Users\furka\VisualStudioProjects\studio\eTicaretUygulaması\eTicaretAPI\Presentation\eTicaretAPI.API\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Physical.dll
 C:\Users\furka\VisualStudioProjects\studio\eTicaretUygulaması\eTicaretAPI\Presentation\eTicaretAPI.API\bin\Debug\net8.0\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\furka\VisualStudioProjects\studio\eTicaretUygulaması\eTicaretAPI\Presentation\eTicaretAPI.API\obj\Debug\net8.0\eTicaretAPI.API.sourcelink.json

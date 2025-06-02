@@ -9,6 +9,7 @@ namespace eTicaretAPI.Domain.Entities
 {
     public class Order : BaseEntity
     {
+        public Guid CustomerId { get; set; }          //Order ın sadece bir customer ı olacağı için bu şekilde tanımlanır
         public string Description { get; set; }
         public string Address { get; set; }
 

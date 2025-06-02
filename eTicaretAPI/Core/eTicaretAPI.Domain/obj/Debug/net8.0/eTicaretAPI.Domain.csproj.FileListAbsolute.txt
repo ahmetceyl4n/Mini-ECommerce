@@ -9,3 +9,4 @@ C:\Users\furka\VisualStudioProjects\studio\eTicaretUygulaması\eTicaretAPI\Core\
 C:\Users\furka\VisualStudioProjects\studio\eTicaretUygulaması\eTicaretAPI\Core\eTicaretAPI.Domain\obj\Debug\net8.0\refint\eTicaretAPI.Domain.dll
 C:\Users\furka\VisualStudioProjects\studio\eTicaretUygulaması\eTicaretAPI\Core\eTicaretAPI.Domain\obj\Debug\net8.0\eTicaretAPI.Domain.pdb
 C:\Users\furka\VisualStudioProjects\studio\eTicaretUygulaması\eTicaretAPI\Core\eTicaretAPI.Domain\obj\Debug\net8.0\ref\eTicaretAPI.Domain.dll
+C:\Users\furka\VisualStudioProjects\studio\eTicaretUygulaması\eTicaretAPI\Core\eTicaretAPI.Domain\obj\Debug\net8.0\eTicaretAPI.Domain.sourcelink.json

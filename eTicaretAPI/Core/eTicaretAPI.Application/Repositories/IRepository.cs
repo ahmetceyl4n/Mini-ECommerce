@@ -13,4 +13,3 @@ namespace eTicaretAPI.Application.Repositories
         DbSet<T> Table {  get; }                     //DbSet'te T'yi kullanmak için T'nin class(entity) olduğunu belirtmemiz lazım. Bu yüzden yukarıda where yapısını kullandık. Ve DbSet ile table'ı çektik
     }
 }
-//Merhaba

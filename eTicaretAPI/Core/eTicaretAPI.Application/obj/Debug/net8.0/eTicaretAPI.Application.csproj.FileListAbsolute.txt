@@ -13,3 +13,4 @@ C:\Users\furka\VisualStudioProjects\studio\eTicaretUygulaması\eTicaretAPI\Core\
 C:\Users\furka\VisualStudioProjects\studio\eTicaretUygulaması\eTicaretAPI\Core\eTicaretAPI.Application\obj\Debug\net8.0\refint\eTicaretAPI.Application.dll
 C:\Users\furka\VisualStudioProjects\studio\eTicaretUygulaması\eTicaretAPI\Core\eTicaretAPI.Application\obj\Debug\net8.0\eTicaretAPI.Application.pdb
 C:\Users\furka\VisualStudioProjects\studio\eTicaretUygulaması\eTicaretAPI\Core\eTicaretAPI.Application\obj\Debug\net8.0\ref\eTicaretAPI.Application.dll
+C:\Users\furka\VisualStudioProjects\studio\eTicaretUygulaması\eTicaretAPI\Core\eTicaretAPI.Application\obj\Debug\net8.0\eTicaretAPI.Application.sourcelink.json

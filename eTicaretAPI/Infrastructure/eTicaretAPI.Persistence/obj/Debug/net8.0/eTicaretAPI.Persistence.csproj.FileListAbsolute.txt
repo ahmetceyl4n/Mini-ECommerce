@@ -17,3 +17,4 @@ C:\Users\furka\VisualStudioProjects\studio\eTicaretUygulaması\eTicaretAPI\Infra
 C:\Users\furka\VisualStudioProjects\studio\eTicaretUygulaması\eTicaretAPI\Infrastructure\eTicaretAPI.Persistence\obj\Debug\net8.0\ref\eTicaretAPI.Persistence.dll
 C:\Users\furka\VisualStudioProjects\studio\eTicaretUygulaması\eTicaretAPI\Infrastructure\eTicaretAPI.Persistence\bin\Debug\net8.0\eTicaretAPI.Persistence.runtimeconfig.json
 C:\Users\furka\VisualStudioProjects\studio\eTicaretUygulaması\eTicaretAPI\Infrastructure\eTicaretAPI.Persistence\obj\Debug\net8.0\eTicaretAPI.Persistence.genruntimeconfig.cache
+C:\Users\furka\VisualStudioProjects\studio\eTicaretUygulaması\eTicaretAPI\Infrastructure\eTicaretAPI.Persistence\obj\Debug\net8.0\eTicaretAPI.Persistence.sourcelink.json
