@@ -7,13 +7,13 @@ import { DashboardComponent } from './admin/components/dashboard/dashboard.compo
 const routes: Routes = [
   {path: "admin", component: LayoutComponent, children: [
     {path: "", component: DashboardComponent},  //Burada path'in boş olmasının nedeni direkt admin sayfasına (https://bilmemne/admin) gidilmek istendiğinde dashboard'ın açılması istendiği için. 
-    {path: "customers", loadChildren: () => import("./admin/components/customer/customer.module").then (module => module.CustomerModule)}, //https://bilmemne/admin/customers
-    {path: "orders", loadChildren: () => import("./admin/components/order/order.module").then (module => module.OrderModule)},
-    {path: "products", loadChildren: () => import("./admin/components/products/products.module").then (module => module.ProductsModule)}
+    {path: "customers", loadChildren: () => import("./admin/components/customer/customer.module").then(module => module.CustomerModule)}, //https://bilmemne/admin/customers
+    {path: "orders", loadChildren: () => import("./admin/components/order/order.module").then(module => module.OrderModule)},
+    {path: "products", loadChildren: () => import("./admin/components/products/products.module").then(module => module.ProductsModule)}
   ]},
   {path: "", component: HomeComponent}, // Direkt https://bilmemne sitesine gidildiğinde açılacak sayfa
-  {path: "basket", loadChildren: () => import("./ui/components/baskets/baskets.module").then (module => module.BasketsModule)},
-  {path: "products", loadChildren: () => import("./ui/components/products/products.module").then (module => module.ProductsModule)}
+  {path: "basket", loadChildren: () => import("./ui/components/baskets/baskets.module").then(module => module.BasketsModule)},
+  {path: "products", loadChildren: () => import("./ui/components/products/products.module").then(module => module.ProductsModule)}
 ];
 
 @NgModule({

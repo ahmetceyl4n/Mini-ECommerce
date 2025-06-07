@@ -1,5 +1,6 @@
-<app-header></app-header>     <!-- ilgili componenti selector ile çağırıyoruz -->
-<app-sidebar></app-sidebar>
+<app-header></app-header>
+<mat-drawer-container class="sidebar-container">
+  <mat-drawer mode="side" opened class="dashboard-left"><app-sidebar></app-sidebar></mat-drawer>
+  <mat-drawer-content><router-outlet></router-outlet></mat-drawer-content>
+</mat-drawer-container>
 <app-footer></app-footer>
-
-<router-outlet></router-outlet>

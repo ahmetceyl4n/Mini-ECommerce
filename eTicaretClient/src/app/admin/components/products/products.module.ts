@@ -13,8 +13,7 @@ import { RouterModule } from '@angular/router';
     CommonModule,
     RouterModule.forChild([
       {path:"", component: ProductsComponent}
-    ]
-    )
+    ])
   ]
 })
 export class ProductsModule { }
