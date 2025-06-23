@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { BaseComponent, SpinnerType } from '../../../base/base.component';
+import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
   selector: 'app-customer',
@@ -6,6 +8,12 @@ import { Component } from '@angular/core';
   templateUrl: './customer.component.html',
   styleUrl: './customer.component.scss'
 })
-export class CustomerComponent {
-
+export class CustomerComponent extends BaseComponent implements OnInit {
+  constructor(spinner: NgxSpinnerService) { 
+    super(spinner); // Call the constructor of the base class
+  }
+  ngOnInit(): void {
+    // Initialize the component
+    this.showSpinner(SpinnerType.SquareJellyBox); // Show the loading spinner
+  }
 }
