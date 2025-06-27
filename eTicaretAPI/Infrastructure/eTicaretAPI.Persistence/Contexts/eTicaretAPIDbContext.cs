@@ -24,15 +24,12 @@ namespace eTicaretAPI.Persistence.Contexts
             var entries = ChangeTracker.Entries<BaseEntity>();          //ChangeTracker, veritabanındaki değişiklikleri takip eder. BaseEntity sınıfından türetilen tüm entity'leri alır
             foreach (var entry in entries)
             {
-                switch (entry.State)
+                _ = entry.State switch
                 {
-                    case EntityState.Added:                             //Eğer entity ekleniyorsa
-                        entry.Entity.CreatedDate = DateTime.UtcNow;     //O anki tarih ve saati CreatedDate alanına atar
-                        break;
-                    case EntityState.Modified:                          //Eğer entity güncelleniyorsa
-                        entry.Entity.UpdatedDate = DateTime.UtcNow;     //O anki tarih ve saati UpdatedDate alanına atar
-                        break;
-                }
+                    EntityState.Added => entry.Entity.CreatedDate = DateTime.UtcNow,
+                    EntityState.Modified => entry.Entity.UpdatedDate = DateTime.UtcNow,
+                    _ => DateTime.UtcNow
+                };
             }
             return base.SaveChangesAsync(cancellationToken);
         }                                              

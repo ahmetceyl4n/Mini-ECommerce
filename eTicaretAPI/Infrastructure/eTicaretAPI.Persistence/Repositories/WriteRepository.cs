@@ -36,21 +36,31 @@ namespace eTicaretAPI.Persistence.Repositories
 
         public bool Remove(T model)
         {
+            if (model == null)
+                return false;
+
             EntityEntry<T> entityEntry = Table.Remove(model);
             return entityEntry.State == EntityState.Deleted;
         }
 
         public bool RemoveRange(List<T> datas)
         {
+            if (datas == null || !datas.Any())
+                return false;
+
             Table.RemoveRange(datas);
             return true;
         }
 
         public async Task<bool> RemoveAsync(string id)
         {
-            T model = await Table.FirstOrDefaultAsync(data => data.ID == Guid.Parse(id));   
+            if (!Guid.TryParse(id, out Guid guidId))
+                return false; // Geçersiz GUID
+
+            T model = await Table.FirstOrDefaultAsync(data => data.ID == guidId);
             return Remove(model);
         }
+
 
         public bool Update(T model)
         {

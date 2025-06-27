@@ -62,9 +62,14 @@ namespace eTicaretAPI.API.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(string id)
         {
-            await _productWriteRepositories.RemoveAsync(id);
+            var success = await _productWriteRepositories.RemoveAsync(id);
+            if (!success)
+                return NotFound(); // ID yoksa veya geçersizse 404
+
             await _productWriteRepositories.SaveAsync();
-            return NoContent(); // Return 204 No Content on successful deletion
+            return NoContent(); // 204
         }
+
+
     }
 }

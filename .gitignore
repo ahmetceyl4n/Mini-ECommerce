@@ -1,0 +1,25 @@
+# === Visual Studio ===
+.vs/
+*.user
+*.suo
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+
+# === ASP.NET Core configs ===
+appsettings*.json
+
+# === Angular / Node.js ===
+node_modules/
+dist/
+.angular/
+.env
+
+# === VS Code ===
+.vscode/
+
+# === Sistem dosyaları ===
+.DS_Store
+Thumbs.db

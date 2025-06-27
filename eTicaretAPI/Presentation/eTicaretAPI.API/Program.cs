@@ -24,7 +24,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseCors(); // CORS politikasýný uygulamak için
+app.UseCors("AllowAllOrigins"); // CORS politikasýný uygulamak için
 
 app.UseHttpsRedirection();
 
