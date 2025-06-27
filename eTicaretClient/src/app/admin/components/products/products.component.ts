@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { BaseComponent, SpinnerType } from '../../../base/base.component';
 import { NgxSpinnerService } from 'ngx-spinner';
 import { HttpClientService } from '../../../services/common/http-client.service';
-import { Product } from '../../../contracts/product';
+import { Create_Product } from '../../../contracts/create_product';
 
 @Component({
   selector: 'app-products',
@@ -17,7 +17,7 @@ export class ProductsComponent extends BaseComponent implements OnInit {
   ngOnInit(): void {
     // Initialize the component
     this.showSpinner(SpinnerType.SquareJellyBox); // Show the loading spinner
-    this.httpClientService.get<Product>({
+    this.httpClientService.get<Create_Product>({
       controller: "products"
     }).subscribe(data => console.log(data))
 

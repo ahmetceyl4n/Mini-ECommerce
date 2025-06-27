@@ -55,11 +55,15 @@ namespace eTicaretAPI.Persistence.Repositories
         public async Task<bool> RemoveAsync(string id)
         {
             if (!Guid.TryParse(id, out Guid guidId))
-                return false; // Geçersiz GUID
+                return false;
 
-            T model = await Table.FirstOrDefaultAsync(data => data.ID == guidId);
+            T model = await Table.FirstOrDefaultAsync(data => data.ID == Guid.Parse(id));
+            if (model == null)
+                return false;
+
             return Remove(model);
         }
+
 
 
         public bool Update(T model)

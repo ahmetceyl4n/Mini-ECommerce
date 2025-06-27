@@ -9,6 +9,5 @@ namespace eTicaretAPI.Application.Repositories
 {
     public interface IProductReadRepositories : IReadRepository<Product>
     {
-        Task GetByIdAsync(Guid guidId);
     }
 }
