@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("eTicaretAPI.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fbcb743b547768569142235ce69840e376da7b7b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e066d7535ba9beb7ab962bbcafd157b763429135")]
 [assembly: System.Reflection.AssemblyProductAttribute("eTicaretAPI.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("eTicaretAPI.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

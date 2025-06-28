@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { BaseComponent, SpinnerType } from '../../../base/base.component';
 import { NgxSpinnerService } from 'ngx-spinner';
 import { HttpClientService } from '../../../services/common/http-client.service';
 import { Create_Product } from '../../../contracts/create_product';
+import { ListComponent } from './list/list.component';
 
 @Component({
   selector: 'app-products',
@@ -11,9 +12,17 @@ import { Create_Product } from '../../../contracts/create_product';
   styleUrl: './products.component.scss'
 })
 export class ProductsComponent extends BaseComponent implements OnInit {
+
   constructor(spinner: NgxSpinnerService, private httpClientService: HttpClientService) { 
     super(spinner); // Call the constructor of the base class
   }
+
+  @ViewChild(ListComponent) listComponents : ListComponent; 
+
+  createdProduct(createdProduct: Create_Product) {
+    this.listComponents.getProducts();
+  }  //Ürün oluşturulduğunda otomatik olarak listeye ekliyor     
+
   ngOnInit(): void {
     // Initialize the component
     this.showSpinner(SpinnerType.SquareJellyBox); // Show the loading spinner

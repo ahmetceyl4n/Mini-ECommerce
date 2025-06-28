@@ -1,4 +1,5 @@
 ﻿using eTicaretAPI.Application.Repositories;
+using eTicaretAPI.Application.RequestParameter;
 using eTicaretAPI.Application.ViewModels.Products;
 using eTicaretAPI.Domain.Entities;
 using Microsoft.AspNetCore.Http;
@@ -20,9 +21,24 @@ namespace eTicaretAPI.API.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Get()
+        public async Task<IActionResult> Get([FromQuery]Pagination pagination)
         {
-            return Ok(_productReadRepositories.GetAll(false));
+            var totalCount = _productReadRepositories.GetAll(false).Count();
+            var products = _productReadRepositories.GetAll(false).Skip(pagination.Page * pagination.Size).Take(pagination.Size).Select(p => new
+            {
+                p.ID,
+                p.Name,
+                p.Stock,
+                p.Price,
+                p.CreatedDate,
+                p.UpdatedDate
+            });
+            
+            return Ok(new
+            {
+                totalCount,
+                products
+            });
         }
 
         [HttpGet("{id}")]

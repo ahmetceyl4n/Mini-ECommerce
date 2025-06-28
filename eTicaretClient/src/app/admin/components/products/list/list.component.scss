@@ -1,0 +1,22 @@
+table {
+  width: 100%;
+}
+
+.table-wrapper {
+  position: relative;
+  padding-bottom: 80px; /* Pagination'ın kaplaması için alan bırak */
+}
+
+mat-paginator {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  padding: 8px 0;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.mat-mdc-paginator-container {
+  justify-content: center !important;
+}
