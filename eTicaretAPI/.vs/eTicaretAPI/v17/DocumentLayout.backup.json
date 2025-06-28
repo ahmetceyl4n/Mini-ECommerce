@@ -3,76 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2697129C-75E0-49B2-9C0C-4FA6AF095338}|Core\\eTicaretAPI.Application\\eTicaretAPI.Application.csproj|c:\\users\\furka\\visualstudioprojects\\studio\\eticaretuygulamas\u0131\\eticaretapi\\core\\eticaretapi.application\\viewmodels\\products\\vm_create_product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2697129C-75E0-49B2-9C0C-4FA6AF095338}|Core\\eTicaretAPI.Application\\eTicaretAPI.Application.csproj|solutionrelative:core\\eticaretapi.application\\viewmodels\\products\\vm_create_product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2697129C-75E0-49B2-9C0C-4FA6AF095338}|Core\\eTicaretAPI.Application\\eTicaretAPI.Application.csproj|c:\\users\\furka\\visualstudioprojects\\studio\\eticaretuygulamas\u0131\\eticaretapi\\core\\eticaretapi.application\\validators\\products\\createproductvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2697129C-75E0-49B2-9C0C-4FA6AF095338}|Core\\eTicaretAPI.Application\\eTicaretAPI.Application.csproj|solutionrelative:core\\eticaretapi.application\\validators\\products\\createproductvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{825387AC-A0FD-466A-A8FA-C507E89AA4E1}|Infrastructure\\eTicaretAPI.Infrastructure\\eTicaretAPI.Infrastructure.csproj|c:\\users\\furka\\visualstudioprojects\\studio\\eticaretuygulamas\u0131\\eticaretapi\\infrastructure\\eticaretapi.infrastructure\\filters\\validationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825387AC-A0FD-466A-A8FA-C507E89AA4E1}|Infrastructure\\eTicaretAPI.Infrastructure\\eTicaretAPI.Infrastructure.csproj|solutionrelative:infrastructure\\eticaretapi.infrastructure\\filters\\validationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{33ED3286-8C22-46DC-87AD-28B8B5F6DAA1}|Presentation\\eTicaretAPI.API\\eTicaretAPI.API.csproj|c:\\users\\furka\\visualstudioprojects\\studio\\eticaretuygulamas\u0131\\eticaretapi\\presentation\\eticaretapi.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{33ED3286-8C22-46DC-87AD-28B8B5F6DAA1}|Presentation\\eTicaretAPI.API\\eTicaretAPI.API.csproj|solutionrelative:presentation\\eticaretapi.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Infrastructure\\eTicaretAPI.Persistence\\Migrations\\20250627181812_ChangePriceToDecimal2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Infrastructure\\eTicaretAPI.Persistence\\Migrations\\20250627181812_ChangePriceToDecimal2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{57C37D38-DB02-4E91-B91D-215B14F7C758}|Core\\eTicaretAPI.Domain\\eTicaretAPI.Domain.csproj|c:\\users\\furka\\visualstudioprojects\\studio\\eticaretuygulamas\u0131\\eticaretapi\\core\\eticaretapi.domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{57C37D38-DB02-4E91-B91D-215B14F7C758}|Core\\eTicaretAPI.Domain\\eTicaretAPI.Domain.csproj|solutionrelative:core\\eticaretapi.domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Infrastructure\\eTicaretAPI.Persistence\\Migrations\\20250627180937_ChangePriceToDecimal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Infrastructure\\eTicaretAPI.Persistence\\Migrations\\20250627180937_ChangePriceToDecimal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{65951ECC-DCD7-40B7-A334-235D15909862}|Infrastructure\\eTicaretAPI.Persistence\\eTicaretAPI.Persistence.csproj|c:\\users\\furka\\visualstudioprojects\\studio\\eticaretuygulamas\u0131\\eticaretapi\\infrastructure\\eticaretapi.persistence\\repositories\\product\\productreadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{65951ECC-DCD7-40B7-A334-235D15909862}|Infrastructure\\eTicaretAPI.Persistence\\eTicaretAPI.Persistence.csproj|solutionrelative:infrastructure\\eticaretapi.persistence\\repositories\\product\\productreadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{65951ECC-DCD7-40B7-A334-235D15909862}|Infrastructure\\eTicaretAPI.Persistence\\eTicaretAPI.Persistence.csproj|c:\\users\\furka\\visualstudioprojects\\studio\\eticaretuygulamas\u0131\\eticaretapi\\infrastructure\\eticaretapi.persistence\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{65951ECC-DCD7-40B7-A334-235D15909862}|Infrastructure\\eTicaretAPI.Persistence\\eTicaretAPI.Persistence.csproj|solutionrelative:infrastructure\\eticaretapi.persistence\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2697129C-75E0-49B2-9C0C-4FA6AF095338}|Core\\eTicaretAPI.Application\\eTicaretAPI.Application.csproj|c:\\users\\furka\\visualstudioprojects\\studio\\eticaretuygulamas\u0131\\eticaretapi\\core\\eticaretapi.application\\repositories\\product\\iproductreadrepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2697129C-75E0-49B2-9C0C-4FA6AF095338}|Core\\eTicaretAPI.Application\\eTicaretAPI.Application.csproj|solutionrelative:core\\eticaretapi.application\\repositories\\product\\iproductreadrepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2697129C-75E0-49B2-9C0C-4FA6AF095338}|Core\\eTicaretAPI.Application\\eTicaretAPI.Application.csproj|c:\\users\\furka\\visualstudioprojects\\studio\\eticaretuygulamas\u0131\\eticaretapi\\core\\eticaretapi.application\\repositories\\product\\iproductwriterepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2697129C-75E0-49B2-9C0C-4FA6AF095338}|Core\\eTicaretAPI.Application\\eTicaretAPI.Application.csproj|solutionrelative:core\\eticaretapi.application\\repositories\\product\\iproductwriterepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2697129C-75E0-49B2-9C0C-4FA6AF095338}|Core\\eTicaretAPI.Application\\eTicaretAPI.Application.csproj|c:\\users\\furka\\visualstudioprojects\\studio\\eticaretuygulamas\u0131\\eticaretapi\\core\\eticaretapi.application\\repositories\\order\\iorderreadrepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2697129C-75E0-49B2-9C0C-4FA6AF095338}|Core\\eTicaretAPI.Application\\eTicaretAPI.Application.csproj|solutionrelative:core\\eticaretapi.application\\repositories\\order\\iorderreadrepositories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{65951ECC-DCD7-40B7-A334-235D15909862}|Infrastructure\\eTicaretAPI.Persistence\\eTicaretAPI.Persistence.csproj|c:\\users\\furka\\visualstudioprojects\\studio\\eticaretuygulamas\u0131\\eticaretapi\\infrastructure\\eticaretapi.persistence\\repositories\\writerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{65951ECC-DCD7-40B7-A334-235D15909862}|Infrastructure\\eTicaretAPI.Persistence\\eTicaretAPI.Persistence.csproj|solutionrelative:infrastructure\\eticaretapi.persistence\\repositories\\writerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2697129C-75E0-49B2-9C0C-4FA6AF095338}|Core\\eTicaretAPI.Application\\eTicaretAPI.Application.csproj|c:\\users\\furka\\visualstudioprojects\\studio\\eticaretuygulamas\u0131\\eticaretapi\\core\\eticaretapi.application\\repositories\\iwriterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2697129C-75E0-49B2-9C0C-4FA6AF095338}|Core\\eTicaretAPI.Application\\eTicaretAPI.Application.csproj|solutionrelative:core\\eticaretapi.application\\repositories\\iwriterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{65951ECC-DCD7-40B7-A334-235D15909862}|Infrastructure\\eTicaretAPI.Persistence\\eTicaretAPI.Persistence.csproj|c:\\users\\furka\\visualstudioprojects\\studio\\eticaretuygulamas\u0131\\eticaretapi\\infrastructure\\eticaretapi.persistence\\contexts\\eticaretapidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{65951ECC-DCD7-40B7-A334-235D15909862}|Infrastructure\\eTicaretAPI.Persistence\\eTicaretAPI.Persistence.csproj|solutionrelative:infrastructure\\eticaretapi.persistence\\contexts\\eticaretapidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{33ED3286-8C22-46DC-87AD-28B8B5F6DAA1}|Presentation\\eTicaretAPI.API\\eTicaretAPI.API.csproj|c:\\users\\furka\\visualstudioprojects\\studio\\eticaretuygulamas\u0131\\eticaretapi\\presentation\\eticaretapi.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{33ED3286-8C22-46DC-87AD-28B8B5F6DAA1}|Presentation\\eTicaretAPI.API\\eTicaretAPI.API.csproj|solutionrelative:presentation\\eticaretapi.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2697129C-75E0-49B2-9C0C-4FA6AF095338}|Core\\eTicaretAPI.Application\\eTicaretAPI.Application.csproj|c:\\users\\furka\\visualstudioprojects\\studio\\eticaretuygulamas\u0131\\eticaretapi\\core\\eticaretapi.application\\repositories\\ireadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2697129C-75E0-49B2-9C0C-4FA6AF095338}|Core\\eTicaretAPI.Application\\eTicaretAPI.Application.csproj|solutionrelative:core\\eticaretapi.application\\repositories\\ireadrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{65951ECC-DCD7-40B7-A334-235D15909862}|Infrastructure\\eTicaretAPI.Persistence\\eTicaretAPI.Persistence.csproj|c:\\users\\furka\\visualstudioprojects\\studio\\eticaretuygulamas\u0131\\eticaretapi\\infrastructure\\eticaretapi.persistence\\designtimedbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{65951ECC-DCD7-40B7-A334-235D15909862}|Infrastructure\\eTicaretAPI.Persistence\\eTicaretAPI.Persistence.csproj|solutionrelative:infrastructure\\eticaretapi.persistence\\designtimedbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{65951ECC-DCD7-40B7-A334-235D15909862}|Infrastructure\\eTicaretAPI.Persistence\\eTicaretAPI.Persistence.csproj|c:\\users\\furka\\visualstudioprojects\\studio\\eticaretuygulamas\u0131\\eticaretapi\\infrastructure\\eticaretapi.persistence\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{65951ECC-DCD7-40B7-A334-235D15909862}|Infrastructure\\eTicaretAPI.Persistence\\eTicaretAPI.Persistence.csproj|solutionrelative:infrastructure\\eticaretapi.persistence\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2697129C-75E0-49B2-9C0C-4FA6AF095338}|Core\\eTicaretAPI.Application\\eTicaretAPI.Application.csproj|c:\\users\\furka\\visualstudioprojects\\studio\\eticaretuygulamas\u0131\\eticaretapi\\core\\eticaretapi.application\\viewmodels\\products\\vm_update_product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2697129C-75E0-49B2-9C0C-4FA6AF095338}|Core\\eTicaretAPI.Application\\eTicaretAPI.Application.csproj|solutionrelative:core\\eticaretapi.application\\viewmodels\\products\\vm_update_product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2697129C-75E0-49B2-9C0C-4FA6AF095338}|Core\\eTicaretAPI.Application\\eTicaretAPI.Application.csproj|c:\\users\\furka\\visualstudioprojects\\studio\\eticaretuygulamas\u0131\\eticaretapi\\core\\eticaretapi.application\\viewmodels\\products\\vm_create_product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2697129C-75E0-49B2-9C0C-4FA6AF095338}|Core\\eTicaretAPI.Application\\eTicaretAPI.Application.csproj|solutionrelative:core\\eticaretapi.application\\viewmodels\\products\\vm_create_product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -82,199 +30,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ValidationFilter.cs",
+              "DocumentMoniker": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Infrastructure\\eTicaretAPI.Infrastructure\\Filters\\ValidationFilter.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\eTicaretAPI.Infrastructure\\Filters\\ValidationFilter.cs",
+              "ToolTip": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Infrastructure\\eTicaretAPI.Infrastructure\\Filters\\ValidationFilter.cs*",
+              "RelativeToolTip": "Infrastructure\\eTicaretAPI.Infrastructure\\Filters\\ValidationFilter.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T12:33:56.7Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "20250627181812_ChangePriceToDecimal2.cs",
-              "DocumentMoniker": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Infrastructure\\eTicaretAPI.Persistence\\Migrations\\20250627181812_ChangePriceToDecimal2.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\eTicaretAPI.Persistence\\Migrations\\20250627181812_ChangePriceToDecimal2.cs",
-              "ToolTip": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Infrastructure\\eTicaretAPI.Persistence\\Migrations\\20250627181812_ChangePriceToDecimal2.cs",
-              "RelativeToolTip": "Infrastructure\\eTicaretAPI.Persistence\\Migrations\\20250627181812_ChangePriceToDecimal2.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Presentation\\eTicaretAPI.API\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "Presentation\\eTicaretAPI.API\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Presentation\\eTicaretAPI.API\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "Presentation\\eTicaretAPI.API\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwCcAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T18:18:12.386Z",
+              "WhenOpened": "2025-06-28T12:26:35.254Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "20250627180937_ChangePriceToDecimal.cs",
-              "DocumentMoniker": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Infrastructure\\eTicaretAPI.Persistence\\Migrations\\20250627180937_ChangePriceToDecimal.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\eTicaretAPI.Persistence\\Migrations\\20250627180937_ChangePriceToDecimal.cs",
-              "ToolTip": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Infrastructure\\eTicaretAPI.Persistence\\Migrations\\20250627180937_ChangePriceToDecimal.cs",
-              "RelativeToolTip": "Infrastructure\\eTicaretAPI.Persistence\\Migrations\\20250627180937_ChangePriceToDecimal.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T18:09:37.258Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IProductWriteRepositories.cs",
-              "DocumentMoniker": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Core\\eTicaretAPI.Application\\Repositories\\Product\\IProductWriteRepositories.cs",
-              "RelativeDocumentMoniker": "Core\\eTicaretAPI.Application\\Repositories\\Product\\IProductWriteRepositories.cs",
-              "ToolTip": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Core\\eTicaretAPI.Application\\Repositories\\Product\\IProductWriteRepositories.cs",
-              "RelativeToolTip": "Core\\eTicaretAPI.Application\\Repositories\\Product\\IProductWriteRepositories.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T15:27:49.166Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IProductReadRepositories.cs",
-              "DocumentMoniker": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Core\\eTicaretAPI.Application\\Repositories\\Product\\IProductReadRepositories.cs",
-              "RelativeDocumentMoniker": "Core\\eTicaretAPI.Application\\Repositories\\Product\\IProductReadRepositories.cs",
-              "ToolTip": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Core\\eTicaretAPI.Application\\Repositories\\Product\\IProductReadRepositories.cs",
-              "RelativeToolTip": "Core\\eTicaretAPI.Application\\Repositories\\Product\\IProductReadRepositories.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T15:26:14.603Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "IOrderReadRepositories.cs",
-              "DocumentMoniker": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Core\\eTicaretAPI.Application\\Repositories\\Order\\IOrderReadRepositories.cs",
-              "RelativeDocumentMoniker": "Core\\eTicaretAPI.Application\\Repositories\\Order\\IOrderReadRepositories.cs",
-              "ToolTip": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Core\\eTicaretAPI.Application\\Repositories\\Order\\IOrderReadRepositories.cs",
-              "RelativeToolTip": "Core\\eTicaretAPI.Application\\Repositories\\Order\\IOrderReadRepositories.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T15:26:08.377Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ProductReadRepository.cs",
-              "DocumentMoniker": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Infrastructure\\eTicaretAPI.Persistence\\Repositories\\Product\\ProductReadRepository.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\eTicaretAPI.Persistence\\Repositories\\Product\\ProductReadRepository.cs",
-              "ToolTip": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Infrastructure\\eTicaretAPI.Persistence\\Repositories\\Product\\ProductReadRepository.cs",
-              "RelativeToolTip": "Infrastructure\\eTicaretAPI.Persistence\\Repositories\\Product\\ProductReadRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T15:23:34.079Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "IWriteRepository.cs",
-              "DocumentMoniker": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Core\\eTicaretAPI.Application\\Repositories\\IWriteRepository.cs",
-              "RelativeDocumentMoniker": "Core\\eTicaretAPI.Application\\Repositories\\IWriteRepository.cs",
-              "ToolTip": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Core\\eTicaretAPI.Application\\Repositories\\IWriteRepository.cs",
-              "RelativeToolTip": "Core\\eTicaretAPI.Application\\Repositories\\IWriteRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T13:56:13.901Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "IReadRepository.cs",
-              "DocumentMoniker": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Core\\eTicaretAPI.Application\\Repositories\\IReadRepository.cs",
-              "RelativeDocumentMoniker": "Core\\eTicaretAPI.Application\\Repositories\\IReadRepository.cs",
-              "ToolTip": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Core\\eTicaretAPI.Application\\Repositories\\IReadRepository.cs",
-              "RelativeToolTip": "Core\\eTicaretAPI.Application\\Repositories\\IReadRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T15:47:01.606Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Configuration.cs",
-              "DocumentMoniker": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Infrastructure\\eTicaretAPI.Persistence\\Configuration.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\eTicaretAPI.Persistence\\Configuration.cs",
-              "ToolTip": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Infrastructure\\eTicaretAPI.Persistence\\Configuration.cs",
-              "RelativeToolTip": "Infrastructure\\eTicaretAPI.Persistence\\Configuration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T15:46:49.5Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "eTicaretAPIDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Infrastructure\\eTicaretAPI.Persistence\\Contexts\\eTicaretAPIDbContext.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\eTicaretAPI.Persistence\\Contexts\\eTicaretAPIDbContext.cs",
-              "ToolTip": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Infrastructure\\eTicaretAPI.Persistence\\Contexts\\eTicaretAPIDbContext.cs",
-              "RelativeToolTip": "Infrastructure\\eTicaretAPI.Persistence\\Contexts\\eTicaretAPIDbContext.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB8AAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T15:46:00.971Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "DesignTimeDbContextFactory.cs",
-              "DocumentMoniker": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Infrastructure\\eTicaretAPI.Persistence\\DesignTimeDbContextFactory.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\eTicaretAPI.Persistence\\DesignTimeDbContextFactory.cs",
-              "ToolTip": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Infrastructure\\eTicaretAPI.Persistence\\DesignTimeDbContextFactory.cs",
-              "RelativeToolTip": "Infrastructure\\eTicaretAPI.Persistence\\DesignTimeDbContextFactory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T15:45:45.059Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ServiceRegistration.cs",
-              "DocumentMoniker": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Infrastructure\\eTicaretAPI.Persistence\\ServiceRegistration.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\eTicaretAPI.Persistence\\ServiceRegistration.cs",
-              "ToolTip": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Infrastructure\\eTicaretAPI.Persistence\\ServiceRegistration.cs",
-              "RelativeToolTip": "Infrastructure\\eTicaretAPI.Persistence\\ServiceRegistration.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAnwBoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T15:45:42.196Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "WriteRepository.cs",
-              "DocumentMoniker": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Infrastructure\\eTicaretAPI.Persistence\\Repositories\\WriteRepository.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\eTicaretAPI.Persistence\\Repositories\\WriteRepository.cs",
-              "ToolTip": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Infrastructure\\eTicaretAPI.Persistence\\Repositories\\WriteRepository.cs",
-              "RelativeToolTip": "Infrastructure\\eTicaretAPI.Persistence\\Repositories\\WriteRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T12:20:53.331Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "VM_Update_Product.cs",
-              "DocumentMoniker": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Core\\eTicaretAPI.Application\\ViewModels\\Products\\VM_Update_Product.cs",
-              "RelativeDocumentMoniker": "Core\\eTicaretAPI.Application\\ViewModels\\Products\\VM_Update_Product.cs",
-              "ToolTip": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Core\\eTicaretAPI.Application\\ViewModels\\Products\\VM_Update_Product.cs",
-              "RelativeToolTip": "Core\\eTicaretAPI.Application\\ViewModels\\Products\\VM_Update_Product.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T12:15:40.971Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Core\\eTicaretAPI.Domain\\Entities\\Product.cs",
-              "RelativeDocumentMoniker": "Core\\eTicaretAPI.Domain\\Entities\\Product.cs",
-              "ToolTip": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Core\\eTicaretAPI.Domain\\Entities\\Product.cs",
-              "RelativeToolTip": "Core\\eTicaretAPI.Domain\\Entities\\Product.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAUAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Presentation\\eTicaretAPI.API\\Program.cs",
+              "RelativeDocumentMoniker": "Presentation\\eTicaretAPI.API\\Program.cs",
+              "ToolTip": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Presentation\\eTicaretAPI.API\\Program.cs",
+              "RelativeToolTip": "Presentation\\eTicaretAPI.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T12:05:56.708Z",
+              "WhenOpened": "2025-06-28T12:18:10.878Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "CreateProductValidator.cs",
+              "DocumentMoniker": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Core\\eTicaretAPI.Application\\Validators\\Products\\CreateProductValidator.cs",
+              "RelativeDocumentMoniker": "Core\\eTicaretAPI.Application\\Validators\\Products\\CreateProductValidator.cs",
+              "ToolTip": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Core\\eTicaretAPI.Application\\Validators\\Products\\CreateProductValidator.cs",
+              "RelativeToolTip": "Core\\eTicaretAPI.Application\\Validators\\Products\\CreateProductValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T12:09:49.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "VM_Create_Product.cs",
               "DocumentMoniker": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Core\\eTicaretAPI.Application\\ViewModels\\Products\\VM_Create_Product.cs",
               "RelativeDocumentMoniker": "Core\\eTicaretAPI.Application\\ViewModels\\Products\\VM_Create_Product.cs",
@@ -283,31 +95,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-23T12:05:33.622Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Presentation\\eTicaretAPI.API\\Program.cs",
-              "RelativeDocumentMoniker": "Presentation\\eTicaretAPI.API\\Program.cs",
-              "ToolTip": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Presentation\\eTicaretAPI.API\\Program.cs",
-              "RelativeToolTip": "Presentation\\eTicaretAPI.API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T19:06:01.005Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProductsController.cs",
-              "DocumentMoniker": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Presentation\\eTicaretAPI.API\\Controllers\\ProductsController.cs",
-              "RelativeDocumentMoniker": "Presentation\\eTicaretAPI.API\\Controllers\\ProductsController.cs",
-              "ToolTip": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Presentation\\eTicaretAPI.API\\Controllers\\ProductsController.cs",
-              "RelativeToolTip": "Presentation\\eTicaretAPI.API\\Controllers\\ProductsController.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAgwCIAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T19:05:52.141Z",
               "EditorCaption": ""
             }
           ]

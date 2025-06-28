@@ -149,3 +149,8 @@ C:\Users\furka\VisualStudioProjects\studio\eTicaretUygulaması\eTicaretAPI\Prese
 C:\Users\furka\VisualStudioProjects\studio\eTicaretUygulaması\eTicaretAPI\Presentation\eTicaretAPI.API\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Physical.dll
 C:\Users\furka\VisualStudioProjects\studio\eTicaretUygulaması\eTicaretAPI\Presentation\eTicaretAPI.API\bin\Debug\net8.0\Microsoft.Extensions.FileSystemGlobbing.dll
 C:\Users\furka\VisualStudioProjects\studio\eTicaretUygulaması\eTicaretAPI\Presentation\eTicaretAPI.API\obj\Debug\net8.0\eTicaretAPI.API.sourcelink.json
+C:\Users\furka\VisualStudioProjects\studio\eTicaretUygulaması\eTicaretAPI\Presentation\eTicaretAPI.API\bin\Debug\net8.0\FluentValidation.dll
+C:\Users\furka\VisualStudioProjects\studio\eTicaretUygulaması\eTicaretAPI\Presentation\eTicaretAPI.API\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+C:\Users\furka\VisualStudioProjects\studio\eTicaretUygulaması\eTicaretAPI\Presentation\eTicaretAPI.API\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\furka\VisualStudioProjects\studio\eTicaretUygulaması\eTicaretAPI\Presentation\eTicaretAPI.API\bin\Debug\net8.0\eTicaretAPI.Infrastructure.dll
+C:\Users\furka\VisualStudioProjects\studio\eTicaretUygulaması\eTicaretAPI\Presentation\eTicaretAPI.API\bin\Debug\net8.0\eTicaretAPI.Infrastructure.pdb

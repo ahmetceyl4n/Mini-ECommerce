@@ -20,19 +20,38 @@ export class CreateComponent extends BaseComponent implements OnInit {
     
   }
 
-  create(name: HTMLInputElement, stock: HTMLInputElement, price: HTMLInputElement){
+  create(name: HTMLInputElement, stock: HTMLInputElement, price: HTMLInputElement) {
     this.showSpinner(SpinnerType.BallSquareMultiple);
     const create_product: Create_Product = new Create_Product();
     create_product.name = name.value;
     create_product.stock = parseInt(stock.value);
     create_product.price = parseFloat(price.value);
 
-    this.productService.create(create_product, () => 
-      this.hideSpinner(SpinnerType.BallSquareMultiple)); 
-      this.alertify.message("Product added successfully", {
+    if(!name.value){
+      this.alertify.message("Product name cannot be empty.", {
+        DismissOthers: true,
+        messageType: MessageType.Error,
+        position: Position.TopRight
+      });      
+      return; 
+    }
+
+    this.productService.create(create_product, () => {
+      this.hideSpinner(SpinnerType.BallSquareMultiple);
+      this.alertify.message("Successfully product creation.", {
         DismissOthers: true,
         messageType: MessageType.Success,
         position: Position.TopRight
-      })
+      });
+      
+    }, errorMessage => {
+      this.hideSpinner(SpinnerType.BallSquareMultiple);
+      this.alertify.message(errorMessage,
+        {
+          DismissOthers: true,
+          messageType: MessageType.Error,
+          position: Position.TopRight
+        });
+    });
   }
 }

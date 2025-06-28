@@ -1,4 +1,8 @@
+using eTicaretAPI.Application.Validators.Products;
+using eTicaretAPI.Infrastructure.Filters;
 using eTicaretAPI.Persistence;
+using FluentValidation;
+using FluentValidation.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,7 +15,19 @@ builder.Services.AddCors(options =>
                           .AllowAnyMethod()             // Allow any HTTP method (GET, POST, PUT, DELETE, etc.)
                           .AllowAnyHeader());           // Allow any header in the request
 });
-builder.Services.AddControllers();
+
+builder.Services.AddControllers(options =>
+{
+    options.Filters.Add<ValidationFilter>();
+})
+.ConfigureApiBehaviorOptions(options =>
+{
+    options.SuppressModelStateInvalidFilter = true;
+});
+builder.Services.AddFluentValidationAutoValidation(); // FluentValidation'ýn otomatik doðrulama özelliðini ekler
+builder.Services.AddFluentValidationClientsideAdapters(); // FluentValidation için istemci tarafý adaptörlerini ekler
+builder.Services.AddValidatorsFromAssemblyContaining<CreateProductValidator>(); // Register validators from the assembly containing CreateProductValidator
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 

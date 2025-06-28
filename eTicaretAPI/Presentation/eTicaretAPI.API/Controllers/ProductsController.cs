@@ -34,6 +34,11 @@ namespace eTicaretAPI.API.Controllers
         [HttpPost]
         public async Task<IActionResult> Post(VM_Create_Product model)
         {
+            if (ModelState.IsValid)
+            { // Check if the model state is valid
+               
+             }
+
             await _productWriteRepositories.AddAsync(new()
             {
                 Name = model.Name,
