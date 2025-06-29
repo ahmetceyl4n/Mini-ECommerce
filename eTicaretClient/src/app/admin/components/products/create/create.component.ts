@@ -4,6 +4,7 @@ import { Create_Product } from '../../../../contracts/create_product';
 import { BaseComponent, SpinnerType } from '../../../../base/base.component';
 import { NgxSpinnerService } from 'ngx-spinner';
 import { AlertifyService, MessageType, Position } from '../../../../services/admin/alertify.service';
+import { FileUploadOptions } from '../../../../services/common/file-upload/file-upload.component';
 
 @Component({
   selector: 'app-create',
@@ -21,6 +22,13 @@ export class CreateComponent extends BaseComponent implements OnInit {
   }
 
   @Output() createdProduct : EventEmitter<Create_Product> = new EventEmitter();
+  @Output() fileUploadOptions : Partial<FileUploadOptions> = {
+    action : "upload",
+    controller : "products",
+    explanation : "Drag and drop pictures",
+    isAdminPage : true,
+    accept : ".png, .jpg, .jpeg"
+  }
 
   create(name: HTMLInputElement, stock: HTMLInputElement, price: HTMLInputElement) {
     this.showSpinner(SpinnerType.BallSquareMultiple);

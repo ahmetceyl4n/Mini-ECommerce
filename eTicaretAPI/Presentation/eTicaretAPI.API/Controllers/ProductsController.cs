@@ -14,10 +14,12 @@ namespace eTicaretAPI.API.Controllers
     {
         private readonly IProductReadRepositories _productReadRepositories;
         private readonly IProductWriteRepositories _productWriteRepositories;
-        public ProductsController(IProductReadRepositories productReadRepositories, IProductWriteRepositories productWriteRepositories)
+        private readonly IWebHostEnvironment _webHostEnvironment;
+        public ProductsController(IProductReadRepositories productReadRepositories, IProductWriteRepositories productWriteRepositories, IWebHostEnvironment webHostEnvironment)
         {
             _productReadRepositories = productReadRepositories;
             _productWriteRepositories = productWriteRepositories;
+            _webHostEnvironment = webHostEnvironment;
         }
 
         [HttpGet]
@@ -91,6 +93,29 @@ namespace eTicaretAPI.API.Controllers
             return NoContent(); // 204
         }
 
+        [HttpPost("[action]")]
+        public async Task<IActionResult> Upload(){
+            //wwwroot/resource/product-images klasörüne resim yükleme işlemi yapılacak
+            string uploadPath = Path.Combine(_webHostEnvironment.WebRootPath, "resource/product-images");
+            
+            if (!Directory.Exists(uploadPath))
+                Directory.CreateDirectory(uploadPath);
 
+            foreach (IFormFile file in Request.Form.Files)
+            {
+                if (file.Length > 0)
+                {
+                    string fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
+                    string filePath = Path.Combine(uploadPath, fileName);
+
+                    using (FileStream fileStream = new FileStream(filePath, FileMode.Create, FileAccess.Write, FileShare.None, 1024 * 1024, useAsync: false)) 
+                    {
+                        await file.CopyToAsync(fileStream); // Resmi belirtilen yola kopyala
+                        await fileStream.FlushAsync(); // Stream'i temizle
+                    } 
+                }
+            }
+            return Ok(new { message = "Resimler başarıyla yüklendi." }); // Başarılı yükleme mesajı
+        }
     }
 }

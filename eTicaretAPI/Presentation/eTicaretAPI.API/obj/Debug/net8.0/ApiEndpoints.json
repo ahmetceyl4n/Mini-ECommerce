@@ -83,5 +83,15 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "eTicaretAPI.API.Controllers.ProductsController",
+    "Method": "Upload",
+    "RelativePath": "api/Products/Upload",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
   }
 ]

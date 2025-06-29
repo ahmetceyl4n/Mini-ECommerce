@@ -40,6 +40,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseStaticFiles(); // Statik dosyalarý kullanmak için
+
 app.UseCors("AllowAllOrigins"); // CORS politikasýný uygulamak için
 
 app.UseHttpsRedirection();

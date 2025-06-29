@@ -154,3 +154,4 @@ C:\Users\furka\VisualStudioProjects\studio\eTicaretUygulaması\eTicaretAPI\Prese
 C:\Users\furka\VisualStudioProjects\studio\eTicaretUygulaması\eTicaretAPI\Presentation\eTicaretAPI.API\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\furka\VisualStudioProjects\studio\eTicaretUygulaması\eTicaretAPI\Presentation\eTicaretAPI.API\bin\Debug\net8.0\eTicaretAPI.Infrastructure.dll
 C:\Users\furka\VisualStudioProjects\studio\eTicaretUygulaması\eTicaretAPI\Presentation\eTicaretAPI.API\bin\Debug\net8.0\eTicaretAPI.Infrastructure.pdb
+C:\Users\furka\VisualStudioProjects\studio\eTicaretUygulaması\eTicaretAPI\Presentation\eTicaretAPI.API\bin\Debug\net8.0\eTicaretAPI.API.staticwebassets.runtime.json
