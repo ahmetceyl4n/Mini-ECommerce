@@ -1,0 +1,8 @@
+<h2 mat-dialog-title> Attentation!</h2>
+<mat-dialog-content>
+  <p>Are you sure?</p>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button matButton (click)="close()">Cancel</button>
+  <button matButton [mat-dialog-close]="data" cdkFocusInitial>Ok</button>
+</mat-dialog-actions>

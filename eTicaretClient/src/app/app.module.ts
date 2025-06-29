@@ -9,7 +9,6 @@ import { ToastrModule } from 'ngx-toastr'; // Import ToastrModule for notificati
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { BaseComponent } from './base/base.component'; // Import NgxSpinnerModule for loading spinner
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { DeleteDirective } from './directives/admin/delete.directive';
 
 @NgModule({
   declarations: [
