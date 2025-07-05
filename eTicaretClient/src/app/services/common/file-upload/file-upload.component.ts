@@ -4,6 +4,7 @@ import { HttpClientService } from '../http-client.service';
 import { HttpErrorResponse, HttpHeaders } from '@angular/common/http';
 import { AlertifyService, MessageType, Position } from '../../admin/alertify.service';
 import { CustomToastrService, ToastrMessageType, ToastrPosition } from '../../ui/custom-toastr.service';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-file-upload',
@@ -15,14 +16,28 @@ export class FileUploadComponent {
   constructor(
     private httpClientService : HttpClientService,
     private alertifyService : AlertifyService,
-    private customToastrService : CustomToastrService
+    private customToastrService : CustomToastrService,
+    private dialog : MatDialog
   ){}
   
   public files: NgxFileDropEntry[];
 
   @Input() options : Partial<FileUploadOptions>; 
 
-  public selectedFiles(files: NgxFileDropEntry[]) {
+  public selectedFiles(files: NgxFileDropEntry[]) { 
+    
+    openDialog(afterClosed : any): void {
+        const dialogRef = this.dialog.open(DeleteDialogComponent, {
+          data: DeleteState.Yes,
+        });
+    
+        dialogRef.afterClosed().subscribe(result => {
+          console.log('The dialog was closed');
+          if (result == DeleteState.Yes) {
+            afterClosed();
+          }
+        });
+      }
     this.files = files;
     const fileData : FormData = new FormData();
     for (const file of files) {
@@ -65,6 +80,7 @@ export class FileUploadComponent {
         })
       }
     })
+  
   }
 }
 
@@ -75,4 +91,9 @@ export class FileUploadOptions {
   explanation? : string;
   accept? : string;
   isAdminPage? : boolean = false;
+}
+
+export enum FileUploadDiialogState{
+  Yes,
+  No
 }
