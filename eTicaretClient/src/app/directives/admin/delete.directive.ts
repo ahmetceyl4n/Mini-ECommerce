@@ -14,6 +14,7 @@ import { AlertifyService, MessageType, Position } from '../../services/admin/ale
 import { HttpErrorResponse } from '@angular/common/http';
 import { NgxSpinnerService } from 'ngx-spinner';
 import { SpinnerType } from '../../base/base.component';
+import { DialogService } from '../../services/common/dialog.service';
 
 declare var $: any;
 
@@ -31,6 +32,7 @@ export class DeleteDirective {
     private element: ElementRef,
     private _renderer: Renderer2,
     private httpClientService : HttpClientService,
+    private dialogService : DialogService,
     public dialog : MatDialog,
     public alertifyService : AlertifyService
   ) {
@@ -44,8 +46,11 @@ export class DeleteDirective {
 
  @HostListener('click')
   async onClick() {
-    this.openDialog(async () => {
-      const td = this.element.nativeElement as HTMLTableCellElement;
+    this.dialogService.openDialog({
+      componentType: DeleteDialogComponent,
+      data: DeleteState.Yes,
+      afterClosed: async () => {
+        const td = this.element.nativeElement as HTMLTableCellElement;
       const parent = td?.parentElement;
 
       this.httpClientService.delete({
@@ -73,19 +78,6 @@ export class DeleteDirective {
             position: Position.TopRight
           });
         });
-    });
-  }
-  // Silme ikonuna tıklandığında satırı siliyor ve otomatik olarak listeyi güncelliyor
-
-  openDialog(afterClosed : any): void {
-    const dialogRef = this.dialog.open(DeleteDialogComponent, {
-      data: DeleteState.Yes,
-    });
-
-    dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
-      if (result == DeleteState.Yes) {
-        afterClosed();
       }
     });
   }

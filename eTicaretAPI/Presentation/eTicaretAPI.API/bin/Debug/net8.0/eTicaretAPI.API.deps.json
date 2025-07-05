@@ -813,7 +813,7 @@
         },
         "runtime": {
           "eTicaretAPI.Application.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -821,7 +821,7 @@
       "eTicaretAPI.Domain/1.0.0": {
         "runtime": {
           "eTicaretAPI.Domain.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -832,7 +832,7 @@
         },
         "runtime": {
           "eTicaretAPI.Infrastructure.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -848,7 +848,7 @@
         },
         "runtime": {
           "eTicaretAPI.Persistence.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
