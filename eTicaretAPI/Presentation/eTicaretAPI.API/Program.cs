@@ -1,4 +1,5 @@
 using eTicaretAPI.Application.Validators.Products;
+using eTicaretAPI.Infrastructure;
 using eTicaretAPI.Infrastructure.Filters;
 using eTicaretAPI.Persistence;
 using FluentValidation;
@@ -8,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddPersistenceServices();      // IoC Container'a ne eklenirse çalýþacak çünkü bu komutla çaðrýlýyor
+builder.Services.AddInfrastructureServices();   // Add infrastructure services
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAllOrigins",

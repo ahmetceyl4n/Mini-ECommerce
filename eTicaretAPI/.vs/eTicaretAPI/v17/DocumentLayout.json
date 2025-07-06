@@ -3,28 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{33ED3286-8C22-46DC-87AD-28B8B5F6DAA1}|Presentation\\eTicaretAPI.API\\eTicaretAPI.API.csproj|c:\\users\\furka\\visualstudioprojects\\studio\\eticaretuygulamas\u0131\\eticaretapi\\presentation\\eticaretapi.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{33ED3286-8C22-46DC-87AD-28B8B5F6DAA1}|Presentation\\eTicaretAPI.API\\eTicaretAPI.API.csproj|solutionrelative:presentation\\eticaretapi.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{825387AC-A0FD-466A-A8FA-C507E89AA4E1}|Infrastructure\\eTicaretAPI.Infrastructure\\eTicaretAPI.Infrastructure.csproj|c:\\users\\furka\\visualstudioprojects\\studio\\eticaretuygulamas\u0131\\eticaretapi\\infrastructure\\eticaretapi.infrastructure\\services\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{825387AC-A0FD-466A-A8FA-C507E89AA4E1}|Infrastructure\\eTicaretAPI.Infrastructure\\eTicaretAPI.Infrastructure.csproj|solutionrelative:infrastructure\\eticaretapi.infrastructure\\services\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{33ED3286-8C22-46DC-87AD-28B8B5F6DAA1}|Presentation\\eTicaretAPI.API\\eTicaretAPI.API.csproj|c:\\users\\furka\\visualstudioprojects\\studio\\eticaretuygulamas\u0131\\eticaretapi\\presentation\\eticaretapi.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{33ED3286-8C22-46DC-87AD-28B8B5F6DAA1}|Presentation\\eTicaretAPI.API\\eTicaretAPI.API.csproj|solutionrelative:presentation\\eticaretapi.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2697129C-75E0-49B2-9C0C-4FA6AF095338}|Core\\eTicaretAPI.Application\\eTicaretAPI.Application.csproj|c:\\users\\furka\\visualstudioprojects\\studio\\eticaretuygulamas\u0131\\eticaretapi\\core\\eticaretapi.application\\requestparameter\\pagination.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2697129C-75E0-49B2-9C0C-4FA6AF095338}|Core\\eTicaretAPI.Application\\eTicaretAPI.Application.csproj|solutionrelative:core\\eticaretapi.application\\requestparameter\\pagination.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{33ED3286-8C22-46DC-87AD-28B8B5F6DAA1}|Presentation\\eTicaretAPI.API\\eTicaretAPI.API.csproj|c:\\users\\furka\\visualstudioprojects\\studio\\eticaretuygulamas\u0131\\eticaretapi\\presentation\\eticaretapi.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33ED3286-8C22-46DC-87AD-28B8B5F6DAA1}|Presentation\\eTicaretAPI.API\\eTicaretAPI.API.csproj|solutionrelative:presentation\\eticaretapi.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2697129C-75E0-49B2-9C0C-4FA6AF095338}|Core\\eTicaretAPI.Application\\eTicaretAPI.Application.csproj|c:\\users\\furka\\visualstudioprojects\\studio\\eticaretuygulamas\u0131\\eticaretapi\\core\\eticaretapi.application\\validators\\products\\createproductvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2697129C-75E0-49B2-9C0C-4FA6AF095338}|Core\\eTicaretAPI.Application\\eTicaretAPI.Application.csproj|solutionrelative:core\\eticaretapi.application\\validators\\products\\createproductvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{825387AC-A0FD-466A-A8FA-C507E89AA4E1}|Infrastructure\\eTicaretAPI.Infrastructure\\eTicaretAPI.Infrastructure.csproj|c:\\users\\furka\\visualstudioprojects\\studio\\eticaretuygulamas\u0131\\eticaretapi\\infrastructure\\eticaretapi.infrastructure\\filters\\validationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{825387AC-A0FD-466A-A8FA-C507E89AA4E1}|Infrastructure\\eTicaretAPI.Infrastructure\\eTicaretAPI.Infrastructure.csproj|solutionrelative:infrastructure\\eticaretapi.infrastructure\\filters\\validationfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2697129C-75E0-49B2-9C0C-4FA6AF095338}|Core\\eTicaretAPI.Application\\eTicaretAPI.Application.csproj|c:\\users\\furka\\visualstudioprojects\\studio\\eticaretuygulamas\u0131\\eticaretapi\\core\\eticaretapi.application\\viewmodels\\products\\vm_create_product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2697129C-75E0-49B2-9C0C-4FA6AF095338}|Core\\eTicaretAPI.Application\\eTicaretAPI.Application.csproj|solutionrelative:core\\eticaretapi.application\\viewmodels\\products\\vm_create_product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2697129C-75E0-49B2-9C0C-4FA6AF095338}|Core\\eTicaretAPI.Application\\eTicaretAPI.Application.csproj|c:\\users\\furka\\visualstudioprojects\\studio\\eticaretuygulamas\u0131\\eticaretapi\\core\\eticaretapi.application\\services\\ifileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2697129C-75E0-49B2-9C0C-4FA6AF095338}|Core\\eTicaretAPI.Application\\eTicaretAPI.Application.csproj|solutionrelative:core\\eticaretapi.application\\services\\ifileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,77 +30,55 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Pagination.cs",
-              "DocumentMoniker": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Core\\eTicaretAPI.Application\\RequestParameter\\Pagination.cs",
-              "RelativeDocumentMoniker": "Core\\eTicaretAPI.Application\\RequestParameter\\Pagination.cs",
-              "ToolTip": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Core\\eTicaretAPI.Application\\RequestParameter\\Pagination.cs",
-              "RelativeToolTip": "Core\\eTicaretAPI.Application\\RequestParameter\\Pagination.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T16:35:56.133Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ValidationFilter.cs",
-              "DocumentMoniker": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Infrastructure\\eTicaretAPI.Infrastructure\\Filters\\ValidationFilter.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\eTicaretAPI.Infrastructure\\Filters\\ValidationFilter.cs",
-              "ToolTip": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Infrastructure\\eTicaretAPI.Infrastructure\\Filters\\ValidationFilter.cs",
-              "RelativeToolTip": "Infrastructure\\eTicaretAPI.Infrastructure\\Filters\\ValidationFilter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T12:33:56.7Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProductsController.cs",
-              "DocumentMoniker": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Presentation\\eTicaretAPI.API\\Controllers\\ProductsController.cs",
-              "RelativeDocumentMoniker": "Presentation\\eTicaretAPI.API\\Controllers\\ProductsController.cs",
-              "ToolTip": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Presentation\\eTicaretAPI.API\\Controllers\\ProductsController.cs*",
-              "RelativeToolTip": "Presentation\\eTicaretAPI.API\\Controllers\\ProductsController.cs*",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAQwGUAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T12:26:35.254Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Presentation\\eTicaretAPI.API\\Program.cs",
               "RelativeDocumentMoniker": "Presentation\\eTicaretAPI.API\\Program.cs",
               "ToolTip": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Presentation\\eTicaretAPI.API\\Program.cs",
               "RelativeToolTip": "Presentation\\eTicaretAPI.API\\Program.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACoAAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAswBsAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T12:18:10.878Z",
+              "WhenOpened": "2025-07-06T16:36:54.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Presentation\\eTicaretAPI.API\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "Presentation\\eTicaretAPI.API\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Presentation\\eTicaretAPI.API\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "Presentation\\eTicaretAPI.API\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T14:34:14.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FileService.cs",
+              "DocumentMoniker": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Infrastructure\\eTicaretAPI.Infrastructure\\Services\\FileService.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\eTicaretAPI.Infrastructure\\Services\\FileService.cs",
+              "ToolTip": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Infrastructure\\eTicaretAPI.Infrastructure\\Services\\FileService.cs",
+              "RelativeToolTip": "Infrastructure\\eTicaretAPI.Infrastructure\\Services\\FileService.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAkwEAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-06T14:21:07.897Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "CreateProductValidator.cs",
-              "DocumentMoniker": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Core\\eTicaretAPI.Application\\Validators\\Products\\CreateProductValidator.cs",
-              "RelativeDocumentMoniker": "Core\\eTicaretAPI.Application\\Validators\\Products\\CreateProductValidator.cs",
-              "ToolTip": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Core\\eTicaretAPI.Application\\Validators\\Products\\CreateProductValidator.cs",
-              "RelativeToolTip": "Core\\eTicaretAPI.Application\\Validators\\Products\\CreateProductValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAABBAAAAAAAAAA==",
+              "Title": "IFileService.cs",
+              "DocumentMoniker": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Core\\eTicaretAPI.Application\\Services\\IFileService.cs",
+              "RelativeDocumentMoniker": "Core\\eTicaretAPI.Application\\Services\\IFileService.cs",
+              "ToolTip": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Core\\eTicaretAPI.Application\\Services\\IFileService.cs",
+              "RelativeToolTip": "Core\\eTicaretAPI.Application\\Services\\IFileService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T12:09:49.267Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "VM_Create_Product.cs",
-              "DocumentMoniker": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Core\\eTicaretAPI.Application\\ViewModels\\Products\\VM_Create_Product.cs",
-              "RelativeDocumentMoniker": "Core\\eTicaretAPI.Application\\ViewModels\\Products\\VM_Create_Product.cs",
-              "ToolTip": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulamas\u0131\\eTicaretAPI\\Core\\eTicaretAPI.Application\\ViewModels\\Products\\VM_Create_Product.cs",
-              "RelativeToolTip": "Core\\eTicaretAPI.Application\\ViewModels\\Products\\VM_Create_Product.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T12:05:33.622Z"
+              "WhenOpened": "2025-07-06T14:19:46.329Z",
+              "EditorCaption": ""
             }
           ]
         }

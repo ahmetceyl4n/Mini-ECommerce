@@ -1,11 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qvcHsXKwtpo=",
+  "dgSpecHash": "3YBiMAJR1bw=",
   "success": true,
-  "projectFilePath": "/Users/furkan/RiderProjects/eTicaretUygulamasi/eTicaretAPI/Core/eTicaretAPI.Domain/eTicaretAPI.Domain.csproj",
-  "expectedPackageFiles": [
-    "/Users/furkan/.nuget/packages/microsoft.netcore.app.ref/8.0.16/microsoft.netcore.app.ref.8.0.16.nupkg.sha512",
-    "/Users/furkan/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.16/microsoft.aspnetcore.app.ref.8.0.16.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\furka\\VisualStudioProjects\\studio\\eTicaretUygulaması\\eTicaretAPI\\Core\\eTicaretAPI.Domain\\eTicaretAPI.Domain.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

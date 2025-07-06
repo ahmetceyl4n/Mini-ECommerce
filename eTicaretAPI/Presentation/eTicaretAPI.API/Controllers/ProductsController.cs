@@ -1,5 +1,6 @@
 ﻿using eTicaretAPI.Application.Repositories;
 using eTicaretAPI.Application.RequestParameter;
+using eTicaretAPI.Application.Services;
 using eTicaretAPI.Application.ViewModels.Products;
 using eTicaretAPI.Domain.Entities;
 using Microsoft.AspNetCore.Http;
@@ -15,11 +16,13 @@ namespace eTicaretAPI.API.Controllers
         private readonly IProductReadRepositories _productReadRepositories;
         private readonly IProductWriteRepositories _productWriteRepositories;
         private readonly IWebHostEnvironment _webHostEnvironment;
-        public ProductsController(IProductReadRepositories productReadRepositories, IProductWriteRepositories productWriteRepositories, IWebHostEnvironment webHostEnvironment)
+        private readonly IFileService _fileService;
+        public ProductsController(IProductReadRepositories productReadRepositories, IProductWriteRepositories productWriteRepositories, IWebHostEnvironment webHostEnvironment, IFileService fileService)
         {
             _productReadRepositories = productReadRepositories;
             _productWriteRepositories = productWriteRepositories;
             _webHostEnvironment = webHostEnvironment;
+            _fileService = fileService;
         }
 
         [HttpGet]
@@ -95,27 +98,8 @@ namespace eTicaretAPI.API.Controllers
 
         [HttpPost("[action]")]
         public async Task<IActionResult> Upload(){
-            //wwwroot/resource/product-images klasörüne resim yükleme işlemi yapılacak
-            string uploadPath = Path.Combine(_webHostEnvironment.WebRootPath, "resource/product-images");
-            
-            if (!Directory.Exists(uploadPath))
-                Directory.CreateDirectory(uploadPath);
-
-            foreach (IFormFile file in Request.Form.Files)
-            {
-                if (file.Length > 0)
-                {
-                    string fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
-                    string filePath = Path.Combine(uploadPath, fileName);
-
-                    using (FileStream fileStream = new FileStream(filePath, FileMode.Create, FileAccess.Write, FileShare.None, 1024 * 1024, useAsync: false)) 
-                    {
-                        await file.CopyToAsync(fileStream); // Resmi belirtilen yola kopyala
-                        await fileStream.FlushAsync(); // Stream'i temizle
-                    } 
-                }
-            }
-            return Ok(new { message = "Resimler başarıyla yüklendi." }); // Başarılı yükleme mesajı
+            await _fileService.UploadAsync("resource/product-images", Request.Form.Files);
+            return Ok(); // Return 200 OK after uploading files
         }
     }
 }
