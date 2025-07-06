@@ -17,12 +17,34 @@ namespace eTicaretAPI.API.Controllers
         private readonly IProductWriteRepositories _productWriteRepositories;
         private readonly IWebHostEnvironment _webHostEnvironment;
         private readonly IFileService _fileService;
-        public ProductsController(IProductReadRepositories productReadRepositories, IProductWriteRepositories productWriteRepositories, IWebHostEnvironment webHostEnvironment, IFileService fileService)
+        private readonly IFileWriteRepository _fileWriteRepository;
+        private readonly IFileReadRepository _fileReadRepository;
+        private readonly IProductImageFileReadRepository _productImageFileReadRepository;
+        private readonly IProductImageFileWriteRepository _productImageFileWriteRepository;
+        private readonly IInvoiceFileReadRepository _invoiceFileReadRepository;
+        private readonly IInvoiceFileWriteRepository _invoiceFileWriteRepository;
+
+        public ProductsController(IProductReadRepositories productReadRepositories, 
+                                  IProductWriteRepositories productWriteRepositories, 
+                                  IWebHostEnvironment webHostEnvironment, 
+                                  IFileService fileService, 
+                                  IFileReadRepository fileReadRepository, 
+                                  IFileWriteRepository fileWriteRepository, 
+                                  IProductImageFileReadRepository productImageFileReadRepository, 
+                                  IProductImageFileWriteRepository productImageFileWriteRepository, 
+                                  IInvoiceFileReadRepository invoiceFileReadRepository, 
+                                  IInvoiceFileWriteRepository invoiceFileWriteRepository)
         {
             _productReadRepositories = productReadRepositories;
             _productWriteRepositories = productWriteRepositories;
             _webHostEnvironment = webHostEnvironment;
             _fileService = fileService;
+            _fileReadRepository = fileReadRepository;
+            _fileWriteRepository = fileWriteRepository;
+            _productImageFileReadRepository = productImageFileReadRepository;
+            _productImageFileWriteRepository = productImageFileWriteRepository;
+            _invoiceFileReadRepository = invoiceFileReadRepository;
+            _invoiceFileWriteRepository = invoiceFileWriteRepository;
         }
 
         [HttpGet]
@@ -98,7 +120,13 @@ namespace eTicaretAPI.API.Controllers
 
         [HttpPost("[action]")]
         public async Task<IActionResult> Upload(){
-            await _fileService.UploadAsync("resource/product-images", Request.Form.Files);
+            var datas = await _fileService.UploadAsync("resource/product-images", Request.Form.Files);
+            await _productImageFileWriteRepository.AddRangeAsync(datas.Select(d => new ProductImageFile() {
+                FileName = d.fileName,
+                FilePath = d.path,    
+            }).ToList());
+
+            await _productImageFileWriteRepository.SaveAsync();
             return Ok(); // Return 200 OK after uploading files
         }
     }

@@ -71,7 +71,7 @@ public class FileService : IFileService
         {
            
             string fileNewName = await FileRenameAsync(uploadPath, file.FileName);
-            datas.Add((fileNewName, $"{uploadPath}\\{fileNewName}"));
+            datas.Add((fileNewName, $"{path}\\{fileNewName}"));
             await CopyFileAsync($"{uploadPath}\\{fileNewName}", file);           
         }
 

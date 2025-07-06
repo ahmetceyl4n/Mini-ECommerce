@@ -10,6 +10,6 @@ namespace eTicaretAPI.Domain.Entities.Common
     {
         public Guid ID { get; set; }
         public DateTime CreatedDate { get; set; }
-        public DateTime UpdatedDate { get; set; }
+        virtual public DateTime UpdatedDate { get; set; } // Bazı entity'lerde update işlemi olmayabilir, bu yüzden virtual olarak tanımladık.
     }
 }

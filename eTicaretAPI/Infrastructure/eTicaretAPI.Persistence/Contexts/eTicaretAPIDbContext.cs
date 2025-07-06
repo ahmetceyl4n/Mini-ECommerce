@@ -17,6 +17,9 @@ namespace eTicaretAPI.Persistence.Contexts
         public DbSet<Product> Products { get; set; }                    //Product türünde Products isminde tablo oluşturur
         public DbSet<Order> Orders { get; set; }
         public DbSet<Customer> Customers { get; set; }
+        public DbSet<Domain.Entities.File> Files { get; set; }
+        public DbSet<ProductImageFile> ProductImageFiles { get; set; }
+        public DbSet<InvoiceFile> InvoiceFiles { get; set; }
 
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)       //Interceptor işlemi için bu metodu override ediyoruz. Interceptor veriyi database'e kaydedecekken araya girer ve eklemeler yapmamızı sağlar.
                                                                                                         //Yani örneğin bir ürün eklendiğinde otomatik olarak ekleme tarihi oluşturacak 

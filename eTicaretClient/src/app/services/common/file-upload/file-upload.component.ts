@@ -7,6 +7,8 @@ import { CustomToastrService, ToastrMessageType, ToastrPosition } from '../../ui
 import { MatDialog } from '@angular/material/dialog';
 import { FileUploadDialogComponent } from '../../../dialogs/file-upload-dialog/file-upload-dialog.component';
 import { DialogService } from '../dialog.service';
+import { NgxSpinnerModule, NgxSpinnerService } from 'ngx-spinner';
+import { SpinnerType } from '../../../base/base.component';
 
 @Component({
   selector: 'app-file-upload',
@@ -20,7 +22,8 @@ export class FileUploadComponent {
     private alertifyService : AlertifyService,
     private customToastrService : CustomToastrService,
     private dialog : MatDialog,
-    private dialogService : DialogService
+    private dialogService : DialogService,
+    private spinner : NgxSpinnerService
   ){}
   
   public files: NgxFileDropEntry[];
@@ -40,6 +43,7 @@ export class FileUploadComponent {
       componentType: FileUploadDialogComponent,
       data: FileUploadDialogState.Yes,
       afterClosed: () => {  
+        this.spinner.show(SpinnerType.SquareJellyBox)
         this.httpClientService.post({
           controller : this.options.controller,
           action : this.options.action,
@@ -59,6 +63,7 @@ export class FileUploadComponent {
               position : ToastrPosition.TopRight
             })
           }
+          this.spinner.hide(SpinnerType.SquareJellyBox)
         },(errorResponse : HttpErrorResponse) => {
           const message: string = "Folder uploading not successfully";
           if(this.options.isAdminPage){
@@ -73,6 +78,7 @@ export class FileUploadComponent {
               position : ToastrPosition.TopRight
             })
           }
+          this.spinner.hide(SpinnerType.SquareJellyBox)
         }); 
       }
     })

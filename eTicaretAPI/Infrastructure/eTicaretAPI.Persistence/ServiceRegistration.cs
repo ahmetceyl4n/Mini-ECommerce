@@ -22,6 +22,12 @@ namespace eTicaretAPI.Persistence
             services.AddScoped<IOrderWriteRepositories, OrderWriteRepository>();
             services.AddScoped<IProductReadRepositories, ProductReadRepository>();
             services.AddScoped<IProductWriteRepositories, ProductWriteRepository>();
+            services.AddScoped<IProductImageFileReadRepository, ProductImageFileReadRepository>();
+            services.AddScoped<IProductImageFileWriteRepository, ProductImageFileWriteRepository>();
+            services.AddScoped<IInvoiceFileReadRepository, InvoiceFileReadRepository>();
+            services.AddScoped<IInvoiceFileWriteRepository, InvoiceFileWriteRepository>();
+            services.AddScoped<IFileReadRepository, FileReadRepository>();
+            services.AddScoped<IFileWriteRepository, FileWriteRepository>();
         }
     }
 }

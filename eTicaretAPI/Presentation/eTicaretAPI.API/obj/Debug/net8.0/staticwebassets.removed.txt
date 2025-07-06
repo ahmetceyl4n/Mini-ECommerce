@@ -1,0 +1,3 @@
+C:\Users\furka\VisualStudioProjects\studio\eTicaretUygulaması\eTicaretAPI\Presentation\eTicaretAPI.API\wwwroot\resource\product-images\Resim(1).jpg
+C:\Users\furka\VisualStudioProjects\studio\eTicaretUygulaması\eTicaretAPI\Presentation\eTicaretAPI.API\wwwroot\resource\product-images\Resim(2).jpg
+C:\Users\furka\VisualStudioProjects\studio\eTicaretUygulaması\eTicaretAPI\Presentation\eTicaretAPI.API\wwwroot\resource\product-images\WhatsApp_Gorsel_20250215_saat_185620316cbfa4.jpg
