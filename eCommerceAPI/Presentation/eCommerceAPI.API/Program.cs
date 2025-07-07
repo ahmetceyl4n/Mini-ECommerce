@@ -1,6 +1,7 @@
 using eCommerceAPI.Application.Validators.Products;
 using eCommerceAPI.Infrastructure;
 using eCommerceAPI.Infrastructure.Filters;
+using eCommerceAPI.Infrastructure.Services.Storage.Local;
 using eCommerceAPI.Persistence;
 using FluentValidation;
 using FluentValidation.AspNetCore;
@@ -10,6 +11,10 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddPersistenceServices();      // IoC Container'a ne eklenirse çalýþacak çünkü bu komutla çaðrýlýyor
 builder.Services.AddInfrastructureServices();   // Add infrastructure services
+
+// Register the storage service with a specific implementation (LocalStorage,Azure,AWS, etc.)
+builder.Services.AddStorage<LocalStorage>(); // Local storage implementation
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAllOrigins",

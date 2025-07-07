@@ -14,5 +14,6 @@ namespace eCommerceAPI.Domain.Entities
         public override DateTime UpdatedDate { get => base.UpdatedDate; set => base.UpdatedDate = value; }
         public string FileName { get; set; }
         public string FilePath { get; set; }
+        public string Storage { get; set; } // Local, Azure, AWS gibi depolama türlerini belirtir.
     }     
 }
