@@ -1,6 +1,7 @@
 using eCommerceAPI.Application.Validators.Products;
 using eCommerceAPI.Infrastructure;
 using eCommerceAPI.Infrastructure.Filters;
+using eCommerceAPI.Infrastructure.Services.Storage.Azure;
 using eCommerceAPI.Infrastructure.Services.Storage.Local;
 using eCommerceAPI.Persistence;
 using FluentValidation;
@@ -13,7 +14,8 @@ builder.Services.AddPersistenceServices();      // IoC Container'a ne eklenirse 
 builder.Services.AddInfrastructureServices();   // Add infrastructure services
 
 // Register the storage service with a specific implementation (LocalStorage,Azure,AWS, etc.)
-builder.Services.AddStorage<LocalStorage>(); // Local storage implementation
+// builder.Services.AddStorage<LocalStorage>(); // Local storage implementation
+builder.Services.AddStorage<AzureStorage>();    // Azure storage implementation
 
 builder.Services.AddCors(options =>
 {
