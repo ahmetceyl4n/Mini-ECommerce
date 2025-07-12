@@ -13,8 +13,5 @@
   <input matInput type="number" min="0" #txtPrice>
 </mat-form-field>
 
-<button matButton="outlined" class="button" (click)="create(txtName, txtStock, txtPrice)">Create</button>
+<button mat-button="outlined" class="button" (click)="create(txtName, txtStock, txtPrice)">Create</button>
 
-<hr />
-
-<app-file-upload [options]="fileUploadOptions"></app-file-upload>

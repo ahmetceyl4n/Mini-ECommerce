@@ -25,7 +25,7 @@ declare var $: any;
 export class DeleteDirective {
   @Input() id!: string;
   @Input() controller : string;
-  @Output() callback: EventEmitter<any> = new EventEmitter();
+  @Output() callback: EventEmitter<any> = new EventEmitter(); 
 
   constructor(
     private spinner : NgxSpinnerService,
@@ -39,6 +39,7 @@ export class DeleteDirective {
     const img = this._renderer.createElement('img');
     img.setAttribute('src', 'assets/delete.png');
     img.setAttribute('style', 'cursor: pointer;');
+    img.setAttribute('title', 'Delete');
     img.width = 15;
     img.height = 15;
     this._renderer.appendChild(this.element.nativeElement, img);
@@ -49,35 +50,36 @@ export class DeleteDirective {
     this.dialogService.openDialog({
       componentType: DeleteDialogComponent,
       data: DeleteState.Yes,
+      options :{width : "500px"},
       afterClosed: async () => {
         const td = this.element.nativeElement as HTMLTableCellElement;
-      const parent = td?.parentElement;
+        const parent = td?.parentElement;
 
-      this.httpClientService.delete({
-        controller: this.controller
-      }, this.id).subscribe(data => {
-        if (parent) {
-          $(parent).fadeOut(1000, () => {
+        this.httpClientService.delete({
+          controller: this.controller
+        }, this.id).subscribe(data => {
+          if (parent) {
+            $(parent).fadeOut(1000, () => {
+              this.callback.emit();
+            });
+          } else {
             this.callback.emit();
-          });
-        } else {
-          this.callback.emit();
-        }
+          }
 
-        this.alertifyService.message("Successfully product deletion.", {
-          DismissOthers: true,
-          messageType: MessageType.Success,
-          position: Position.TopRight
-        });
-      },
-        (errorResponse: HttpErrorResponse) => {
-          this.spinner.hide(SpinnerType.BallSquareMultiple)
-          this.alertifyService.message("Product deletion failed", {
+          this.alertifyService.message("Successfully product deletion.", {
             DismissOthers: true,
-            messageType: MessageType.Error,
+            messageType: MessageType.Success,
             position: Position.TopRight
           });
-        });
+        },
+          (errorResponse: HttpErrorResponse) => {
+            this.spinner.hide(SpinnerType.BallSquareMultiple)
+            this.alertifyService.message("Product deletion failed", {
+              DismissOthers: true,
+              messageType: MessageType.Error,
+              position: Position.TopRight
+            });
+          });
       }
     });
   }
