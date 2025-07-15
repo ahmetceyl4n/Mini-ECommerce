@@ -1,0 +1,64 @@
+<div class="fullscreen-wrapper">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+        <form [formGroup]="frm" (ngSubmit)="onSubmit(frm.value)">
+            <div class="mb-3">
+                <label for="nameSurname" class="form-label">Name Surname *</label>
+                <input type="text" formControlName="nameSurname" class="form-control" id="nameSurname" placeholder="Enter your name and surname" [ngClass]="{'is-invalid': frm.get('nameSurname').invalid && (frm.get('nameSurname').dirty || frm.get('nameSurname').touched)}" >   
+                <small class="text-danger" *ngIf="frm.get('nameSurname').touched && frm.get('nameSurname').invalid">
+                    <span *ngIf="frm.get('nameSurname').errors?.['required']">Full name is required.</span>
+                    <span *ngIf="frm.get('nameSurname').errors?.['minlength']">Full name must be at least 3 characters long.</span>
+                    <span *ngIf="frm.get('nameSurname').errors?.['maxlength']">Full name cannot exceed 50 characters.</span>
+                </small>
+                         
+            </div>
+            <div class="mb-3">
+                <label for="username" class="form-label">Username *</label>
+                <input type="text" formControlName="username" class="form-control" id="username" placeholder="Enter your username" [ngClass]="{'is-invalid': frm.get('username').invalid && (frm.get('username').dirty || frm.get('username').touched)}" >   
+                <small class="text-danger" *ngIf="frm.get('username').touched && frm.get('username').invalid">
+                    <span *ngIf="frm.get('username').errors?.['required']">Username is required.</span>
+                    <span *ngIf="frm.get('username').errors?.['minlength']">Username must be at least 3 characters long.</span>
+                    <span *ngIf="frm.get('username').errors?.['maxlength']">Username cannot exceed 20 characters.</span>
+                    <span *ngIf="frm.get('username').errors?.['pattern']">Username can only contain letters, numbers, and underscores.</span>
+                </small>
+                          
+            </div>
+            <div class="mb-3">
+                <label for="emailaddress" class="form-label">Email Address *</label>
+                <input type="email" formControlName="email" class="form-control" id="emailaddress" aria-describedby="emailHelp" placeholder="Enter your email" [ngClass]="{'is-invalid': frm.get('email').invalid && (frm.get('email').dirty || frm.get('email').touched)}" >
+                
+                <small class="text-danger" *ngIf="frm.get('email').touched && frm.get('email').invalid">
+                    <span *ngIf="frm.get('email').errors?.['required']">Email address is required.</span>
+                    <span *ngIf="frm.get('email').errors?.['email']">Please enter a valid email address.</span>
+                    <span *ngIf="frm.get('email').errors?.['maxlength']">Email cannot exceed 100 characters.</span>
+                </small>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password *</label>
+                <input type="password" formControlName="password" class="form-control" id="password" placeholder="Enter your password" [ngClass]="{'is-invalid': frm.get('password').invalid && (frm.get('password').dirty || frm.get('password').touched)}" >
+                <small class="text-danger" *ngIf="frm.get('password').touched && frm.get('password').invalid">
+                    <span *ngIf="frm.get('password').errors?.['required']">Password is required.</span>
+                    <span *ngIf="frm.get('password').errors?.['minlength']">Password must be at least 6 characters long.</span>
+                    <span *ngIf="frm.get('password').errors?.['maxlength']">Password cannot exceed 20 characters.</span>
+                    <span *ngIf="frm.get('password').errors?.['pattern']">
+                        Password must contain at least one uppercase letter, one lowercase letter, and one number.
+                    </span>
+                </small>
+
+            </div>
+            <div class="mb-3">
+                <label for="confirmPassword" class="form-label">Password Check *</label>
+                <input type="password" formControlName="confirmPassword" class="form-control" id="confirmPassword" placeholder="Re-enter your password" [ngClass]="{'is-invalid': frm.get('confirmPassword').invalid && (frm.get('confirmPassword').dirty || frm.get('confirmPassword').touched)}" >
+                <small class="text-danger" *ngIf="frm.get('confirmPassword').touched && frm.get('confirmPassword').invalid">
+                    <span *ngIf="frm.get('confirmPassword').errors?.['required']">Please confirm your password.</span>
+                    <span class="text-danger" *ngIf="frm.get('confirmPassword').touched && frm.get('confirmPassword').  errors?.['passwordMismatch']">
+                    Passwords do not match.
+                    </span>
+                </small>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <div class="col-md-3"></div>
+</div>

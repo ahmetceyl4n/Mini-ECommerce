@@ -1,0 +1,73 @@
+html, body {
+  height: 100%;
+}
+
+.fullscreen-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto; /* Ekran küçükse kaydırma izni verir */
+}
+
+
+/* Form container styling */
+form {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Form labels */
+.form-label {
+  font-weight: 600;
+  color: #333;
+}
+
+/* Inputs */
+.form-control {
+  border-radius: 8px;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+/* Invalid input */
+.is-invalid {
+  border-color: #dc3545;
+  background-color: #fff5f5;
+}
+
+.is-invalid:focus {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.2);
+}
+
+/* Error messages */
+.text-danger {
+  font-size: 0.875rem;
+  margin-top: 5px;
+}
+
+/* Submit button */
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 8px;
+  background-color: #41a55a;
+}
+
+/* Responsive spacing */
+@media (max-width: 767px) {
+  form {
+    padding: 20px;
+  }
+}

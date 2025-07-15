@@ -26,7 +26,7 @@ export class SelectProductImageDialogComponent extends BaseDialogs<SelectProduct
     private productService : ProductService,
     private spinner : NgxSpinnerService,
     private dialogService : DialogService
-  ) {
+    ) {
     super(dialogRef);
     this.data = injectedData;
   }
@@ -48,17 +48,18 @@ export class SelectProductImageDialogComponent extends BaseDialogs<SelectProduct
     this.images = await this.productService.readImages(this.data as string, () => this.spinner.hide(SpinnerType.BallSquareMultiple));
     }
 
-    deleteImage(imageId: string) {
-      this.dialogService.openDialog({ 
+    async deleteImage(imageId: string) {
+
+      this.dialogService.openDialog({
         componentType: DeleteDialogComponent,
         data: DeleteState.Yes,
         afterClosed: async () => {
           this.spinner.show(SpinnerType.BallSquareMultiple)
           await this.productService.deleteImage(this.data as string, imageId, () => {
-            this.spinner.hide(SpinnerType.BallSquareMultiple); 
-          })
+            this.spinner.hide(SpinnerType.BallSquareMultiple);                  
+          });
         }
-      });
+      })
     }
   }
 

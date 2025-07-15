@@ -13,6 +13,7 @@ const routes: Routes = [
   ]},
   {path: "", component: HomeComponent}, // Direkt https://bilmemne sitesine gidildiğinde açılacak sayfa
   {path: "basket", loadChildren: () => import("./ui/components/baskets/baskets.module").then(module => module.BasketsModule)},
+  {path: "register", loadChildren: () => import("./ui/components/register/register.module").then(module => module.RegisterModule)},
   {path: "products", loadChildren: () => import("./ui/components/products/products.module").then(module => module.ProductsModule)}
 ];
 
