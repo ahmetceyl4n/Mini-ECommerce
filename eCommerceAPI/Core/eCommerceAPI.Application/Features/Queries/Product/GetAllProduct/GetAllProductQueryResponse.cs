@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace eCommerceAPI.Application.Features.Queries.GetAllProduct
+namespace eCommerceAPI.Application.Features.Queries.Product.GetAllProduct
 {
     public class GetAllProductQueryResponse
     {

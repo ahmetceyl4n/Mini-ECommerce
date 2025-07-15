@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace eCommerceAPI.Application.Features.Commands.CreateProduct
+namespace eCommerceAPI.Application.Features.Commands.Product.CreateProduct
 {
     public class CreateProductCommandRequest : IRequest<CreateProductCommandResponse>
     {
