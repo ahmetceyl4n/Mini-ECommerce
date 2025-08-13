@@ -47,11 +47,11 @@
 
             </div>
             <div class="mb-3">
-                <label for="confirmPassword" class="form-label">Password Check *</label>
-                <input type="password" formControlName="confirmPassword" class="form-control" id="confirmPassword" placeholder="Re-enter your password" [ngClass]="{'is-invalid': frm.get('confirmPassword').invalid && (frm.get('confirmPassword').dirty || frm.get('confirmPassword').touched)}" >
-                <small class="text-danger" *ngIf="frm.get('confirmPassword').touched && frm.get('confirmPassword').invalid">
-                    <span *ngIf="frm.get('confirmPassword').errors?.['required']">Please confirm your password.</span>
-                    <span class="text-danger" *ngIf="frm.get('confirmPassword').touched && frm.get('confirmPassword').  errors?.['passwordMismatch']">
+                <label for="PasswordConfirm" class="form-label">Password Check *</label>
+                <input type="password" formControlName="PasswordConfirm" class="form-control" id="PasswordConfirm" placeholder="Re-enter your password" [ngClass]="{'is-invalid': frm.get('PasswordConfirm').invalid && (frm.get('PasswordConfirm').dirty || frm.get('PasswordConfirm').touched)}" >
+                <small class="text-danger" *ngIf="frm.get('PasswordConfirm').touched && frm.get('PasswordConfirm').invalid">
+                    <span *ngIf="frm.get('PasswordConfirm').errors?.['required']">Please confirm your password.</span>
+                    <span class="text-danger" *ngIf="frm.get('PasswordConfirm').touched && frm.get('PasswordConfirm').  errors?.['passwordMismatch']">
                     Passwords do not match.
                     </span>
                 </small>
