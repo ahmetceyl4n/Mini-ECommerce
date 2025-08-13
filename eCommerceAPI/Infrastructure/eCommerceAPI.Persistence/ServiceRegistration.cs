@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using eCommerceAPI.Application.Repositories;
 using eCommerceAPI.Persistence.Repositories;
+using eCommerceAPI.Domain.Entities.Identity;
 
 namespace eCommerceAPI.Persistence
 {
@@ -16,6 +17,13 @@ namespace eCommerceAPI.Persistence
         public static void AddPersistenceServices(this IServiceCollection services)
         {
             services.AddDbContext<eCommerceAPIDbContext>(options => options.UseNpgsql(Configuration.ConnectionString));
+            services.AddIdentity<AppUser, AppRole>(options =>
+            {
+                options.Password.RequiredLength = 3; // Şifre uzunluğunu 3 karakter olarak ayarlıyoruz
+                options.Password.RequireNonAlphanumeric = false; // Özel karakter gereksinimini kaldırıyoruz
+                options.Password.RequireDigit = false; // Rakam gereksinimini kaldırıyoruz
+            }).AddEntityFrameworkStores<eCommerceAPIDbContext>(); //Identity ile ilgili işlemleri yapabilmek için Identity'yi ekliyoruz. AppUser ve AppRole sınıflarını kullanarak Identity'yi yapılandırıyoruz. 
+
             services.AddScoped<ICustomerReadRepositories, CustomerReadRepository>();    //DbContext Scoped kullandığı için burada scoped kullandık. İlerde hata almamak için.
             services.AddScoped<ICustomerWriteRepositories, CustomerWriteRepository>();
             services.AddScoped<IOrderReadRepositories, OrderReadRepository>();

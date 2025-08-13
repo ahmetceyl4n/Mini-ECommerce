@@ -1,6 +1,4 @@
 ﻿using eCommerceAPI.Application.Abstractions.Storage;
-using eCommerceAPI.Application.Features.Commands.Product.CreateProduct;
-using eCommerceAPI.Application.Features.Queries.Product.GetAllProduct;
 using eCommerceAPI.Application.Repositories;
 using eCommerceAPI.Application.RequestParameter;
 using eCommerceAPI.Application.ViewModels.Products;
@@ -10,12 +8,14 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Net;
-using eCommerceAPI.Application.Features.Commands.Product.RemoveProduct;
-using eCommerceAPI.Application.Features.Commands.Product.UpdateProduct;
-using eCommerceAPI.Application.Features.Commands.ProductImageFile.RemoveProductImage;
-using eCommerceAPI.Application.Features.Commands.ProductImageFile.UploadProductImage;
-using eCommerceAPI.Application.Features.Queries.Product.GetByIdProduct;
-using eCommerceAPI.Application.Features.Queries.ProductImageFile.GetProductImage;
+using eCommerceAPI.Application.Features.Product.Commands.RemoveProduct;
+using eCommerceAPI.Application.Features.Product.Commands.CreateProduct;
+using eCommerceAPI.Application.Features.Product.Commands.UpdateProduct;
+using eCommerceAPI.Application.Features.Product.Queries.GetByIdProduct;
+using eCommerceAPI.Application.Features.Product.Queries.GetAllProduct;
+using eCommerceAPI.Application.Features.ProductImageFile.Commands.UploadProductImage;
+using eCommerceAPI.Application.Features.ProductImageFile.Commands.RemoveProductImage;
+using eCommerceAPI.Application.Features.ProductImageFile.Queries.GetProductImage;
 
 namespace eCommerceAPI.API.Controllers
 {
