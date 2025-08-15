@@ -5,7 +5,7 @@ import { NgxSpinnerService } from 'ngx-spinner';
 import { AuthService } from '../../../services/common/auth.service';
 import {  ActivatedRoute, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
-
+import { SocialAuthService, SocialUser } from '@abacritt/angularx-social-login';
 @Component({
   selector: 'app-login',
   standalone: false,
@@ -22,9 +22,13 @@ export class LoginComponent extends BaseComponent implements OnDestroy {
     spinner: NgxSpinnerService,
     private authService: AuthService,
     private activatedRoute: ActivatedRoute,
-    private router: Router
+    private router: Router,
+    socialAuthService: SocialAuthService
   ) {
     super(spinner);
+    socialAuthService.authState.subscribe((user: SocialUser)  => {
+      console.log(user);
+    })
   }
 
   async login(usernameOrEmail: string, password: string) {
