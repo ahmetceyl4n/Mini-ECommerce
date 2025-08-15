@@ -3,7 +3,7 @@ import { UserService } from '../../../services/common/models/user.service';
 import { BaseComponent, SpinnerType } from '../../../base/base.component';
 import { NgxSpinnerService } from 'ngx-spinner';
 import { AuthService } from '../../../services/common/auth.service';
-import { ActivatedRoute, Router } from '@angular/router';
+import {  ActivatedRoute, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 
 @Component({
