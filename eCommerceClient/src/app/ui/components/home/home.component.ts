@@ -14,6 +14,6 @@ export class HomeComponent extends BaseComponent implements OnInit {
   }
   ngOnInit(): void {
     // Initialize the component
-    this.showSpinner(SpinnerType.SquareJellyBox); // Show the loading spinner
+    //this.showSpinner(SpinnerType.SquareJellyBox); // Show the loading spinner
   }
 }

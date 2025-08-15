@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { CustomToastrService, ToastrMessageType, ToastrPosition } from './services/ui/custom-toastr.service';
+import { AuthService } from './services/common/auth.service';
+import { Router } from '@angular/router';
 declare var $: any; // jQuery
 
 
@@ -10,13 +12,24 @@ declare var $: any; // jQuery
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'eTicaretClient';
-  constructor(private customToastrService: CustomToastrService) {
+
+  constructor(
+    private customToastrService: CustomToastrService,
+    public authService: AuthService,
+    private router: Router
+  ) {
     this.customToastrService.message("Welcome to eTicaretClient!", "Welcome", {messageType: ToastrMessageType.Info, position: ToastrPosition.TopLeft});
+
+    authService.identityCheck();
   }
+  signOut() {
+   this.authService.signOut();
+   this.router.navigate(["login"]); // Kullanıcıyı login sayfasına yönlendir  
+   this.customToastrService.message(
+      "You have been signed out.",
+      "Goodbye",
+      { messageType: ToastrMessageType.Info, position: ToastrPosition.TopRight }
+    );
+  }
+  
 }
-/*
-$(document).ready(function () {
-alert("jQuery is working!") 
-}) // Ensure jQuery is loaded and working
-*/

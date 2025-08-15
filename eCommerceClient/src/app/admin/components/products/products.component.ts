@@ -25,7 +25,7 @@ export class ProductsComponent extends BaseComponent implements OnInit {
 
   ngOnInit(): void {
     // Initialize the component
-    this.showSpinner(SpinnerType.SquareJellyBox); // Show the loading spinner
+    
     this.httpClientService.get<Create_Product>({
       controller: "products"
     }).subscribe(data => console.log(data))

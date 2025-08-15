@@ -16,7 +16,7 @@ export class DashboardComponent extends BaseComponent implements OnInit {
 
   ngOnInit(): void {
     // Initialize the component
-    this.showSpinner(SpinnerType.BallSquareMultiple); // Show the loading spinner
+    
   }
 
   // Additional methods and properties can be added here as needed
