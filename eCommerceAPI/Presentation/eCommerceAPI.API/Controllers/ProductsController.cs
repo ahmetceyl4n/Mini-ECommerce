@@ -16,11 +16,13 @@ using eCommerceAPI.Application.Features.Product.Queries.GetAllProduct;
 using eCommerceAPI.Application.Features.ProductImageFile.Commands.UploadProductImage;
 using eCommerceAPI.Application.Features.ProductImageFile.Commands.RemoveProductImage;
 using eCommerceAPI.Application.Features.ProductImageFile.Queries.GetProductImage;
+using Microsoft.AspNetCore.Authorization;
 
 namespace eCommerceAPI.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(AuthenticationSchemes = "Admin")]
     public class ProductsController : ControllerBase
     {
         private readonly IMediator _mediator;

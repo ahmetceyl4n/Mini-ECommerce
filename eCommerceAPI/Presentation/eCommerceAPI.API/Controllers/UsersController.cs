@@ -1,4 +1,5 @@
 ﻿using eCommerceAPI.Application.Features.AppUser.Commands.CreateUser;
+using eCommerceAPI.Application.Features.AppUser.Commands.GoogleLogin;
 using eCommerceAPI.Application.Features.AppUser.Commands.LoginUser;
 using MediatR;
 using Microsoft.AspNetCore.Http;
@@ -32,6 +33,14 @@ namespace eCommerceAPI.API.Controllers
 
         }
 
+        [HttpPost("[action]")]
+        public async Task<IActionResult> GoogleLogin(GoogleLoginCommandRequest googleLoginCommandRequest)
+        {
+            GoogleLoginCommandResponse response =  await _mediator.Send(googleLoginCommandRequest);
+            
+            return Ok(response);
+        }
 
+        [HttpPost("[action]")]
     }
 }
