@@ -24,7 +24,7 @@ export class AppComponent {
   }
   signOut() {
    this.authService.signOut();
-   this.router.navigate(["login"]); // Kullanıcıyı login sayfasına yönlendir  
+   this.router.navigate(["/login"]); // Kullanıcıyı login sayfasına yönlendir  
    this.customToastrService.message(
       "You have been signed out.",
       "Goodbye",

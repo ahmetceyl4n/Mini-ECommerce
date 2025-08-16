@@ -22,7 +22,7 @@ export class AuthGuard implements CanActivate {
 
     // Kullanıcı giriş yapmamışsa
     if (!this.authService.isAuthenticated) {
-      this.router.navigate(['login'], { queryParams: { returnUrl: state.url } }); 
+      this.router.navigate(['/login'], { queryParams: { returnUrl: state.url } }); 
       // Eğer token yoksa veya süresi dolmuşsa, kullanıcıyı login sayfasına yönlendiriyoruz.
       // queryParams ile geri dönülecek URL'yi de ekliyoruz, böylece kullanıcı giriş yaptıktan sonra bu sayfaya yönlendirilebilir.
 

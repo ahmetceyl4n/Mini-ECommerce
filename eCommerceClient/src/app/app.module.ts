@@ -10,16 +10,14 @@ import { NgxSpinnerModule } from 'ngx-spinner';
 import { HttpClientModule } from '@angular/common/http';
 import { JwtModule } from '@auth0/angular-jwt';
 
-// ** LoginModule'u import ediyoruz **
-import { LoginModule } from './ui/components/login/login.module'; 
-
 // Sosyal login için gerekli importlar
-import { SocialLoginModule, SocialAuthServiceConfig, GoogleLoginProvider, GoogleSigninButtonDirective } from '@abacritt/angularx-social-login';
+import { SocialLoginModule, SocialAuthServiceConfig, GoogleLoginProvider, FacebookLoginProvider, GoogleSigninButtonDirective } from '@abacritt/angularx-social-login';
 import { LoginComponent } from './ui/components/login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -41,8 +39,7 @@ import { LoginComponent } from './ui/components/login/login.component';
     }),
     SocialLoginModule // Sosyal login için gerekli modül
     ,
-    GoogleSigninButtonDirective,
-    LoginModule
+    GoogleSigninButtonDirective
 ],
   providers: [
     {provide: "baseUrl", useValue: "https://localhost:7143/api", multi: true},
@@ -54,6 +51,10 @@ import { LoginComponent } from './ui/components/login/login.component';
           {
             id: GoogleLoginProvider.PROVIDER_ID,
             provider: new GoogleLoginProvider("594603581579-tap8bm8niss1t73t0rco4af8ljui0rum.apps.googleusercontent.com")  
+          },
+          {
+            id: FacebookLoginProvider.PROVIDER_ID,
+            provider: new FacebookLoginProvider("YOUR_FACEBOOK_APP_ID") 
           }
         ],
         onError: err => console.log(err)

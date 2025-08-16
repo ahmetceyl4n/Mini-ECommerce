@@ -13,7 +13,7 @@ const routes: Routes = [
     {path: "products", loadChildren: () => import("./admin/components/products/products.module").then(module => module.ProductsModule),canActivate: [AuthGuard]}
   ], canActivate: [AuthGuard] // Burada canActivate ile koruma eklenebilir. Örneğin, admin sayfasına erişim için bir yetkilendirme kontrolü yapılabilir.
   },
-  {path: "", component: HomeComponent}, // Direkt https://bilmemne sitesine gidildiğinde açılacak sayfa
+  {path: "", component: HomeComponent, pathMatch: 'full'}, // Direkt https://bilmemne sitesine gidildiğinde açılacak sayfa
   {path: "basket", loadChildren: () => import("./ui/components/baskets/baskets.module").then(module => module.BasketsModule)},
   {path: "register", loadChildren: () => import("./ui/components/register/register.module").then(module => module.RegisterModule)},
   {path: "products", loadChildren: () => import("./ui/components/products/products.module").then(module => module.ProductsModule)},

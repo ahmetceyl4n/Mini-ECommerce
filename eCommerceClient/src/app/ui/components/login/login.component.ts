@@ -5,7 +5,9 @@ import { NgxSpinnerService } from 'ngx-spinner';
 import { AuthService } from '../../../services/common/auth.service';
 import {  ActivatedRoute, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
-import { SocialAuthService, SocialUser } from '@abacritt/angularx-social-login';
+import { FacebookLoginProvider, SocialAuthService, SocialUser } from '@abacritt/angularx-social-login';
+import { HttpClientService } from '../../../services/common/http-client.service';
+import { TokenResponse } from '../../../contracts/token/tokenResponse';
 @Component({
   selector: 'app-login',
   standalone: false,
@@ -23,12 +25,28 @@ export class LoginComponent extends BaseComponent implements OnDestroy {
     private authService: AuthService,
     private activatedRoute: ActivatedRoute,
     private router: Router,
-    socialAuthService: SocialAuthService
+    private socialAuthService: SocialAuthService,
+    private httpClientService: HttpClientService
   ) {
     super(spinner);
-    socialAuthService.authState.subscribe((user: SocialUser)  => {
-      console.log(user);
-    })
+    socialAuthService.authState.subscribe(async (user: SocialUser)  => {
+      
+      this.showSpinner(SpinnerType.SquareJellyBox);
+
+      switch (user.provider) {
+        case "GOOGLE":
+          await userService.googleLogin(user, () => {
+            authService.identityCheck();
+            this.hideSpinner(SpinnerType.SquareJellyBox)})
+          break;
+        case "FACEBOOK":
+          await userService.facebookLogin(user, () => {
+            authService.identityCheck();
+            this.hideSpinner(SpinnerType.SquareJellyBox)});
+          break;  
+
+      }
+    });
   }
 
   async login(usernameOrEmail: string, password: string) {
@@ -51,5 +69,10 @@ export class LoginComponent extends BaseComponent implements OnDestroy {
     if (this.queryParamsSubscription) {
       this.queryParamsSubscription.unsubscribe();
     }
+  }
+
+
+  facebookLogin() {
+    this.socialAuthService.signIn(FacebookLoginProvider.PROVIDER_ID);
   }
 }

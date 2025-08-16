@@ -7,6 +7,7 @@ import { Token } from '../../../contracts/token/token';
 import { CustomToastrService, ToastrMessageType, ToastrPosition } from '../../ui/custom-toastr.service';
 import { Position } from '../../admin/alertify.service';
 import { TokenResponse } from '../../../contracts/token/tokenResponse';
+import { SocialUser } from '@abacritt/angularx-social-login';
 
 @Injectable({
   providedIn: 'root'
@@ -49,6 +50,45 @@ export class UserService {
     callBackFunc(); 
   }
 
+
+  async googleLogin(user : SocialUser,callBackFunc?: () => void) : Promise<any> { 
+
+    const observable : Observable<SocialUser | TokenResponse> = this.httpClientService.post<SocialUser | TokenResponse>({
+      action: "google-login",
+      controller: "users"
+      }, user)
+
+    const tokenResponse: TokenResponse = await firstValueFrom(observable) as TokenResponse;  
+    
+    if (tokenResponse) {
+      localStorage.setItem("accessToken", tokenResponse.token.accessToken); // Token'ı localStorage'a kaydediyoruz
+      
+      this.toastrService.message("Successfully logged in with Google", "Login Successful", {
+        messageType: ToastrMessageType.Success,
+        position: ToastrPosition.TopRight
+      });      
+    }
+    callBackFunc();
+  }
+
+  async facebookLogin(user: SocialUser, callBackFunc?: () => void): Promise<any> {
+    const observable: Observable<SocialUser | TokenResponse> = this.httpClientService.post<SocialUser | TokenResponse>({
+      action: "facebook-login",
+      controller: "users"
+    }, user);
+
+    const tokenResponse : TokenResponse = await firstValueFrom(observable) as TokenResponse;
+
+    if (tokenResponse) {
+      localStorage.setItem("accessToken", tokenResponse.token.accessToken); // Token'ı localStorage'a kaydediyoruz
+      
+      this.toastrService.message("Successfully logged in with Facebook", "Login Successful", {
+        messageType: ToastrMessageType.Success,
+        position: ToastrPosition.TopRight
+      });
+    }
+    callBackFunc();
+  }
 
 
 }

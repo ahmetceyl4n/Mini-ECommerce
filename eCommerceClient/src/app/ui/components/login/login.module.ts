@@ -5,19 +5,17 @@ import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import { GoogleSigninButtonDirective } from "@abacritt/angularx-social-login";
 
-
 @NgModule({
   declarations: [
-    LoginComponent  // LoginComponent burada tanımlı
+    //LoginComponent
   ],
   imports: [
     CommonModule,
     RouterModule.forChild([
         { path: "", component: LoginComponent }
     ]),
-    ReactiveFormsModule // Eğer formlar kullanıyorsanız
-    ,
+    ReactiveFormsModule,
     GoogleSigninButtonDirective
-]
+  ]
 })
 export class LoginModule { }
