@@ -13,10 +13,10 @@ import { RegisterModule } from './register/register.module';
   ],
   imports: [
     CommonModule,
-    ProductsModule,
-    BasketsModule,
-    HomeModule,
-    RegisterModule,
+    //ProductsModule,
+    //BasketsModule,
+    //HomeModule,
+    //RegisterModule,
     //LoginModule
   ]
 })

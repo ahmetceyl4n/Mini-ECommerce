@@ -28,67 +28,6 @@ export class UserService {
     
     // dışarıdan gelen observable'ı Promise'e çeviriyoruz. Bu servis, dışarıdan bir User objesi alıp, onu API’ye POST eden ve API’den gelen sonucu Create_User tipinde döndüren bir metot sağlıyor 
   }
-  async login(usernameOrEmail: string, password: string, callBackFunc?: () => void): Promise<any> {
-    const observable: Observable<any | TokenResponse> = this.httpClientService.post<any | TokenResponse>({
-      controller: 'users',
-      action: 'login'
-    }, { usernameOrEmail, password }); // API'ye kullanıcı adı veya e-posta ve şifre ile giriş yapma isteği gönderiyoruz
-
-    const tokenResponse : TokenResponse = await firstValueFrom(observable) as TokenResponse;
-
-    if(tokenResponse) 
-    {
-      localStorage.setItem("accessToken", tokenResponse.token.accessToken); // Token'ı localStorage'a kaydediyoruz
-      //localStorage.setItem("expiration", token.expiration.toString()); // Token'ın süresini localStorage'a kaydediyoruz
-
-      this.toastrService.message("Successfully logged in", "Login Successful", {
-        messageType: ToastrMessageType.Success,
-        position: ToastrPosition.TopRight
-      });
-    }
-
-    callBackFunc(); 
-  }
-
-
-  async googleLogin(user : SocialUser,callBackFunc?: () => void) : Promise<any> { 
-
-    const observable : Observable<SocialUser | TokenResponse> = this.httpClientService.post<SocialUser | TokenResponse>({
-      action: "google-login",
-      controller: "users"
-      }, user)
-
-    const tokenResponse: TokenResponse = await firstValueFrom(observable) as TokenResponse;  
-    
-    if (tokenResponse) {
-      localStorage.setItem("accessToken", tokenResponse.token.accessToken); // Token'ı localStorage'a kaydediyoruz
-      
-      this.toastrService.message("Successfully logged in with Google", "Login Successful", {
-        messageType: ToastrMessageType.Success,
-        position: ToastrPosition.TopRight
-      });      
-    }
-    callBackFunc();
-  }
-
-  async facebookLogin(user: SocialUser, callBackFunc?: () => void): Promise<any> {
-    const observable: Observable<SocialUser | TokenResponse> = this.httpClientService.post<SocialUser | TokenResponse>({
-      action: "facebook-login",
-      controller: "users"
-    }, user);
-
-    const tokenResponse : TokenResponse = await firstValueFrom(observable) as TokenResponse;
-
-    if (tokenResponse) {
-      localStorage.setItem("accessToken", tokenResponse.token.accessToken); // Token'ı localStorage'a kaydediyoruz
-      
-      this.toastrService.message("Successfully logged in with Facebook", "Login Successful", {
-        messageType: ToastrMessageType.Success,
-        position: ToastrPosition.TopRight
-      });
-    }
-    callBackFunc();
-  }
-
+  
 
 }

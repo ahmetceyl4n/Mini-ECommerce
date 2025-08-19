@@ -7,7 +7,7 @@ import { GoogleSigninButtonDirective } from "@abacritt/angularx-social-login";
 
 @NgModule({
   declarations: [
-    //LoginComponent
+    LoginComponent
   ],
   imports: [
     CommonModule,

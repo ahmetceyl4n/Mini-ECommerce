@@ -1,66 +1,77 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { AdminModule } from './admin/admin.module';
-import { UiModule } from './ui/ui.module';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ToastrModule } from 'ngx-toastr'; // Import ToastrModule for notifications
-import { NgxSpinnerModule } from 'ngx-spinner';
-import { HttpClientModule } from '@angular/common/http';
-import { JwtModule } from '@auth0/angular-jwt';
+import { HttpEvent, HttpHandler, HttpInterceptor, HttpRequest, HttpStatusCode } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { NgxSpinnerService } from 'ngx-spinner';
+import { catchError, Observable, of } from 'rxjs';
+import { CustomToastrService, ToastrMessageType, ToastrPosition } from './services/ui/custom-toastr.service';
+import { UserAuthService } from './services/common/models/user-auth.service';
+import { SpinnerType } from './base/base.component';
 
-// Sosyal login için gerekli importlar
-import { SocialLoginModule, SocialAuthServiceConfig, GoogleLoginProvider, FacebookLoginProvider, GoogleSigninButtonDirective } from '@abacritt/angularx-social-login';
-import { LoginComponent } from './ui/components/login/login.component';
 
-@NgModule({
-  declarations: [
-    AppComponent,
-    LoginComponent
-  ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    AppRoutingModule,
-    AdminModule,
-    UiModule,
-    ToastrModule.forRoot(),
-    NgxSpinnerModule,
-    HttpClientModule,
-    JwtModule.forRoot({
-        config: {
-            tokenGetter: () => {
-                return localStorage.getItem("accessToken");
-            },
-            allowedDomains: ["localhost:7143"],
-            disallowedRoutes: []
-        }
-    }),
-    SocialLoginModule // Sosyal login için gerekli modül
-    ,
-    GoogleSigninButtonDirective
-],
-  providers: [
-    {provide: "baseUrl", useValue: "https://localhost:7143/api", multi: true},
-    {
-      provide: "SocialAuthServiceConfig",
-      useValue: {
-        autoLogin: false,
-        providers: [
-          {
-            id: GoogleLoginProvider.PROVIDER_ID,
-            provider: new GoogleLoginProvider("594603581579-tap8bm8niss1t73t0rco4af8ljui0rum.apps.googleusercontent.com")  
-          },
-          {
-            id: FacebookLoginProvider.PROVIDER_ID,
-            provider: new FacebookLoginProvider("YOUR_FACEBOOK_APP_ID") 
-          }
-        ],
-        onError: err => console.log(err)
-      } as SocialAuthServiceConfig
-    }
-  ],
-  bootstrap: [AppComponent]
+
+
+@Injectable({
+  providedIn: 'root'
 })
-export class AppModule { }
+export class HttpErrorHandlerInterceptorService implements HttpInterceptor {
+
+  constructor(private toastrService: CustomToastrService, private userAuthService: UserAuthService, private router: Router, private spinner: NgxSpinnerService) { }
+
+  intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
+
+    return next.handle(req).pipe(catchError(error => {
+      switch (error.status) {
+        case HttpStatusCode.Unauthorized:
+
+          /*this.userAuthService.refreshTokenLogin(localStorage.getItem("refreshToken"), (state) => {
+            if (!state) {
+              const url = this.router.url;
+              if (url == "/products")
+                this.toastrService.message("Sepete ürün eklemek için oturum açmanız gerekiyor.", "Oturum açınız!", {
+                  messageType: ToastrMessageType.Warning,
+                  position: ToastrPosition.TopRight
+                });
+              else
+                this.toastrService.message("Bu işlemi yapmaya yetkiniz bulunmamaktadır!", "Yetkisiz işlem!", {
+                  messageType: ToastrMessageType.Warning,
+                  position: ToastrPosition.BottomFullWidth
+                });
+            }
+          }).then(data => {
+            this.toastrService.message("Bu işlemi yapmaya yetkiniz bulunmamaktadır!", "Yetkisiz işlem!", {
+              messageType: ToastrMessageType.Warning,
+              position: ToastrPosition.BottomFullWidth
+            });
+          });*/
+          break;
+        case HttpStatusCode.InternalServerError:
+          this.toastrService.message("Sunucuya erişilmiyor!", "Sunucu hatası!", {
+            messageType: ToastrMessageType.Warning,
+            position: ToastrPosition.BottomFullWidth
+          });
+          break;
+        case HttpStatusCode.BadRequest:
+          this.toastrService.message("Geçersiz istek yapıldı!", "Geçersiz istek!", {
+            messageType: ToastrMessageType.Warning,
+            position: ToastrPosition.BottomFullWidth
+          });
+          break;
+        case HttpStatusCode.NotFound:
+          this.toastrService.message("Sayfa bulunamadı!", "Sayfa bulunamadı!", {
+            messageType: ToastrMessageType.Warning,
+            position: ToastrPosition.BottomFullWidth
+          });
+          break;
+        default:
+          this.toastrService.message("Beklenmeyen bir hata meydana gelmiştir!", "Hata!", {
+            messageType: ToastrMessageType.Warning,
+            position: ToastrPosition.BottomFullWidth
+          });
+          break;
+      }
+
+      this.spinner.hide(SpinnerType.SquareJellyBox);
+      return of(error);
+    }));
+  }
+}

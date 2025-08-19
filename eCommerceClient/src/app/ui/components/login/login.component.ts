@@ -1,26 +1,36 @@
 import { Component, OnDestroy } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Subscription } from 'rxjs';
+
 import { UserService } from '../../../services/common/models/user.service';
+import { AuthService } from '../../../services/common/auth.service';
+import { HttpClientService } from '../../../services/common/http-client.service';
+
 import { BaseComponent, SpinnerType } from '../../../base/base.component';
 import { NgxSpinnerService } from 'ngx-spinner';
-import { AuthService } from '../../../services/common/auth.service';
-import {  ActivatedRoute, Router } from '@angular/router';
-import { Subscription } from 'rxjs';
-import { FacebookLoginProvider, SocialAuthService, SocialUser } from '@abacritt/angularx-social-login';
-import { HttpClientService } from '../../../services/common/http-client.service';
-import { TokenResponse } from '../../../contracts/token/tokenResponse';
+
+import {
+  FacebookLoginProvider,
+  SocialAuthService,
+  SocialUser
+} from '@abacritt/angularx-social-login';
+import { UserAuthService } from '../../../services/common/models/user-auth.service';
+
 @Component({
   selector: 'app-login',
-  standalone: false,
   templateUrl: './login.component.html',
-  styleUrl: './login.component.scss'
+  styleUrls: ['./login.component.scss'],   
+  standalone: false
 })
 export class LoginComponent extends BaseComponent implements OnDestroy {
 
   currentYear = new Date().getFullYear();
-  private queryParamsSubscription: Subscription; // queryParams subscribe için subscription
+
+  private queryParamsSubscription?: Subscription;
+  private authSubscription?: Subscription;
 
   constructor(
-    private userService: UserService,
+    private userAuthService: UserAuthService,
     spinner: NgxSpinnerService,
     private authService: AuthService,
     private activatedRoute: ActivatedRoute,
@@ -29,50 +39,58 @@ export class LoginComponent extends BaseComponent implements OnDestroy {
     private httpClientService: HttpClientService
   ) {
     super(spinner);
-    socialAuthService.authState.subscribe(async (user: SocialUser)  => {
-      
+
+    // Sosyal giriş state'i dinle
+    this.authSubscription = this.socialAuthService.authState.subscribe(async (user: SocialUser) => {
+      if (!user) return;
+
       this.showSpinner(SpinnerType.SquareJellyBox);
 
-      switch (user.provider) {
-        case "GOOGLE":
-          await userService.googleLogin(user, () => {
-            authService.identityCheck();
-            this.hideSpinner(SpinnerType.SquareJellyBox)})
-          break;
-        case "FACEBOOK":
-          await userService.facebookLogin(user, () => {
-            authService.identityCheck();
-            this.hideSpinner(SpinnerType.SquareJellyBox)});
-          break;  
+      try {
+        switch (user.provider) {
+          case 'GOOGLE':
+            await this.userAuthService.googleLogin(user, () => {
+              this.authService.identityCheck();
+            });
+            break;
+          case 'FACEBOOK':
+            await this.userAuthService.facebookLogin(user, () => {
+              this.authService.identityCheck();
+            });
+            break;
+        }
 
+        // Sosyal login sonrası geri dönüş adresi ya da ana sayfa
+        const params = this.activatedRoute.snapshot.queryParams;
+        const returnUrl = params['returnUrl'] || '/';
+        await this.router.navigate([returnUrl]);
+      } finally {
+        this.hideSpinner(SpinnerType.SquareJellyBox);
       }
     });
   }
 
   async login(usernameOrEmail: string, password: string) {
     this.showSpinner(SpinnerType.SquareJellyBox);
-    await this.userService.login(usernameOrEmail, password, () => { 
+
+    await this.userAuthService.login(usernameOrEmail, password, async () => {
       this.authService.identityCheck();
 
-      // queryParams subscription
-      this.queryParamsSubscription = this.activatedRoute.queryParams.subscribe(params => {
-        const returnUrl = params['returnUrl'] || '/'; // Varsayılan olarak anasayfaya yönlendir
-        this.router.navigate([returnUrl]).then(() => {
-          this.hideSpinner(SpinnerType.SquareJellyBox)
-        });
+      // returnUrl yakala ve yönlendir
+      this.queryParamsSubscription = this.activatedRoute.queryParams.subscribe(async params => {
+        const returnUrl = params['returnUrl'] || '/';
+        await this.router.navigate([returnUrl]);
+        this.hideSpinner(SpinnerType.SquareJellyBox);
       });
     });
   }
 
-  ngOnDestroy() {
-    // component destroy olduğunda subscription'ı temizle
-    if (this.queryParamsSubscription) {
-      this.queryParamsSubscription.unsubscribe();
-    }
-  }
-
-
   facebookLogin() {
     this.socialAuthService.signIn(FacebookLoginProvider.PROVIDER_ID);
+  }
+
+  ngOnDestroy() {
+    this.queryParamsSubscription?.unsubscribe();
+    this.authSubscription?.unsubscribe();
   }
 }
