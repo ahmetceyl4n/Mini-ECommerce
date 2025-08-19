@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace eCommerceAPI.Application.Features.AppUser.Commands.CreateUser
+namespace eCommerceAPI.Application.DTOs.User
 {
-    public class CreateUserCommandResponse
+    public class CreateUserResponseDTO
     {
         public bool Succeeded { get; set; }
         public string Message { get; set; }

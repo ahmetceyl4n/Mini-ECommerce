@@ -1,4 +1,5 @@
 ﻿using eCommerceAPI.Application.Features.AppUser.Commands.CreateUser;
+using eCommerceAPI.Application.Features.AppUser.Commands.FacebookLogin;
 using eCommerceAPI.Application.Features.AppUser.Commands.GoogleLogin;
 using eCommerceAPI.Application.Features.AppUser.Commands.LoginUser;
 using MediatR;
@@ -25,22 +26,6 @@ namespace eCommerceAPI.API.Controllers
             return Ok(response);
         }
 
-        [HttpPost("[action]")]
-        public async Task<IActionResult> Login(LoginUserCommandRequest loginUserCommandRequest)
-        {
-            LoginUserCommandResponse response = await _mediator.Send(loginUserCommandRequest);
-            return Ok(response);
-
-        }
-
-        [HttpPost("[action]")]
-        public async Task<IActionResult> GoogleLogin(GoogleLoginCommandRequest googleLoginCommandRequest)
-        {
-            GoogleLoginCommandResponse response =  await _mediator.Send(googleLoginCommandRequest);
-            
-            return Ok(response);
-        }
-
-        [HttpPost("[action]")]
+        
     }
 }

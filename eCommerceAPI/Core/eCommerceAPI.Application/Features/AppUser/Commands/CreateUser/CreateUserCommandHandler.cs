@@ -1,4 +1,6 @@
-﻿using eCommerceAPI.Application.Exceptions;
+﻿using eCommerceAPI.Application.Abstractions.Services;
+using eCommerceAPI.Application.DTOs.User;
+using eCommerceAPI.Application.Exceptions;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
 using System;
@@ -12,34 +14,33 @@ namespace eCommerceAPI.Application.Features.AppUser.Commands.CreateUser
 {
     public class CreateUserCommandHandler : IRequestHandler<CreateUserCommandRequest, CreateUserCommandResponse>
     {
-        readonly UserManager<Domain.Entities.Identity.AppUser> _userManager; // Identifyı IoCye eklediğimiz için bu olayda repository pattern kullanmıyoruz. IdentityUserManager sınıfını kullanarak işlemlerimizi yapacağız.
+        
+        readonly IUserService _userService;
 
-        public CreateUserCommandHandler(UserManager<Domain.Entities.Identity.AppUser> userManager)
+        public CreateUserCommandHandler(IUserService userService)
         {
-            _userManager = userManager;
+            _userService = userService;
         }
 
         public async Task<CreateUserCommandResponse> Handle(CreateUserCommandRequest request, CancellationToken cancellationToken)
         {
-            IdentityResult result = await _userManager.CreateAsync(new Domain.Entities.Identity.AppUser
-            {
-                NameSurname = request.NameSurname,
-                UserName = request.UserName,
-                Email = request.Email
-            }, request.Password);
 
-            var message = result.Succeeded
-                ? "User created successfully."
-                : string.Join(", ", result.Errors.Select(e => $"{e.Code} - {e.Description}"));
+            CreateUserResponseDTO response = await _userService.CreateAsync(
+                new()
+                {
+                    NameSurname = request.NameSurname,
+                    UserName = request.UserName,
+                    Email = request.Email,
+                    Password = request.Password,
+                    PasswordConfirm = request.PasswordConfirm
+                }
+            );
 
             return new CreateUserCommandResponse
             {
-                Succeeded = result.Succeeded,
-                Message = message
+                Succeeded = response.Succeeded,
+                Message = response.Message
             };
-
-
-
 
 
         }

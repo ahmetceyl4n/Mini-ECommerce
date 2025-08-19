@@ -19,7 +19,7 @@ namespace eCommerceAPI.Infrastructure.Services.Token
             _configuration = configuration;
         }
 
-        public Application.DTOs.Token CreateAccessToken(int minute)
+        public Application.DTOs.Token CreateAccessToken(int second)
         {
             Application.DTOs.Token token = new();
             
@@ -27,7 +27,7 @@ namespace eCommerceAPI.Infrastructure.Services.Token
 
             SigningCredentials signingCredentials = new(securityKey, SecurityAlgorithms.HmacSha256); // Token'ın imzasını oluşturmak için kullanılan imzalama kimlik bilgileri. şifreli kimlik bilgileri oluşturur.
 
-            token.AccessTokenExpiration = DateTime.UtcNow.AddMinutes(minute); // Token'ın geçerlilik süresi. UTC zaman diliminde geçerli olacak şekilde ayarlanır.
+            token.AccessTokenExpiration = DateTime.UtcNow.AddMinutes(second); // Token'ın geçerlilik süresi. UTC zaman diliminde geçerli olacak şekilde ayarlanır.
 
             JwtSecurityToken jwtSecurityToken = new( 
                 audience: _configuration["Token:Audience"], // tokeni kimler kullanabilir

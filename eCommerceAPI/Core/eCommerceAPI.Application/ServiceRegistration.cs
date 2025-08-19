@@ -17,6 +17,8 @@ namespace eCommerceAPI.Application
             {
                 cfg.RegisterServicesFromAssembly(typeof(ServiceRegistration).Assembly);
             });
+
+            services.AddHttpClient();
         }
     }
 }

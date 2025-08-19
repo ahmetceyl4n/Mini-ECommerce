@@ -5,10 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace eCommerceAPI.Application.Abstractions.Token
+namespace eCommerceAPI.Application.Features.AppUser.Commands.FacebookLogin
 {
-    public interface ITokenHandler
+    public class FacebookLoginCommandResponse
     {
-        DTOs.Token CreateAccessToken(int second);
+        public Token Token{ get; set; }
     }
 }
