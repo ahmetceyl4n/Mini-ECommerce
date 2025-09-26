@@ -8,6 +8,7 @@ using eCommerceAPI.Domain.Entities.Identity;
 using Google.Apis.Auth;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
@@ -26,9 +27,10 @@ namespace eCommerceAPI.Persistence.Services
         private readonly HttpClient _httpClient;
         readonly IConfiguration _configuration;
         readonly SignInManager<Domain.Entities.Identity.AppUser> _signInManager;
+        readonly IUserService _userService;
 
 
-        public AuthService(ITokenHandler tokenHandler, UserManager<Domain.Entities.Identity.AppUser> userManager, IHttpClientFactory httpClientFactory, IConfiguration configuration, SignInManager<AppUser> signInManager)
+        public AuthService(ITokenHandler tokenHandler, UserManager<Domain.Entities.Identity.AppUser> userManager, IHttpClientFactory httpClientFactory, IConfiguration configuration, SignInManager<AppUser> signInManager, IUserService userService)
         {
             _tokenHandler = tokenHandler;
             _userManager = userManager;
@@ -36,6 +38,7 @@ namespace eCommerceAPI.Persistence.Services
             _httpClient = httpClientFactory.CreateClient();
             _configuration = configuration;
             _signInManager = signInManager;
+            _userService = userService;
         }
 
         async Task<Token> CreateUserExternalAsync(AppUser user,string email, string name,UserLoginInfo info, int accessTokenLifeTime)
@@ -63,7 +66,8 @@ namespace eCommerceAPI.Persistence.Services
             if (result)
             {
                  await _userManager.AddLoginAsync(user, info); // Add the login information to the user. AspNetUserLogine kaydediyoruz böylelikle dışarıdan kayıt olan kullanıcılar için de giriş yapabiliyoruz ve dışarıdan kayıtlıları görebiliyoruz
-                Token token = _tokenHandler.CreateAccessToken(5);
+                Token token = _tokenHandler.CreateAccessToken(5,user);
+                await _userService.UpdateRefreshToken(token.RefreshToken, user, token.AccessTokenExpiration, 15);
 
                 return token;
             }
@@ -138,11 +142,33 @@ namespace eCommerceAPI.Persistence.Services
             if (result.Succeeded) // If the password is correct
             {
                 // ..... Yetkileri belirlememiz gerekiyor
-                Token token = _tokenHandler.CreateAccessToken(accessTokenLifeTime);
+                Token token = _tokenHandler.CreateAccessToken(accessTokenLifeTime, user);
+                await _userService.UpdateRefreshToken(token.RefreshToken, user, token.AccessTokenExpiration, 15);
 
                 return token;
             }
-            throw new AuthenticationErrorException();
+            else
+            {
+                throw new AuthenticationErrorException();
+            }
+               
+        }
+
+        public async Task<Token> RefreshTokenLoginAsync(string refreshToken)
+        {
+            AppUser user = await _userManager.Users.FirstOrDefaultAsync(u => u.RefreshToken == refreshToken && u.RefreshTokenEndDate > DateTime.UtcNow);
+
+            if (user != null)
+            {
+                Token token = _tokenHandler.CreateAccessToken(5,user);
+                await _userService.UpdateRefreshToken(token.RefreshToken, user, token.AccessTokenExpiration, 300);
+                return token;
+            }
+            else
+            {
+                throw new NotFoundUserException();
+            }
+
         }
     }
 }

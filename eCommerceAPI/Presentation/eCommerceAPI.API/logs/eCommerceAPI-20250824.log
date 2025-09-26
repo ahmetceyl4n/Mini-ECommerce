@@ -1,0 +1,28 @@
+2025-08-24 12:33:03.154 +03:00 [INF] User profile is available. Using 'C:\Users\ahmet.ceylan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-24 12:33:03.638 +03:00 [INF] Now listening on: https://localhost:7143
+2025-08-24 12:33:03.642 +03:00 [INF] Now listening on: http://localhost:5045
+2025-08-24 12:33:03.766 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-24 12:33:03.769 +03:00 [INF] Hosting environment: Development
+2025-08-24 12:33:03.771 +03:00 [INF] Content root path: C:\Users\ahmet.ceylan\Desktop\ECommerce\eCommerceAPI\Presentation\eCommerceAPI.API
+2025-08-24 12:33:07.410 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/index.html - null null
+2025-08-24 12:33:07.996 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/index.html - 200 null text/html;charset=utf-8 601.0211ms
+2025-08-24 12:33:08.325 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7143/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-24 12:33:08.328 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7143/_vs/browserLink - null null
+2025-08-24 12:33:08.423 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7143/_framework/aspnetcore-browser-refresh.js - 200 16517 application/javascript; charset=utf-8 99.6028ms
+2025-08-24 12:33:08.580 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7143/_vs/browserLink - 200 null text/javascript; charset=UTF-8 252.7218ms
+2025-08-24 12:33:09.003 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - null null
+2025-08-24 12:33:09.067 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 64.0012ms
+2025-08-24 12:35:03.921 +03:00 [INF] User profile is available. Using 'C:\Users\ahmet.ceylan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-24 12:35:04.514 +03:00 [INF] Now listening on: https://localhost:7143
+2025-08-24 12:35:04.536 +03:00 [INF] Now listening on: http://localhost:5045
+2025-08-24 12:35:04.753 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-24 12:35:04.756 +03:00 [INF] Hosting environment: Development
+2025-08-24 12:35:04.757 +03:00 [INF] Content root path: C:\Users\ahmet.ceylan\Desktop\ECommerce\eCommerceAPI\Presentation\eCommerceAPI.API
+2025-08-24 12:35:08.585 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/index.html - null null
+2025-08-24 12:35:09.159 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/index.html - 200 null text/html;charset=utf-8 592.7808ms
+2025-08-24 12:35:09.271 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7143/_framework/aspnetcore-browser-refresh.js - null null
+2025-08-24 12:35:09.271 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7143/_vs/browserLink - null null
+2025-08-24 12:35:09.393 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7143/_framework/aspnetcore-browser-refresh.js - 200 16517 application/javascript; charset=utf-8 122.2433ms
+2025-08-24 12:35:09.524 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7143/_vs/browserLink - 200 null text/javascript; charset=UTF-8 252.7304ms
+2025-08-24 12:35:09.619 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - null null
+2025-08-24 12:35:09.683 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 63.9556ms

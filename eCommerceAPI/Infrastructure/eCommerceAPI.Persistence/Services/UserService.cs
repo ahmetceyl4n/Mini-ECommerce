@@ -1,5 +1,6 @@
 ﻿using eCommerceAPI.Application.Abstractions.Services;
 using eCommerceAPI.Application.DTOs.User;
+using eCommerceAPI.Application.Exceptions;
 using eCommerceAPI.Application.Features.AppUser.Commands.CreateUser;
 using eCommerceAPI.Domain.Entities.Identity;
 using MediatR;
@@ -42,5 +43,20 @@ namespace eCommerceAPI.Persistence.Services
                 Message = message
             };
         }
+
+        public async Task UpdateRefreshToken(string refreshToken, AppUser user, DateTime accessTokenDate, int addOnAccessToken)
+        {
+            
+
+            if (user != null)
+            {
+                user.RefreshToken = refreshToken;
+                user.RefreshTokenEndDate = accessTokenDate.AddSeconds(addOnAccessToken); 
+                await _userManager.UpdateAsync(user);
+            }else
+                throw new NotFoundUserException();
+        }
+
+
     }
 }

@@ -1,0 +1,1468 @@
+2025-09-22 11:47:59.951 +03:00 [INF] User profile is available. Using 'C:\Users\ahmet.ceylan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-22 11:48:00.783 +03:00 [INF] Now listening on: https://localhost:7143
+2025-09-22 11:48:00.786 +03:00 [INF] Now listening on: http://localhost:5045
+2025-09-22 11:48:01.001 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-22 11:48:01.043 +03:00 [INF] Hosting environment: Development
+2025-09-22 11:48:01.046 +03:00 [INF] Content root path: C:\Users\ahmet.ceylan\Desktop\ECommerce\eCommerceAPI\Presentation\eCommerceAPI.API
+2025-09-22 11:48:05.029 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger - null null
+2025-09-22 11:48:05.384 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger - 301 0 null 373.5928ms
+2025-09-22 11:48:05.396 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/index.html - null null
+2025-09-22 11:48:05.551 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/index.html - 200 null text/html;charset=utf-8 155.4067ms
+2025-09-22 11:48:05.570 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7143/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-22 11:48:05.570 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/swagger-ui-standalone-preset.js - null null
+2025-09-22 11:48:05.575 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7143/_vs/browserLink - null null
+2025-09-22 11:48:05.570 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/swagger-ui-bundle.js - null null
+2025-09-22 11:48:05.570 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/swagger-ui.css - null null
+2025-09-22 11:48:05.617 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7143/_framework/aspnetcore-browser-refresh.js - 200 16517 application/javascript; charset=utf-8 47.4683ms
+2025-09-22 11:48:05.695 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-09-22 11:48:05.694 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-09-22 11:48:05.721 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/swagger-ui.css - 200 152034 text/css 154.0174ms
+2025-09-22 11:48:05.706 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 136.0367ms
+2025-09-22 11:48:05.767 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-09-22 11:48:05.772 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 201.843ms
+2025-09-22 11:48:05.807 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7143/_vs/browserLink - 200 null text/javascript; charset=UTF-8 236.7956ms
+2025-09-22 11:48:06.035 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - null null
+2025-09-22 11:48:06.072 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 37.4922ms
+2025-09-22 11:48:06.084 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/favicon-32x32.png - null null
+2025-09-22 11:48:06.099 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-09-22 11:48:06.102 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/favicon-32x32.png - 200 628 image/png 19.0397ms
+2025-09-22 11:48:44.436 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7143/api/auth/login - application/json 1774
+2025-09-22 11:48:44.436 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7143/api/auth/login - application/json 1774
+2025-09-22 11:48:44.477 +03:00 [INF] Executing endpoint 'eCommerceAPI.API.Controllers.AuthController.Login (eCommerceAPI.API)'
+2025-09-22 11:48:44.477 +03:00 [INF] Executing endpoint 'eCommerceAPI.API.Controllers.AuthController.Login (eCommerceAPI.API)'
+2025-09-22 11:48:44.516 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(eCommerceAPI.Application.Features.AppUser.Commands.LoginUser.LoginUserCommandRequest) on controller eCommerceAPI.API.Controllers.AuthController (eCommerceAPI.API).
+2025-09-22 11:48:44.516 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(eCommerceAPI.Application.Features.AppUser.Commands.LoginUser.LoginUserCommandRequest) on controller eCommerceAPI.API.Controllers.AuthController (eCommerceAPI.API).
+2025-09-22 11:48:44.522 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-09-22 11:48:44.522 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-09-22 11:48:44.588 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String[], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-22 11:48:44.588 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String[], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-22 11:48:44.600 +03:00 [INF] Executed action eCommerceAPI.API.Controllers.AuthController.Login (eCommerceAPI.API) in 74.6224ms
+2025-09-22 11:48:44.600 +03:00 [INF] Executed action eCommerceAPI.API.Controllers.AuthController.Login (eCommerceAPI.API) in 76.514ms
+2025-09-22 11:48:44.602 +03:00 [INF] Executed endpoint 'eCommerceAPI.API.Controllers.AuthController.Login (eCommerceAPI.API)'
+2025-09-22 11:48:44.603 +03:00 [INF] Executed endpoint 'eCommerceAPI.API.Controllers.AuthController.Login (eCommerceAPI.API)'
+2025-09-22 11:48:44.607 +03:00 [INF] Request and Response:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/auth/login
+Accept: */*
+Connection: keep-alive
+Host: localhost:7143
+User-Agent: PostmanRuntime/7.47.1
+Accept-Encoding: gzip, deflate, br
+Content-Type: application/json
+Content-Length: 1774
+Postman-Token: [Redacted]
+StatusCode: 400
+Content-Type: application/json; charset=utf-8
+RequestBody: {"query":"\n    query IntrospectionQuery {\n      __schema {\n        \n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          \n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      \n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n      \n      \n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "}
+RequestBodyStatus: [Completed]
+ResponseBody: {"Password":["The Password field is required."],"UsernameOrEmail":["The UsernameOrEmail field is required."]}
+Duration: 159.2499
+2025-09-22 11:48:44.607 +03:00 [INF] Request and Response:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/auth/login
+Accept: */*
+Connection: keep-alive
+Host: localhost:7143
+User-Agent: PostmanRuntime/7.47.1
+Accept-Encoding: gzip, deflate, br
+Content-Type: application/json
+Content-Length: 1774
+Postman-Token: [Redacted]
+StatusCode: 400
+Content-Type: application/json; charset=utf-8
+RequestBody: {"query":"\n    query IntrospectionQuery {\n      __schema {\n        \n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          \n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      \n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n      \n      \n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  "}
+RequestBodyStatus: [Completed]
+ResponseBody: {"Password":["The Password field is required."],"UsernameOrEmail":["The UsernameOrEmail field is required."]}
+Duration: 159.2249
+2025-09-22 11:48:44.610 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7143/api/auth/login - 400 null application/json; charset=utf-8 174.0409ms
+2025-09-22 11:48:44.610 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7143/api/auth/login - 400 null application/json; charset=utf-8 174.0408ms
+2025-09-22 11:54:56.172 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7143/api/users/createuser - application/json 152
+2025-09-22 11:54:56.194 +03:00 [INF] Request and Response:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/users/createuser
+Accept: */*
+Connection: keep-alive
+Host: localhost:7143
+User-Agent: PostmanRuntime/7.47.1
+Accept-Encoding: gzip, deflate, br
+Content-Type: application/json
+Content-Length: 152
+Postman-Token: [Redacted]
+StatusCode: 404
+RequestBody: 
+RequestBodyStatus: [Not consumed by app]
+Duration: 9.9105
+2025-09-22 11:54:56.196 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7143/api/users/createuser - 404 0 null 23.5481ms
+2025-09-22 11:54:56.202 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7143/api/users/createuser, Response status code: 404
+2025-09-22 11:56:07.502 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7143/api/users/ - application/json 152
+2025-09-22 11:56:07.510 +03:00 [INF] Executing endpoint 'eCommerceAPI.API.Controllers.UsersController.CreateUser (eCommerceAPI.API)'
+2025-09-22 11:56:07.517 +03:00 [INF] Route matched with {action = "CreateUser", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateUser(eCommerceAPI.Application.Features.AppUser.Commands.CreateUser.CreateUserCommandRequest) on controller eCommerceAPI.API.Controllers.UsersController (eCommerceAPI.API).
+2025-09-22 11:56:07.714 +03:00 [INF] Executing OkObjectResult, writing value of type 'eCommerceAPI.Application.Features.AppUser.Commands.CreateUser.CreateUserCommandResponse'.
+2025-09-22 11:56:07.717 +03:00 [INF] Executed action eCommerceAPI.API.Controllers.UsersController.CreateUser (eCommerceAPI.API) in 198.4455ms
+2025-09-22 11:56:07.719 +03:00 [INF] Executed endpoint 'eCommerceAPI.API.Controllers.UsersController.CreateUser (eCommerceAPI.API)'
+2025-09-22 11:56:07.720 +03:00 [INF] Request and Response:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/users/
+Accept: */*
+Connection: keep-alive
+Host: localhost:7143
+User-Agent: PostmanRuntime/7.47.1
+Accept-Encoding: gzip, deflate, br
+Content-Type: application/json
+Content-Length: 152
+Postman-Token: [Redacted]
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+RequestBody: {
+  "nameSurname": "Ali Veli",
+  "userName": "aliveli",
+  "email": "ali.veli@example.com",
+  "password": "12345",
+  "passwordConfirm": "12345"
+}
+
+RequestBodyStatus: [Completed]
+ResponseBody: {"succeeded":false,"message":"PasswordRequiresLower - Passwords must have at least one lowercase ('a'-'z')., PasswordRequiresUpper - Passwords must have at least one uppercase ('A'-'Z')."}
+Duration: 210.2443
+2025-09-22 11:56:07.727 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7143/api/users/ - 200 null application/json; charset=utf-8 225.5616ms
+2025-09-22 11:56:26.702 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7143/api/users/ - application/json 152
+2025-09-22 11:56:26.705 +03:00 [INF] Executing endpoint 'eCommerceAPI.API.Controllers.UsersController.CreateUser (eCommerceAPI.API)'
+2025-09-22 11:56:26.707 +03:00 [INF] Route matched with {action = "CreateUser", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateUser(eCommerceAPI.Application.Features.AppUser.Commands.CreateUser.CreateUserCommandRequest) on controller eCommerceAPI.API.Controllers.UsersController (eCommerceAPI.API).
+2025-09-22 11:56:28.205 +03:00 [INF] Executed DbCommand (87ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-09-22 11:56:28.417 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[@p0='?', @p1='?' (DbType = Int32), @p2='?', @p3='?', @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTime), @p7='?', @p8='?', @p9='?', @p10='?', @p11='?', @p12='?' (DbType = Boolean), @p13='?', @p14='?' (DbType = DateTime), @p15='?', @p16='?' (DbType = Boolean), @p17='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AspNetUsers" ("Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NameSurname", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "RefreshToken", "RefreshTokenEndDate", "SecurityStamp", "TwoFactorEnabled", "UserName")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17);
+2025-09-22 11:56:28.436 +03:00 [INF] Executing OkObjectResult, writing value of type 'eCommerceAPI.Application.Features.AppUser.Commands.CreateUser.CreateUserCommandResponse'.
+2025-09-22 11:56:28.439 +03:00 [INF] Executed action eCommerceAPI.API.Controllers.UsersController.CreateUser (eCommerceAPI.API) in 1729.547ms
+2025-09-22 11:56:28.441 +03:00 [INF] Executed endpoint 'eCommerceAPI.API.Controllers.UsersController.CreateUser (eCommerceAPI.API)'
+2025-09-22 11:56:28.444 +03:00 [INF] Request and Response:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/users/
+Accept: */*
+Connection: keep-alive
+Host: localhost:7143
+User-Agent: PostmanRuntime/7.47.1
+Accept-Encoding: gzip, deflate, br
+Content-Type: application/json
+Content-Length: 152
+Postman-Token: [Redacted]
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+RequestBody: {
+  "nameSurname": "Ali Veli",
+  "userName": "aliveli",
+  "email": "ali.veli@example.com",
+  "password": "Av123",
+  "passwordConfirm": "Av123"
+}
+
+RequestBodyStatus: [Completed]
+ResponseBody: {"succeeded":true,"message":"User created successfully."}
+Duration: 1738.9254
+2025-09-22 11:56:28.454 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7143/api/users/ - 200 null application/json; charset=utf-8 1751.7745ms
+2025-09-22 11:57:59.820 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7143/api/auth/login - application/json 63
+2025-09-22 11:57:59.826 +03:00 [INF] Executing endpoint 'eCommerceAPI.API.Controllers.AuthController.Login (eCommerceAPI.API)'
+2025-09-22 11:57:59.829 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(eCommerceAPI.Application.Features.AppUser.Commands.LoginUser.LoginUserCommandRequest) on controller eCommerceAPI.API.Controllers.AuthController (eCommerceAPI.API).
+2025-09-22 11:57:59.913 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-09-22 11:58:00.208 +03:00 [INF] Executed action eCommerceAPI.API.Controllers.AuthController.Login (eCommerceAPI.API) in 377.0678ms
+2025-09-22 11:58:00.212 +03:00 [INF] Executed endpoint 'eCommerceAPI.API.Controllers.AuthController.Login (eCommerceAPI.API)'
+2025-09-22 11:58:00.307 +03:00 [INF] Request and Response:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/auth/login
+Accept: */*
+Connection: keep-alive
+Host: localhost:7143
+User-Agent: PostmanRuntime/7.47.1
+Accept-Encoding: gzip, deflate, br
+Content-Type: application/json
+Content-Length: 63
+Postman-Token: [Redacted]
+StatusCode: 200
+RequestBody: {
+  "usernameOrEmail": "aliveli",
+  "password": "Av123!"
+}
+
+RequestBodyStatus: [Completed]
+Duration: 481.642
+2025-09-22 11:58:00.313 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+eCommerceAPI.Application.Exceptions.AuthenticationErrorException: Authentication error occurred.
+   at eCommerceAPI.Persistence.Services.AuthService.LoginAsync(String usernameOrEmail, String password, Int32 accessTokenLifeTime) in C:\Users\ahmet.ceylan\Desktop\ECommerce\eCommerceAPI\Infrastructure\eCommerceAPI.Persistence\Services\AuthService.cs:line 152
+   at eCommerceAPI.Application.Features.AppUser.Commands.LoginUser.LoginUserCommandHandler.Handle(LoginUserCommandRequest request, CancellationToken cancellationToken) in C:\Users\ahmet.ceylan\Desktop\ECommerce\eCommerceAPI\Core\eCommerceAPI.Application\Features\AppUser\Commands\LoginUser\LoginUserCommandHandler.cs:line 28
+   at eCommerceAPI.API.Controllers.AuthController.Login(LoginUserCommandRequest loginUserCommandRequest) in C:\Users\ahmet.ceylan\Desktop\ECommerce\eCommerceAPI\Presentation\eCommerceAPI.API\Controllers\AuthController.cs:line 25
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<<Main>$>b__0_5>d.MoveNext() in C:\Users\ahmet.ceylan\Desktop\ECommerce\eCommerceAPI\Presentation\eCommerceAPI.API\Program.cs:line 132
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-09-22 11:58:00.426 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7143/api/auth/login - 500 null text/plain; charset=utf-8 606.1182ms
+2025-09-22 11:59:54.112 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7143/api/auth/login - application/json 63
+2025-09-22 11:59:54.119 +03:00 [INF] Executing endpoint 'eCommerceAPI.API.Controllers.AuthController.Login (eCommerceAPI.API)'
+2025-09-22 11:59:54.121 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(eCommerceAPI.Application.Features.AppUser.Commands.LoginUser.LoginUserCommandRequest) on controller eCommerceAPI.API.Controllers.AuthController (eCommerceAPI.API).
+2025-09-22 11:59:54.145 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-09-22 11:59:54.375 +03:00 [INF] Executed action eCommerceAPI.API.Controllers.AuthController.Login (eCommerceAPI.API) in 251.0107ms
+2025-09-22 11:59:54.378 +03:00 [INF] Executed endpoint 'eCommerceAPI.API.Controllers.AuthController.Login (eCommerceAPI.API)'
+2025-09-22 11:59:54.488 +03:00 [INF] Request and Response:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/auth/login
+Accept: */*
+Connection: keep-alive
+Host: localhost:7143
+User-Agent: PostmanRuntime/7.47.1
+Accept-Encoding: gzip, deflate, br
+Content-Type: application/json
+Content-Length: 63
+Postman-Token: [Redacted]
+StatusCode: 200
+RequestBody: {
+  "usernameOrEmail": "aliveli",
+  "password": "Av123!"
+}
+
+RequestBodyStatus: [Completed]
+Duration: 368.7225
+2025-09-22 11:59:54.491 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+eCommerceAPI.Application.Exceptions.AuthenticationErrorException: Authentication error occurred.
+   at eCommerceAPI.Persistence.Services.AuthService.LoginAsync(String usernameOrEmail, String password, Int32 accessTokenLifeTime) in C:\Users\ahmet.ceylan\Desktop\ECommerce\eCommerceAPI\Infrastructure\eCommerceAPI.Persistence\Services\AuthService.cs:line 152
+   at eCommerceAPI.Application.Features.AppUser.Commands.LoginUser.LoginUserCommandHandler.Handle(LoginUserCommandRequest request, CancellationToken cancellationToken) in C:\Users\ahmet.ceylan\Desktop\ECommerce\eCommerceAPI\Core\eCommerceAPI.Application\Features\AppUser\Commands\LoginUser\LoginUserCommandHandler.cs:line 28
+   at eCommerceAPI.API.Controllers.AuthController.Login(LoginUserCommandRequest loginUserCommandRequest) in C:\Users\ahmet.ceylan\Desktop\ECommerce\eCommerceAPI\Presentation\eCommerceAPI.API\Controllers\AuthController.cs:line 25
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<<Main>$>b__0_5>d.MoveNext() in C:\Users\ahmet.ceylan\Desktop\ECommerce\eCommerceAPI\Presentation\eCommerceAPI.API\Program.cs:line 132
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-09-22 11:59:54.503 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7143/api/auth/login - 500 null text/plain; charset=utf-8 391.2303ms
+2025-09-22 12:01:31.629 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7143/api/auth/login - application/json 76
+2025-09-22 12:01:31.643 +03:00 [INF] Executing endpoint 'eCommerceAPI.API.Controllers.AuthController.Login (eCommerceAPI.API)'
+2025-09-22 12:01:31.645 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(eCommerceAPI.Application.Features.AppUser.Commands.LoginUser.LoginUserCommandRequest) on controller eCommerceAPI.API.Controllers.AuthController (eCommerceAPI.API).
+2025-09-22 12:01:31.717 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-09-22 12:01:31.739 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-09-22 12:01:32.011 +03:00 [INF] Executed action eCommerceAPI.API.Controllers.AuthController.Login (eCommerceAPI.API) in 362.1194ms
+2025-09-22 12:01:32.015 +03:00 [INF] Executed endpoint 'eCommerceAPI.API.Controllers.AuthController.Login (eCommerceAPI.API)'
+2025-09-22 12:01:32.117 +03:00 [INF] Request and Response:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/auth/login
+Accept: */*
+Connection: keep-alive
+Host: localhost:7143
+User-Agent: PostmanRuntime/7.47.1
+Accept-Encoding: gzip, deflate, br
+Content-Type: application/json
+Content-Length: 76
+Postman-Token: [Redacted]
+StatusCode: 200
+RequestBody: {
+  "usernameOrEmail": "ali.veli@example.com",
+  "password": "Av123!"
+}
+
+RequestBodyStatus: [Completed]
+Duration: 473.8844
+2025-09-22 12:01:32.120 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+eCommerceAPI.Application.Exceptions.AuthenticationErrorException: Authentication error occurred.
+   at eCommerceAPI.Persistence.Services.AuthService.LoginAsync(String usernameOrEmail, String password, Int32 accessTokenLifeTime) in C:\Users\ahmet.ceylan\Desktop\ECommerce\eCommerceAPI\Infrastructure\eCommerceAPI.Persistence\Services\AuthService.cs:line 152
+   at eCommerceAPI.Application.Features.AppUser.Commands.LoginUser.LoginUserCommandHandler.Handle(LoginUserCommandRequest request, CancellationToken cancellationToken) in C:\Users\ahmet.ceylan\Desktop\ECommerce\eCommerceAPI\Core\eCommerceAPI.Application\Features\AppUser\Commands\LoginUser\LoginUserCommandHandler.cs:line 28
+   at eCommerceAPI.API.Controllers.AuthController.Login(LoginUserCommandRequest loginUserCommandRequest) in C:\Users\ahmet.ceylan\Desktop\ECommerce\eCommerceAPI\Presentation\eCommerceAPI.API\Controllers\AuthController.cs:line 25
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<<Main>$>b__0_5>d.MoveNext() in C:\Users\ahmet.ceylan\Desktop\ECommerce\eCommerceAPI\Presentation\eCommerceAPI.API\Program.cs:line 132
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-09-22 12:01:32.133 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7143/api/auth/login - 500 null text/plain; charset=utf-8 504.8486ms
+2025-09-22 12:01:44.492 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7143/api/auth/login - application/json 62
+2025-09-22 12:01:44.497 +03:00 [INF] Executing endpoint 'eCommerceAPI.API.Controllers.AuthController.Login (eCommerceAPI.API)'
+2025-09-22 12:01:44.499 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(eCommerceAPI.Application.Features.AppUser.Commands.LoginUser.LoginUserCommandRequest) on controller eCommerceAPI.API.Controllers.AuthController (eCommerceAPI.API).
+2025-09-22 12:01:44.511 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-09-22 12:01:44.737 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-09-22 12:01:44.766 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@p17='?', @p0='?' (DbType = Int32), @p1='?', @p18='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime), @p6='?', @p7='?', @p8='?', @p9='?', @p10='?', @p11='?' (DbType = Boolean), @p12='?', @p13='?' (DbType = DateTime), @p14='?', @p15='?' (DbType = Boolean), @p16='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "LockoutEnabled" = @p4, "LockoutEnd" = @p5, "NameSurname" = @p6, "NormalizedEmail" = @p7, "NormalizedUserName" = @p8, "PasswordHash" = @p9, "PhoneNumber" = @p10, "PhoneNumberConfirmed" = @p11, "RefreshToken" = @p12, "RefreshTokenEndDate" = @p13, "SecurityStamp" = @p14, "TwoFactorEnabled" = @p15, "UserName" = @p16
+WHERE "Id" = @p17 AND "ConcurrencyStamp" = @p18;
+2025-09-22 12:01:45.040 +03:00 [INF] Executed action eCommerceAPI.API.Controllers.AuthController.Login (eCommerceAPI.API) in 536.8179ms
+2025-09-22 12:01:45.043 +03:00 [INF] Executed endpoint 'eCommerceAPI.API.Controllers.AuthController.Login (eCommerceAPI.API)'
+2025-09-22 12:01:45.135 +03:00 [INF] Request and Response:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/auth/login
+Accept: */*
+Connection: keep-alive
+Host: localhost:7143
+User-Agent: PostmanRuntime/7.47.1
+Accept-Encoding: gzip, deflate, br
+Content-Type: application/json
+Content-Length: 62
+Postman-Token: [Redacted]
+StatusCode: 200
+RequestBody: {
+  "usernameOrEmail": "aliveli",
+  "password": "Av123"
+}
+
+RequestBodyStatus: [Completed]
+Duration: 638.3988
+2025-09-22 12:01:45.138 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+eCommerceAPI.Application.Exceptions.NotFoundUserException: User not found
+   at eCommerceAPI.Persistence.Services.UserService.UpdateRefreshToken(String refreshToken, AppUser user, DateTime accessTokenDate, Int32 addOnAccessToken) in C:\Users\ahmet.ceylan\Desktop\ECommerce\eCommerceAPI\Infrastructure\eCommerceAPI.Persistence\Services\UserService.cs:line 57
+   at eCommerceAPI.Persistence.Services.AuthService.LoginAsync(String usernameOrEmail, String password, Int32 accessTokenLifeTime) in C:\Users\ahmet.ceylan\Desktop\ECommerce\eCommerceAPI\Infrastructure\eCommerceAPI.Persistence\Services\AuthService.cs:line 146
+   at eCommerceAPI.Application.Features.AppUser.Commands.LoginUser.LoginUserCommandHandler.Handle(LoginUserCommandRequest request, CancellationToken cancellationToken) in C:\Users\ahmet.ceylan\Desktop\ECommerce\eCommerceAPI\Core\eCommerceAPI.Application\Features\AppUser\Commands\LoginUser\LoginUserCommandHandler.cs:line 28
+   at eCommerceAPI.API.Controllers.AuthController.Login(LoginUserCommandRequest loginUserCommandRequest) in C:\Users\ahmet.ceylan\Desktop\ECommerce\eCommerceAPI\Presentation\eCommerceAPI.API\Controllers\AuthController.cs:line 25
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<<Main>$>b__0_5>d.MoveNext() in C:\Users\ahmet.ceylan\Desktop\ECommerce\eCommerceAPI\Presentation\eCommerceAPI.API\Program.cs:line 132
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-09-22 12:01:45.152 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7143/api/auth/login - 500 null text/plain; charset=utf-8 660.2072ms
+2025-09-22 12:01:50.710 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7143/api/auth/login - application/json 62
+2025-09-22 12:01:50.714 +03:00 [INF] Executing endpoint 'eCommerceAPI.API.Controllers.AuthController.Login (eCommerceAPI.API)'
+2025-09-22 12:01:50.717 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(eCommerceAPI.Application.Features.AppUser.Commands.LoginUser.LoginUserCommandRequest) on controller eCommerceAPI.API.Controllers.AuthController (eCommerceAPI.API).
+2025-09-22 12:01:50.725 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-09-22 12:01:50.855 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-09-22 12:01:50.862 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@p17='?', @p0='?' (DbType = Int32), @p1='?', @p18='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime), @p6='?', @p7='?', @p8='?', @p9='?', @p10='?', @p11='?' (DbType = Boolean), @p12='?', @p13='?' (DbType = DateTime), @p14='?', @p15='?' (DbType = Boolean), @p16='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "LockoutEnabled" = @p4, "LockoutEnd" = @p5, "NameSurname" = @p6, "NormalizedEmail" = @p7, "NormalizedUserName" = @p8, "PasswordHash" = @p9, "PhoneNumber" = @p10, "PhoneNumberConfirmed" = @p11, "RefreshToken" = @p12, "RefreshTokenEndDate" = @p13, "SecurityStamp" = @p14, "TwoFactorEnabled" = @p15, "UserName" = @p16
+WHERE "Id" = @p17 AND "ConcurrencyStamp" = @p18;
+2025-09-22 12:01:51.125 +03:00 [INF] Executed action eCommerceAPI.API.Controllers.AuthController.Login (eCommerceAPI.API) in 405.1219ms
+2025-09-22 12:01:51.128 +03:00 [INF] Executed endpoint 'eCommerceAPI.API.Controllers.AuthController.Login (eCommerceAPI.API)'
+2025-09-22 12:01:51.225 +03:00 [INF] Request and Response:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/auth/login
+Accept: */*
+Connection: keep-alive
+Host: localhost:7143
+User-Agent: PostmanRuntime/7.47.1
+Accept-Encoding: gzip, deflate, br
+Content-Type: application/json
+Content-Length: 62
+Postman-Token: [Redacted]
+StatusCode: 200
+RequestBody: {
+  "usernameOrEmail": "aliveli",
+  "password": "Av123"
+}
+
+RequestBodyStatus: [Completed]
+Duration: 510.6982
+2025-09-22 12:01:51.228 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+eCommerceAPI.Application.Exceptions.NotFoundUserException: User not found
+   at eCommerceAPI.Persistence.Services.UserService.UpdateRefreshToken(String refreshToken, AppUser user, DateTime accessTokenDate, Int32 addOnAccessToken) in C:\Users\ahmet.ceylan\Desktop\ECommerce\eCommerceAPI\Infrastructure\eCommerceAPI.Persistence\Services\UserService.cs:line 57
+   at eCommerceAPI.Persistence.Services.AuthService.LoginAsync(String usernameOrEmail, String password, Int32 accessTokenLifeTime) in C:\Users\ahmet.ceylan\Desktop\ECommerce\eCommerceAPI\Infrastructure\eCommerceAPI.Persistence\Services\AuthService.cs:line 146
+   at eCommerceAPI.Application.Features.AppUser.Commands.LoginUser.LoginUserCommandHandler.Handle(LoginUserCommandRequest request, CancellationToken cancellationToken) in C:\Users\ahmet.ceylan\Desktop\ECommerce\eCommerceAPI\Core\eCommerceAPI.Application\Features\AppUser\Commands\LoginUser\LoginUserCommandHandler.cs:line 28
+   at eCommerceAPI.API.Controllers.AuthController.Login(LoginUserCommandRequest loginUserCommandRequest) in C:\Users\ahmet.ceylan\Desktop\ECommerce\eCommerceAPI\Presentation\eCommerceAPI.API\Controllers\AuthController.cs:line 25
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<<Main>$>b__0_5>d.MoveNext() in C:\Users\ahmet.ceylan\Desktop\ECommerce\eCommerceAPI\Presentation\eCommerceAPI.API\Program.cs:line 132
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-09-22 12:01:51.246 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7143/api/auth/login - 500 null text/plain; charset=utf-8 536.2348ms
+2025-09-22 12:04:44.857 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7143/api/users/ - application/json 163
+2025-09-22 12:04:44.863 +03:00 [INF] Executing endpoint 'eCommerceAPI.API.Controllers.UsersController.CreateUser (eCommerceAPI.API)'
+2025-09-22 12:04:44.864 +03:00 [INF] Route matched with {action = "CreateUser", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateUser(eCommerceAPI.Application.Features.AppUser.Commands.CreateUser.CreateUserCommandRequest) on controller eCommerceAPI.API.Controllers.UsersController (eCommerceAPI.API).
+2025-09-22 12:04:44.951 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-09-22 12:04:44.960 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?', @p1='?' (DbType = Int32), @p2='?', @p3='?', @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTime), @p7='?', @p8='?', @p9='?', @p10='?', @p11='?', @p12='?' (DbType = Boolean), @p13='?', @p14='?' (DbType = DateTime), @p15='?', @p16='?' (DbType = Boolean), @p17='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AspNetUsers" ("Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NameSurname", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "RefreshToken", "RefreshTokenEndDate", "SecurityStamp", "TwoFactorEnabled", "UserName")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17);
+2025-09-22 12:04:44.963 +03:00 [INF] Executing OkObjectResult, writing value of type 'eCommerceAPI.Application.Features.AppUser.Commands.CreateUser.CreateUserCommandResponse'.
+2025-09-22 12:04:44.965 +03:00 [INF] Executed action eCommerceAPI.API.Controllers.UsersController.CreateUser (eCommerceAPI.API) in 98.1725ms
+2025-09-22 12:04:44.966 +03:00 [INF] Executed endpoint 'eCommerceAPI.API.Controllers.UsersController.CreateUser (eCommerceAPI.API)'
+2025-09-22 12:04:44.968 +03:00 [INF] Request and Response:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/users/
+Accept: */*
+Connection: keep-alive
+Host: localhost:7143
+User-Agent: PostmanRuntime/7.47.1
+Accept-Encoding: gzip, deflate, br
+Content-Type: application/json
+Content-Length: 163
+Postman-Token: [Redacted]
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+RequestBody: {
+  "nameSurname": "Mehmet Yılmaz",
+  "userName": "mehmety",
+  "email": "mehmet.yilmaz@example.com",
+  "password": "My123",
+  "passwordConfirm": "My123"
+}
+
+RequestBodyStatus: [Completed]
+ResponseBody: {"succeeded":true,"message":"User created successfully."}
+Duration: 105.2622
+2025-09-22 12:04:44.969 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7143/api/users/ - 200 null application/json; charset=utf-8 114.2739ms
+2025-09-22 12:05:34.302 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7143/api/auth/login - application/json 62
+2025-09-22 12:05:34.307 +03:00 [INF] Executing endpoint 'eCommerceAPI.API.Controllers.AuthController.Login (eCommerceAPI.API)'
+2025-09-22 12:05:34.309 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(eCommerceAPI.Application.Features.AppUser.Commands.LoginUser.LoginUserCommandRequest) on controller eCommerceAPI.API.Controllers.AuthController (eCommerceAPI.API).
+2025-09-22 12:05:34.320 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-09-22 12:05:34.409 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-09-22 12:05:34.416 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p17='?', @p0='?' (DbType = Int32), @p1='?', @p18='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime), @p6='?', @p7='?', @p8='?', @p9='?', @p10='?', @p11='?' (DbType = Boolean), @p12='?', @p13='?' (DbType = DateTime), @p14='?', @p15='?' (DbType = Boolean), @p16='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "LockoutEnabled" = @p4, "LockoutEnd" = @p5, "NameSurname" = @p6, "NormalizedEmail" = @p7, "NormalizedUserName" = @p8, "PasswordHash" = @p9, "PhoneNumber" = @p10, "PhoneNumberConfirmed" = @p11, "RefreshToken" = @p12, "RefreshTokenEndDate" = @p13, "SecurityStamp" = @p14, "TwoFactorEnabled" = @p15, "UserName" = @p16
+WHERE "Id" = @p17 AND "ConcurrencyStamp" = @p18;
+2025-09-22 12:05:34.608 +03:00 [INF] Executed action eCommerceAPI.API.Controllers.AuthController.Login (eCommerceAPI.API) in 295.5665ms
+2025-09-22 12:05:34.611 +03:00 [INF] Executed endpoint 'eCommerceAPI.API.Controllers.AuthController.Login (eCommerceAPI.API)'
+2025-09-22 12:05:34.694 +03:00 [INF] Request and Response:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/auth/login
+Accept: */*
+Connection: keep-alive
+Host: localhost:7143
+User-Agent: PostmanRuntime/7.47.1
+Accept-Encoding: gzip, deflate, br
+Content-Type: application/json
+Content-Length: 62
+Postman-Token: [Redacted]
+StatusCode: 200
+RequestBody: {
+  "usernameOrEmail": "mehmety",
+  "password": "My123"
+}
+
+RequestBodyStatus: [Completed]
+Duration: 387.1943
+2025-09-22 12:05:34.696 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+eCommerceAPI.Application.Exceptions.NotFoundUserException: User not found
+   at eCommerceAPI.Persistence.Services.UserService.UpdateRefreshToken(String refreshToken, AppUser user, DateTime accessTokenDate, Int32 addOnAccessToken) in C:\Users\ahmet.ceylan\Desktop\ECommerce\eCommerceAPI\Infrastructure\eCommerceAPI.Persistence\Services\UserService.cs:line 57
+   at eCommerceAPI.Persistence.Services.AuthService.LoginAsync(String usernameOrEmail, String password, Int32 accessTokenLifeTime) in C:\Users\ahmet.ceylan\Desktop\ECommerce\eCommerceAPI\Infrastructure\eCommerceAPI.Persistence\Services\AuthService.cs:line 146
+   at eCommerceAPI.Application.Features.AppUser.Commands.LoginUser.LoginUserCommandHandler.Handle(LoginUserCommandRequest request, CancellationToken cancellationToken) in C:\Users\ahmet.ceylan\Desktop\ECommerce\eCommerceAPI\Core\eCommerceAPI.Application\Features\AppUser\Commands\LoginUser\LoginUserCommandHandler.cs:line 28
+   at eCommerceAPI.API.Controllers.AuthController.Login(LoginUserCommandRequest loginUserCommandRequest) in C:\Users\ahmet.ceylan\Desktop\ECommerce\eCommerceAPI\Presentation\eCommerceAPI.API\Controllers\AuthController.cs:line 25
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<<Main>$>b__0_5>d.MoveNext() in C:\Users\ahmet.ceylan\Desktop\ECommerce\eCommerceAPI\Presentation\eCommerceAPI.API\Program.cs:line 132
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-09-22 12:05:34.706 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7143/api/auth/login - 500 null text/plain; charset=utf-8 403.8202ms
+2025-09-22 12:06:40.988 +03:00 [INF] User profile is available. Using 'C:\Users\ahmet.ceylan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-22 12:06:41.425 +03:00 [INF] Now listening on: https://localhost:7143
+2025-09-22 12:06:41.429 +03:00 [INF] Now listening on: http://localhost:5045
+2025-09-22 12:06:41.524 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-22 12:06:41.527 +03:00 [INF] Hosting environment: Development
+2025-09-22 12:06:41.529 +03:00 [INF] Content root path: C:\Users\ahmet.ceylan\Desktop\ECommerce\eCommerceAPI\Presentation\eCommerceAPI.API
+2025-09-22 12:06:45.354 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/index.html - null null
+2025-09-22 12:06:45.864 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/index.html - 200 null text/html;charset=utf-8 527.2986ms
+2025-09-22 12:06:45.930 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7143/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-22 12:06:45.930 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7143/_vs/browserLink - null null
+2025-09-22 12:06:45.997 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7143/_framework/aspnetcore-browser-refresh.js - 200 16517 application/javascript; charset=utf-8 66.7078ms
+2025-09-22 12:06:46.087 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7143/_vs/browserLink - 200 null text/javascript; charset=UTF-8 157.499ms
+2025-09-22 12:06:46.291 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - null null
+2025-09-22 12:06:46.327 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 36.8424ms
+2025-09-22 12:06:51.178 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7143/api/auth/login - application/json 62
+2025-09-22 12:06:51.206 +03:00 [INF] Executing endpoint 'eCommerceAPI.API.Controllers.AuthController.Login (eCommerceAPI.API)'
+2025-09-22 12:06:51.239 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(eCommerceAPI.Application.Features.AppUser.Commands.LoginUser.LoginUserCommandRequest) on controller eCommerceAPI.API.Controllers.AuthController (eCommerceAPI.API).
+2025-09-22 12:06:51.244 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-09-22 12:06:53.100 +03:00 [INF] Executed DbCommand (107ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-09-22 12:06:53.449 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-09-22 12:06:53.582 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[@p17='?', @p0='?' (DbType = Int32), @p1='?', @p18='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime), @p6='?', @p7='?', @p8='?', @p9='?', @p10='?', @p11='?' (DbType = Boolean), @p12='?', @p13='?' (DbType = DateTime), @p14='?', @p15='?' (DbType = Boolean), @p16='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "LockoutEnabled" = @p4, "LockoutEnd" = @p5, "NameSurname" = @p6, "NormalizedEmail" = @p7, "NormalizedUserName" = @p8, "PasswordHash" = @p9, "PhoneNumber" = @p10, "PhoneNumberConfirmed" = @p11, "RefreshToken" = @p12, "RefreshTokenEndDate" = @p13, "SecurityStamp" = @p14, "TwoFactorEnabled" = @p15, "UserName" = @p16
+WHERE "Id" = @p17 AND "ConcurrencyStamp" = @p18;
+2025-09-22 12:06:53.605 +03:00 [INF] Executing OkObjectResult, writing value of type 'eCommerceAPI.Application.Features.AppUser.Commands.LoginUser.LoginUserSuccessCommandResponse'.
+2025-09-22 12:06:53.624 +03:00 [INF] Executed action eCommerceAPI.API.Controllers.AuthController.Login (eCommerceAPI.API) in 2379.575ms
+2025-09-22 12:06:53.627 +03:00 [INF] Executed endpoint 'eCommerceAPI.API.Controllers.AuthController.Login (eCommerceAPI.API)'
+2025-09-22 12:06:53.632 +03:00 [INF] Request and Response:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/auth/login
+Accept: */*
+Connection: keep-alive
+Host: localhost:7143
+User-Agent: PostmanRuntime/7.47.1
+Accept-Encoding: gzip, deflate, br
+Content-Type: application/json
+Content-Length: 62
+Postman-Token: [Redacted]
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+RequestBody: {
+  "usernameOrEmail": "mehmety",
+  "password": "My123"
+}
+
+RequestBodyStatus: [Completed]
+ResponseBody: {"token":{"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoibWVobWV0eSIsIm5iZiI6MTc1ODUzMjAxMywiZXhwIjoxNzU4NTMyMDI4LCJpc3MiOiJ3d3cubXlhcGkuY29tIiwiYXVkIjoid3d3LmJpbG1lbW5lLmNvbSJ9.I2vVorFArAGCwVioi4Xo9BiFD2EndEbheRYfqm2yzLE","accessTokenExpiration":"2025-09-22T09:07:08.3894877Z","refreshToken":"s/KxWZjaTLQxm7Wm/9uwfF26HR7K0NP8dOtvrY8vL6U="}}
+Duration: 2440.9627
+2025-09-22 12:06:53.644 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7143/api/auth/login - 200 null application/json; charset=utf-8 2465.9062ms
+2025-09-22 12:08:28.547 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7143/api/auth/login - application/json 62
+2025-09-22 12:08:28.561 +03:00 [INF] Executing endpoint 'eCommerceAPI.API.Controllers.AuthController.Login (eCommerceAPI.API)'
+2025-09-22 12:08:28.563 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(eCommerceAPI.Application.Features.AppUser.Commands.LoginUser.LoginUserCommandRequest) on controller eCommerceAPI.API.Controllers.AuthController (eCommerceAPI.API).
+2025-09-22 12:08:28.661 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-09-22 12:08:28.741 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-09-22 12:08:28.758 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[@p17='?', @p0='?' (DbType = Int32), @p1='?', @p18='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime), @p6='?', @p7='?', @p8='?', @p9='?', @p10='?', @p11='?' (DbType = Boolean), @p12='?', @p13='?' (DbType = DateTime), @p14='?', @p15='?' (DbType = Boolean), @p16='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "LockoutEnabled" = @p4, "LockoutEnd" = @p5, "NameSurname" = @p6, "NormalizedEmail" = @p7, "NormalizedUserName" = @p8, "PasswordHash" = @p9, "PhoneNumber" = @p10, "PhoneNumberConfirmed" = @p11, "RefreshToken" = @p12, "RefreshTokenEndDate" = @p13, "SecurityStamp" = @p14, "TwoFactorEnabled" = @p15, "UserName" = @p16
+WHERE "Id" = @p17 AND "ConcurrencyStamp" = @p18;
+2025-09-22 12:08:28.762 +03:00 [INF] Executing OkObjectResult, writing value of type 'eCommerceAPI.Application.Features.AppUser.Commands.LoginUser.LoginUserSuccessCommandResponse'.
+2025-09-22 12:08:28.764 +03:00 [INF] Executed action eCommerceAPI.API.Controllers.AuthController.Login (eCommerceAPI.API) in 198.6545ms
+2025-09-22 12:08:28.766 +03:00 [INF] Executed endpoint 'eCommerceAPI.API.Controllers.AuthController.Login (eCommerceAPI.API)'
+2025-09-22 12:08:28.768 +03:00 [INF] Request and Response:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/auth/login
+Accept: */*
+Connection: keep-alive
+Host: localhost:7143
+User-Agent: PostmanRuntime/7.47.1
+Accept-Encoding: gzip, deflate, br
+Content-Type: application/json
+Content-Length: 62
+Postman-Token: [Redacted]
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+RequestBody: {
+  "usernameOrEmail": "mehmety",
+  "password": "My123"
+}
+
+RequestBodyStatus: [Completed]
+ResponseBody: {"token":{"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoibWVobWV0eSIsIm5iZiI6MTc1ODUzMjEwOCwiZXhwIjoxNzU4NTMyMTIzLCJpc3MiOiJ3d3cubXlhcGkuY29tIiwiYXVkIjoid3d3LmJpbG1lbW5lLmNvbSJ9.SJkAARIHrJwhFKjc-AK6bGg_zWNF645BUxz8V8F4NUw","accessTokenExpiration":"2025-09-22T09:08:43.7384558Z","refreshToken":"xZ/wtMisC7o2iSUxwvRFf9r330elM0Mee+gcTLsGlMI="}}
+Duration: 208.8289
+2025-09-22 12:08:28.769 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7143/api/auth/login - 200 null application/json; charset=utf-8 222.4875ms
+2025-09-22 12:08:38.616 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7143/api/products/ - null null
+2025-09-22 12:08:38.790 +03:00 [INF] Executing endpoint 'eCommerceAPI.API.Controllers.ProductsController.Get (eCommerceAPI.API)'
+2025-09-22 12:08:38.802 +03:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(eCommerceAPI.Application.Features.Product.Queries.GetAllProduct.GetAllProductQueryRequest) on controller eCommerceAPI.API.Controllers.ProductsController (eCommerceAPI.API).
+2025-09-22 12:08:38.883 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Products" AS p
+2025-09-22 12:08:38.901 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2025-09-22 12:08:38.903 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2025-09-22 12:08:38.917 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."ID", p."Name", p."Stock", p."Price", p."CreatedDate", p."UpdatedDate"
+FROM "Products" AS p
+LIMIT @__p_1 OFFSET @__p_0
+2025-09-22 12:08:38.924 +03:00 [INF] Executing OkObjectResult, writing value of type 'eCommerceAPI.Application.Features.Product.Queries.GetAllProduct.GetAllProductQueryResponse'.
+2025-09-22 12:08:38.945 +03:00 [INF] Executed action eCommerceAPI.API.Controllers.ProductsController.Get (eCommerceAPI.API) in 140.9263ms
+2025-09-22 12:08:38.947 +03:00 [INF] Executed endpoint 'eCommerceAPI.API.Controllers.ProductsController.Get (eCommerceAPI.API)'
+2025-09-22 12:08:38.949 +03:00 [INF] Request and Response:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/products/
+Accept: */*
+Connection: keep-alive
+Host: localhost:7143
+User-Agent: PostmanRuntime/7.47.1
+Accept-Encoding: gzip, deflate, br
+Authorization: [Redacted]
+Postman-Token: [Redacted]
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+ResponseBody: {"totalCount":2,"products":[{"id":"01989def-8bb5-79b2-88b9-9ac29ae07c8a","name":"ürün 1 ","stock":1,"price":1,"createdDate":"2025-08-12T10:59:38.656275Z","updatedDate":"0001-01-01T00:00:00"},{"id":"01989def-abbc-7aa3-9fd7-bfca3809f580","name":"ürün 2","stock":2,"price":2,"createdDate":"2025-08-12T10:59:46.748799Z","updatedDate":"0001-01-01T00:00:00"}]}
+Duration: 329.2788
+2025-09-22 12:08:38.950 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7143/api/products/ - 200 null application/json; charset=utf-8 334.4345ms
+2025-09-22 12:09:46.300 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7143/api/products/ - null null
+2025-09-22 12:09:46.313 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidLifetimeException: IDX10230: Lifetime validation failed. Delegate returned false, securitytoken: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-09-22 12:09:46.342 +03:00 [INF] Admin was not authenticated. Failure message: IDX10230: Lifetime validation failed. Delegate returned false, securitytoken: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2025-09-22 12:09:46.344 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-22 12:09:46.360 +03:00 [INF] AuthenticationScheme: Admin was challenged.
+2025-09-22 12:09:46.361 +03:00 [INF] Request and Response:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/products/
+Accept: */*
+Connection: keep-alive
+Host: localhost:7143
+User-Agent: PostmanRuntime/7.47.1
+Accept-Encoding: gzip, deflate, br
+Authorization: [Redacted]
+Postman-Token: [Redacted]
+StatusCode: 401
+WWW-Authenticate: [Redacted]
+Duration: 55.6113
+2025-09-22 12:09:46.362 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7143/api/products/ - 401 0 null 62.7459ms
+2025-09-22 12:09:48.884 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7143/api/products/ - null null
+2025-09-22 12:09:48.889 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidLifetimeException: IDX10230: Lifetime validation failed. Delegate returned false, securitytoken: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-09-22 12:09:48.893 +03:00 [INF] Admin was not authenticated. Failure message: IDX10230: Lifetime validation failed. Delegate returned false, securitytoken: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2025-09-22 12:09:48.894 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-22 12:09:48.898 +03:00 [INF] AuthenticationScheme: Admin was challenged.
+2025-09-22 12:09:48.902 +03:00 [INF] Request and Response:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/products/
+Accept: */*
+Connection: keep-alive
+Host: localhost:7143
+User-Agent: PostmanRuntime/7.47.1
+Accept-Encoding: gzip, deflate, br
+Authorization: [Redacted]
+Postman-Token: [Redacted]
+StatusCode: 401
+WWW-Authenticate: [Redacted]
+Duration: 15.3895
+2025-09-22 12:09:48.905 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7143/api/products/ - 401 0 null 21.8181ms
+2025-09-22 12:09:52.965 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7143/api/auth/login - application/json 62
+2025-09-22 12:09:52.975 +03:00 [INF] Executing endpoint 'eCommerceAPI.API.Controllers.AuthController.Login (eCommerceAPI.API)'
+2025-09-22 12:09:52.980 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(eCommerceAPI.Application.Features.AppUser.Commands.LoginUser.LoginUserCommandRequest) on controller eCommerceAPI.API.Controllers.AuthController (eCommerceAPI.API).
+2025-09-22 12:09:53.008 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-09-22 12:09:53.100 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-09-22 12:09:53.116 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[@p17='?', @p0='?' (DbType = Int32), @p1='?', @p18='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime), @p6='?', @p7='?', @p8='?', @p9='?', @p10='?', @p11='?' (DbType = Boolean), @p12='?', @p13='?' (DbType = DateTime), @p14='?', @p15='?' (DbType = Boolean), @p16='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "LockoutEnabled" = @p4, "LockoutEnd" = @p5, "NameSurname" = @p6, "NormalizedEmail" = @p7, "NormalizedUserName" = @p8, "PasswordHash" = @p9, "PhoneNumber" = @p10, "PhoneNumberConfirmed" = @p11, "RefreshToken" = @p12, "RefreshTokenEndDate" = @p13, "SecurityStamp" = @p14, "TwoFactorEnabled" = @p15, "UserName" = @p16
+WHERE "Id" = @p17 AND "ConcurrencyStamp" = @p18;
+2025-09-22 12:09:53.120 +03:00 [INF] Executing OkObjectResult, writing value of type 'eCommerceAPI.Application.Features.AppUser.Commands.LoginUser.LoginUserSuccessCommandResponse'.
+2025-09-22 12:09:53.123 +03:00 [INF] Executed action eCommerceAPI.API.Controllers.AuthController.Login (eCommerceAPI.API) in 139.1094ms
+2025-09-22 12:09:53.125 +03:00 [INF] Executed endpoint 'eCommerceAPI.API.Controllers.AuthController.Login (eCommerceAPI.API)'
+2025-09-22 12:09:53.128 +03:00 [INF] Request and Response:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/auth/login
+Accept: */*
+Connection: keep-alive
+Host: localhost:7143
+User-Agent: PostmanRuntime/7.47.1
+Accept-Encoding: gzip, deflate, br
+Content-Type: application/json
+Content-Length: 62
+Postman-Token: [Redacted]
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+RequestBody: {
+  "usernameOrEmail": "mehmety",
+  "password": "My123"
+}
+
+RequestBodyStatus: [Completed]
+ResponseBody: {"token":{"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoibWVobWV0eSIsIm5iZiI6MTc1ODUzMjE5MywiZXhwIjoxNzU4NTMyMjA4LCJpc3MiOiJ3d3cubXlhcGkuY29tIiwiYXVkIjoid3d3LmJpbG1lbW5lLmNvbSJ9.Kcafnzd-xgcPXxijaIKjlZmgvjPioOEGY2-gQgxo8uY","accessTokenExpiration":"2025-09-22T09:10:08.097474Z","refreshToken":"pbWT+2VgXs5FMTtjmQTd2K1djIxopyyU8GwURo91mJc="}}
+Duration: 153.0234
+2025-09-22 12:09:53.133 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7143/api/auth/login - 200 null application/json; charset=utf-8 168.0181ms
+2025-09-22 12:10:01.266 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7143/api/products/ - null null
+2025-09-22 12:10:01.271 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidLifetimeException: IDX10230: Lifetime validation failed. Delegate returned false, securitytoken: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-09-22 12:10:01.274 +03:00 [INF] Admin was not authenticated. Failure message: IDX10230: Lifetime validation failed. Delegate returned false, securitytoken: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2025-09-22 12:10:01.276 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-22 12:10:01.278 +03:00 [INF] AuthenticationScheme: Admin was challenged.
+2025-09-22 12:10:01.279 +03:00 [INF] Request and Response:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/products/
+Accept: */*
+Connection: keep-alive
+Host: localhost:7143
+User-Agent: PostmanRuntime/7.47.1
+Accept-Encoding: gzip, deflate, br
+Authorization: [Redacted]
+Postman-Token: [Redacted]
+StatusCode: 401
+WWW-Authenticate: [Redacted]
+Duration: 9.1848
+2025-09-22 12:10:01.281 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7143/api/products/ - 401 0 null 14.9181ms
+2025-09-22 12:10:10.707 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7143/api/auth/login - application/json 62
+2025-09-22 12:10:10.710 +03:00 [INF] Executing endpoint 'eCommerceAPI.API.Controllers.AuthController.Login (eCommerceAPI.API)'
+2025-09-22 12:10:10.712 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(eCommerceAPI.Application.Features.AppUser.Commands.LoginUser.LoginUserCommandRequest) on controller eCommerceAPI.API.Controllers.AuthController (eCommerceAPI.API).
+2025-09-22 12:10:10.720 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-09-22 12:10:10.812 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-09-22 12:10:10.830 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[@p17='?', @p0='?' (DbType = Int32), @p1='?', @p18='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime), @p6='?', @p7='?', @p8='?', @p9='?', @p10='?', @p11='?' (DbType = Boolean), @p12='?', @p13='?' (DbType = DateTime), @p14='?', @p15='?' (DbType = Boolean), @p16='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "LockoutEnabled" = @p4, "LockoutEnd" = @p5, "NameSurname" = @p6, "NormalizedEmail" = @p7, "NormalizedUserName" = @p8, "PasswordHash" = @p9, "PhoneNumber" = @p10, "PhoneNumberConfirmed" = @p11, "RefreshToken" = @p12, "RefreshTokenEndDate" = @p13, "SecurityStamp" = @p14, "TwoFactorEnabled" = @p15, "UserName" = @p16
+WHERE "Id" = @p17 AND "ConcurrencyStamp" = @p18;
+2025-09-22 12:10:10.834 +03:00 [INF] Executing OkObjectResult, writing value of type 'eCommerceAPI.Application.Features.AppUser.Commands.LoginUser.LoginUserSuccessCommandResponse'.
+2025-09-22 12:10:10.836 +03:00 [INF] Executed action eCommerceAPI.API.Controllers.AuthController.Login (eCommerceAPI.API) in 121.1998ms
+2025-09-22 12:10:10.839 +03:00 [INF] Executed endpoint 'eCommerceAPI.API.Controllers.AuthController.Login (eCommerceAPI.API)'
+2025-09-22 12:10:10.840 +03:00 [INF] Request and Response:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/auth/login
+Accept: */*
+Connection: keep-alive
+Host: localhost:7143
+User-Agent: PostmanRuntime/7.47.1
+Accept-Encoding: gzip, deflate, br
+Content-Type: application/json
+Content-Length: 62
+Postman-Token: [Redacted]
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+RequestBody: {
+  "usernameOrEmail": "mehmety",
+  "password": "My123"
+}
+
+RequestBodyStatus: [Completed]
+ResponseBody: {"token":{"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoibWVobWV0eSIsIm5iZiI6MTc1ODUzMjIxMCwiZXhwIjoxNzU4NTMyMjI1LCJpc3MiOiJ3d3cubXlhcGkuY29tIiwiYXVkIjoid3d3LmJpbG1lbW5lLmNvbSJ9.00-5K5KcDe7D2pUS_WHVydMTgQAhCGoH7Bji5Z0QgsE","accessTokenExpiration":"2025-09-22T09:10:25.8098144Z","refreshToken":"mNmWo+PP90MOCbEBEYRxgMcszCcCO0GCATZwD0WxJDo="}}
+Duration: 129.8067
+2025-09-22 12:10:10.842 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7143/api/auth/login - 200 null application/json; charset=utf-8 135.2404ms
+2025-09-22 12:10:20.789 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7143/api/products/ - null null
+2025-09-22 12:10:20.795 +03:00 [INF] Executing endpoint 'eCommerceAPI.API.Controllers.ProductsController.Get (eCommerceAPI.API)'
+2025-09-22 12:10:20.796 +03:00 [INF] Route matched with {action = "Get", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(eCommerceAPI.Application.Features.Product.Queries.GetAllProduct.GetAllProductQueryRequest) on controller eCommerceAPI.API.Controllers.ProductsController (eCommerceAPI.API).
+2025-09-22 12:10:20.802 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT count(*)::int
+FROM "Products" AS p
+2025-09-22 12:10:20.808 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT p."ID", p."Name", p."Stock", p."Price", p."CreatedDate", p."UpdatedDate"
+FROM "Products" AS p
+LIMIT @__p_1 OFFSET @__p_0
+2025-09-22 12:10:20.811 +03:00 [INF] Executing OkObjectResult, writing value of type 'eCommerceAPI.Application.Features.Product.Queries.GetAllProduct.GetAllProductQueryResponse'.
+2025-09-22 12:10:20.813 +03:00 [INF] Executed action eCommerceAPI.API.Controllers.ProductsController.Get (eCommerceAPI.API) in 14.6514ms
+2025-09-22 12:10:20.816 +03:00 [INF] Executed endpoint 'eCommerceAPI.API.Controllers.ProductsController.Get (eCommerceAPI.API)'
+2025-09-22 12:10:20.818 +03:00 [INF] Request and Response:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/products/
+Accept: */*
+Connection: keep-alive
+Host: localhost:7143
+User-Agent: PostmanRuntime/7.47.1
+Accept-Encoding: gzip, deflate, br
+Authorization: [Redacted]
+Postman-Token: [Redacted]
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+ResponseBody: {"totalCount":2,"products":[{"id":"01989def-8bb5-79b2-88b9-9ac29ae07c8a","name":"ürün 1 ","stock":1,"price":1,"createdDate":"2025-08-12T10:59:38.656275Z","updatedDate":"0001-01-01T00:00:00"},{"id":"01989def-abbc-7aa3-9fd7-bfca3809f580","name":"ürün 2","stock":2,"price":2,"createdDate":"2025-08-12T10:59:46.748799Z","updatedDate":"0001-01-01T00:00:00"}]}
+Duration: 23.7876
+2025-09-22 12:10:20.819 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7143/api/products/ - 200 null application/json; charset=utf-8 29.9099ms
+2025-09-22 12:10:33.147 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7143/api/products/ - null null
+2025-09-22 12:10:33.151 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidLifetimeException: IDX10230: Lifetime validation failed. Delegate returned false, securitytoken: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-09-22 12:10:33.154 +03:00 [INF] Admin was not authenticated. Failure message: IDX10230: Lifetime validation failed. Delegate returned false, securitytoken: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2025-09-22 12:10:33.156 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-22 12:10:33.158 +03:00 [INF] AuthenticationScheme: Admin was challenged.
+2025-09-22 12:10:33.160 +03:00 [INF] Request and Response:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/products/
+Accept: */*
+Connection: keep-alive
+Host: localhost:7143
+User-Agent: PostmanRuntime/7.47.1
+Accept-Encoding: gzip, deflate, br
+Authorization: [Redacted]
+Postman-Token: [Redacted]
+StatusCode: 401
+WWW-Authenticate: [Redacted]
+Duration: 9.1242
+2025-09-22 12:10:33.161 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7143/api/products/ - 401 0 null 14.6458ms
+2025-09-22 12:10:35.715 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7143/api/products/ - null null
+2025-09-22 12:10:35.720 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenInvalidLifetimeException: IDX10230: Lifetime validation failed. Delegate returned false, securitytoken: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-09-22 12:10:35.724 +03:00 [INF] Admin was not authenticated. Failure message: IDX10230: Lifetime validation failed. Delegate returned false, securitytoken: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+2025-09-22 12:10:35.726 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-22 12:10:35.727 +03:00 [INF] AuthenticationScheme: Admin was challenged.
+2025-09-22 12:10:35.729 +03:00 [INF] Request and Response:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/products/
+Accept: */*
+Connection: keep-alive
+Host: localhost:7143
+User-Agent: PostmanRuntime/7.47.1
+Accept-Encoding: gzip, deflate, br
+Authorization: [Redacted]
+Postman-Token: [Redacted]
+StatusCode: 401
+WWW-Authenticate: [Redacted]
+Duration: 10.1792
+2025-09-22 12:10:35.731 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7143/api/products/ - 401 0 null 15.545ms
+2025-09-22 12:14:09.424 +03:00 [INF] User profile is available. Using 'C:\Users\ahmet.ceylan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-22 12:14:09.917 +03:00 [INF] Now listening on: https://localhost:7143
+2025-09-22 12:14:09.921 +03:00 [INF] Now listening on: http://localhost:5045
+2025-09-22 12:14:10.153 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-22 12:14:10.155 +03:00 [INF] Hosting environment: Development
+2025-09-22 12:14:10.157 +03:00 [INF] Content root path: C:\Users\ahmet.ceylan\Desktop\ECommerce\eCommerceAPI\Presentation\eCommerceAPI.API
+2025-09-22 12:14:12.666 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/index.html - null null
+2025-09-22 12:14:13.603 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/index.html - 200 null text/html;charset=utf-8 940.6442ms
+2025-09-22 12:14:13.798 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7143/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-22 12:14:13.799 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7143/_vs/browserLink - null null
+2025-09-22 12:14:13.879 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7143/_framework/aspnetcore-browser-refresh.js - 200 16517 application/javascript; charset=utf-8 82.4163ms
+2025-09-22 12:14:13.988 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7143/_vs/browserLink - 200 null text/javascript; charset=UTF-8 191.2283ms
+2025-09-22 12:14:14.277 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - null null
+2025-09-22 12:14:14.325 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 48.2399ms
+2025-09-22 12:14:53.309 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7143/api/auth/login - application/json 62
+2025-09-22 12:14:53.339 +03:00 [INF] Executing endpoint 'eCommerceAPI.API.Controllers.AuthController.Login (eCommerceAPI.API)'
+2025-09-22 12:14:53.391 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(eCommerceAPI.Application.Features.AppUser.Commands.LoginUser.LoginUserCommandRequest) on controller eCommerceAPI.API.Controllers.AuthController (eCommerceAPI.API).
+2025-09-22 12:14:53.400 +03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-09-22 12:14:54.938 +03:00 [INF] Executed DbCommand (64ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-09-22 12:14:55.216 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-09-22 12:14:55.334 +03:00 [INF] Executed DbCommand (15ms) [Parameters=[@p17='?', @p0='?' (DbType = Int32), @p1='?', @p18='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime), @p6='?', @p7='?', @p8='?', @p9='?', @p10='?', @p11='?' (DbType = Boolean), @p12='?', @p13='?' (DbType = DateTime), @p14='?', @p15='?' (DbType = Boolean), @p16='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "LockoutEnabled" = @p4, "LockoutEnd" = @p5, "NameSurname" = @p6, "NormalizedEmail" = @p7, "NormalizedUserName" = @p8, "PasswordHash" = @p9, "PhoneNumber" = @p10, "PhoneNumberConfirmed" = @p11, "RefreshToken" = @p12, "RefreshTokenEndDate" = @p13, "SecurityStamp" = @p14, "TwoFactorEnabled" = @p15, "UserName" = @p16
+WHERE "Id" = @p17 AND "ConcurrencyStamp" = @p18;
+2025-09-22 12:14:55.356 +03:00 [INF] Executing OkObjectResult, writing value of type 'eCommerceAPI.Application.Features.AppUser.Commands.LoginUser.LoginUserSuccessCommandResponse'.
+2025-09-22 12:14:55.373 +03:00 [INF] Executed action eCommerceAPI.API.Controllers.AuthController.Login (eCommerceAPI.API) in 1974.5135ms
+2025-09-22 12:14:55.377 +03:00 [INF] Executed endpoint 'eCommerceAPI.API.Controllers.AuthController.Login (eCommerceAPI.API)'
+2025-09-22 12:14:55.383 +03:00 [INF] Request and Response:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/auth/login
+Accept: */*
+Connection: keep-alive
+Host: localhost:7143
+User-Agent: PostmanRuntime/7.47.1
+Accept-Encoding: gzip, deflate, br
+Content-Type: application/json
+Content-Length: 62
+Postman-Token: [Redacted]
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+RequestBody: {
+  "usernameOrEmail": "mehmety",
+  "password": "My123"
+}
+
+RequestBodyStatus: [Completed]
+ResponseBody: {"token":{"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoibWVobWV0eSIsIm5iZiI6MTc1ODUzMjQ5NSwiZXhwIjoxNzU4NTMyNTEwLCJpc3MiOiJ3d3cubXlhcGkuY29tIiwiYXVkIjoid3d3LmJpbG1lbW5lLmNvbSJ9._49n-0e4Ry6IpJ2nsE0iPLem0UPGLkepQicdVdOAfD4","accessTokenExpiration":"2025-09-22T09:15:10.1627265Z","refreshToken":"c3pLU4Oo1lbkz5LYGExmNyxSdxPjE4JbK8cOce1c0Qs="}}
+Duration: 2060.4405
+2025-09-22 12:14:55.393 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7143/api/auth/login - 200 null application/json; charset=utf-8 2084.515ms
+2025-09-22 12:15:03.347 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7143/api/auth/RefreshTokenLogin - application/x-www-form-urlencoded 59
+2025-09-22 12:15:03.358 +03:00 [INF] Executing endpoint 'eCommerceAPI.API.Controllers.AuthController.RefreshTokenLogin (eCommerceAPI.API)'
+2025-09-22 12:15:03.377 +03:00 [INF] Route matched with {action = "RefreshTokenLogin", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RefreshTokenLogin(eCommerceAPI.Application.Features.AppUser.Commands.RefreshTokenLogin.RefreshTokenLoginCommandRequest) on controller eCommerceAPI.API.Controllers.AuthController (eCommerceAPI.API).
+2025-09-22 12:15:03.557 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__refreshToken_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."RefreshToken" = @__refreshToken_0 AND a."RefreshTokenEndDate" > now()
+LIMIT 1
+2025-09-22 12:15:03.563 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-09-22 12:15:03.573 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@p17='?', @p0='?' (DbType = Int32), @p1='?', @p18='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime), @p6='?', @p7='?', @p8='?', @p9='?', @p10='?', @p11='?' (DbType = Boolean), @p12='?', @p13='?' (DbType = DateTime), @p14='?', @p15='?' (DbType = Boolean), @p16='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "LockoutEnabled" = @p4, "LockoutEnd" = @p5, "NameSurname" = @p6, "NormalizedEmail" = @p7, "NormalizedUserName" = @p8, "PasswordHash" = @p9, "PhoneNumber" = @p10, "PhoneNumberConfirmed" = @p11, "RefreshToken" = @p12, "RefreshTokenEndDate" = @p13, "SecurityStamp" = @p14, "TwoFactorEnabled" = @p15, "UserName" = @p16
+WHERE "Id" = @p17 AND "ConcurrencyStamp" = @p18;
+2025-09-22 12:15:03.578 +03:00 [INF] Executing OkObjectResult, writing value of type 'eCommerceAPI.Application.Features.AppUser.Commands.RefreshTokenLogin.RefreshTokenLoginCommandResponse'.
+2025-09-22 12:15:03.580 +03:00 [INF] Executed action eCommerceAPI.API.Controllers.AuthController.RefreshTokenLogin (eCommerceAPI.API) in 198.5652ms
+2025-09-22 12:15:03.582 +03:00 [INF] Executed endpoint 'eCommerceAPI.API.Controllers.AuthController.RefreshTokenLogin (eCommerceAPI.API)'
+2025-09-22 12:15:03.583 +03:00 [INF] Request and Response:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/auth/RefreshTokenLogin
+Accept: */*
+Connection: keep-alive
+Host: localhost:7143
+User-Agent: PostmanRuntime/7.47.1
+Accept-Encoding: gzip, deflate, br
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 59
+Postman-Token: [Redacted]
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+ResponseBody: {"token":{"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoibWVobWV0eSIsIm5iZiI6MTc1ODUzMjUwMywiZXhwIjoxNzU4NTMyNTA4LCJpc3MiOiJ3d3cubXlhcGkuY29tIiwiYXVkIjoid3d3LmJpbG1lbW5lLmNvbSJ9.o11GFVwgW9476rzu71NgOpXVNQgea6PcxXVf1ps9_DI","accessTokenExpiration":"2025-09-22T09:15:08.5613787Z","refreshToken":"/BL+IGw8ahXlw0n0qPTbUI5K4rNvOARXUP1UNAvj60k="}}
+Duration: 229.1676
+2025-09-22 12:15:03.584 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7143/api/auth/RefreshTokenLogin - 200 null application/json; charset=utf-8 237.3155ms
+2025-09-22 12:15:17.978 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7143/api/auth/RefreshTokenLogin - application/x-www-form-urlencoded 66
+2025-09-22 12:15:17.986 +03:00 [INF] Executing endpoint 'eCommerceAPI.API.Controllers.AuthController.RefreshTokenLogin (eCommerceAPI.API)'
+2025-09-22 12:15:17.988 +03:00 [INF] Route matched with {action = "RefreshTokenLogin", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RefreshTokenLogin(eCommerceAPI.Application.Features.AppUser.Commands.RefreshTokenLogin.RefreshTokenLoginCommandRequest) on controller eCommerceAPI.API.Controllers.AuthController (eCommerceAPI.API).
+2025-09-22 12:15:18.009 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__refreshToken_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."RefreshToken" = @__refreshToken_0 AND a."RefreshTokenEndDate" > now()
+LIMIT 1
+2025-09-22 12:15:18.188 +03:00 [INF] Executed action eCommerceAPI.API.Controllers.AuthController.RefreshTokenLogin (eCommerceAPI.API) in 197.9221ms
+2025-09-22 12:15:18.192 +03:00 [INF] Executed endpoint 'eCommerceAPI.API.Controllers.AuthController.RefreshTokenLogin (eCommerceAPI.API)'
+2025-09-22 12:15:18.289 +03:00 [INF] Request and Response:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/auth/RefreshTokenLogin
+Accept: */*
+Connection: keep-alive
+Host: localhost:7143
+User-Agent: PostmanRuntime/7.47.1
+Accept-Encoding: gzip, deflate, br
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 66
+Postman-Token: [Redacted]
+StatusCode: 200
+Duration: 305.5058
+2025-09-22 12:15:18.294 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+eCommerceAPI.Application.Exceptions.NotFoundUserException: User not found
+   at eCommerceAPI.Persistence.Services.AuthService.RefreshTokenLoginAsync(String refreshToken) in C:\Users\ahmet.ceylan\Desktop\ECommerce\eCommerceAPI\Infrastructure\eCommerceAPI.Persistence\Services\AuthService.cs:line 169
+   at eCommerceAPI.Application.Features.AppUser.Commands.RefreshTokenLogin.RefreshTokenLoginCommandHandler.Handle(RefreshTokenLoginCommandRequest request, CancellationToken cancellationToken) in C:\Users\ahmet.ceylan\Desktop\ECommerce\eCommerceAPI\Core\eCommerceAPI.Application\Features\AppUser\Commands\RefreshTokenLogin\RefreshTokenLoginCommandHandler.cs:line 24
+   at eCommerceAPI.API.Controllers.AuthController.RefreshTokenLogin(RefreshTokenLoginCommandRequest refreshTokenLoginCommandRequest) in C:\Users\ahmet.ceylan\Desktop\ECommerce\eCommerceAPI\Presentation\eCommerceAPI.API\Controllers\AuthController.cs:line 32
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<<Main>$>b__0_5>d.MoveNext() in C:\Users\ahmet.ceylan\Desktop\ECommerce\eCommerceAPI\Presentation\eCommerceAPI.API\Program.cs:line 132
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-09-22 12:15:18.343 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7143/api/auth/RefreshTokenLogin - 500 null text/plain; charset=utf-8 364.6193ms
+2025-09-22 12:15:30.712 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7143/api/auth/login - application/json 62
+2025-09-22 12:15:30.715 +03:00 [INF] Executing endpoint 'eCommerceAPI.API.Controllers.AuthController.Login (eCommerceAPI.API)'
+2025-09-22 12:15:30.717 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(eCommerceAPI.Application.Features.AppUser.Commands.LoginUser.LoginUserCommandRequest) on controller eCommerceAPI.API.Controllers.AuthController (eCommerceAPI.API).
+2025-09-22 12:15:30.726 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-09-22 12:15:30.814 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-09-22 12:15:30.823 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@p17='?', @p0='?' (DbType = Int32), @p1='?', @p18='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime), @p6='?', @p7='?', @p8='?', @p9='?', @p10='?', @p11='?' (DbType = Boolean), @p12='?', @p13='?' (DbType = DateTime), @p14='?', @p15='?' (DbType = Boolean), @p16='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "LockoutEnabled" = @p4, "LockoutEnd" = @p5, "NameSurname" = @p6, "NormalizedEmail" = @p7, "NormalizedUserName" = @p8, "PasswordHash" = @p9, "PhoneNumber" = @p10, "PhoneNumberConfirmed" = @p11, "RefreshToken" = @p12, "RefreshTokenEndDate" = @p13, "SecurityStamp" = @p14, "TwoFactorEnabled" = @p15, "UserName" = @p16
+WHERE "Id" = @p17 AND "ConcurrencyStamp" = @p18;
+2025-09-22 12:15:30.826 +03:00 [INF] Executing OkObjectResult, writing value of type 'eCommerceAPI.Application.Features.AppUser.Commands.LoginUser.LoginUserSuccessCommandResponse'.
+2025-09-22 12:15:30.827 +03:00 [INF] Executed action eCommerceAPI.API.Controllers.AuthController.Login (eCommerceAPI.API) in 107.3082ms
+2025-09-22 12:15:30.829 +03:00 [INF] Executed endpoint 'eCommerceAPI.API.Controllers.AuthController.Login (eCommerceAPI.API)'
+2025-09-22 12:15:30.831 +03:00 [INF] Request and Response:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/auth/login
+Accept: */*
+Connection: keep-alive
+Host: localhost:7143
+User-Agent: PostmanRuntime/7.47.1
+Accept-Encoding: gzip, deflate, br
+Content-Type: application/json
+Content-Length: 62
+Postman-Token: [Redacted]
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+RequestBody: {
+  "usernameOrEmail": "mehmety",
+  "password": "My123"
+}
+
+RequestBodyStatus: [Completed]
+ResponseBody: {"token":{"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoibWVobWV0eSIsIm5iZiI6MTc1ODUzMjUzMCwiZXhwIjoxNzU4NTMyNTQ1LCJpc3MiOiJ3d3cubXlhcGkuY29tIiwiYXVkIjoid3d3LmJpbG1lbW5lLmNvbSJ9.HK42XAcsoG3kfMuhSazzUu4tbcqCSvyAfKIqXUbYQEA","accessTokenExpiration":"2025-09-22T09:15:45.8121632Z","refreshToken":"CY+aiIH1KMvKGGnSI8FrGmPmfibKJb6izvm1zQgvhcg="}}
+Duration: 115.6963
+2025-09-22 12:15:30.833 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7143/api/auth/login - 200 null application/json; charset=utf-8 121.6891ms
+2025-09-22 12:15:41.137 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7143/api/auth/RefreshTokenLogin - application/x-www-form-urlencoded 61
+2025-09-22 12:15:41.140 +03:00 [INF] Executing endpoint 'eCommerceAPI.API.Controllers.AuthController.RefreshTokenLogin (eCommerceAPI.API)'
+2025-09-22 12:15:41.142 +03:00 [INF] Route matched with {action = "RefreshTokenLogin", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RefreshTokenLogin(eCommerceAPI.Application.Features.AppUser.Commands.RefreshTokenLogin.RefreshTokenLoginCommandRequest) on controller eCommerceAPI.API.Controllers.AuthController (eCommerceAPI.API).
+2025-09-22 12:15:41.163 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__refreshToken_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."RefreshToken" = @__refreshToken_0 AND a."RefreshTokenEndDate" > now()
+LIMIT 1
+2025-09-22 12:15:41.171 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-09-22 12:15:41.182 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@p17='?', @p0='?' (DbType = Int32), @p1='?', @p18='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime), @p6='?', @p7='?', @p8='?', @p9='?', @p10='?', @p11='?' (DbType = Boolean), @p12='?', @p13='?' (DbType = DateTime), @p14='?', @p15='?' (DbType = Boolean), @p16='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "LockoutEnabled" = @p4, "LockoutEnd" = @p5, "NameSurname" = @p6, "NormalizedEmail" = @p7, "NormalizedUserName" = @p8, "PasswordHash" = @p9, "PhoneNumber" = @p10, "PhoneNumberConfirmed" = @p11, "RefreshToken" = @p12, "RefreshTokenEndDate" = @p13, "SecurityStamp" = @p14, "TwoFactorEnabled" = @p15, "UserName" = @p16
+WHERE "Id" = @p17 AND "ConcurrencyStamp" = @p18;
+2025-09-22 12:15:41.185 +03:00 [INF] Executing OkObjectResult, writing value of type 'eCommerceAPI.Application.Features.AppUser.Commands.RefreshTokenLogin.RefreshTokenLoginCommandResponse'.
+2025-09-22 12:15:41.187 +03:00 [INF] Executed action eCommerceAPI.API.Controllers.AuthController.RefreshTokenLogin (eCommerceAPI.API) in 43.1543ms
+2025-09-22 12:15:41.190 +03:00 [INF] Executed endpoint 'eCommerceAPI.API.Controllers.AuthController.RefreshTokenLogin (eCommerceAPI.API)'
+2025-09-22 12:15:41.193 +03:00 [INF] Request and Response:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/auth/RefreshTokenLogin
+Accept: */*
+Connection: keep-alive
+Host: localhost:7143
+User-Agent: PostmanRuntime/7.47.1
+Accept-Encoding: gzip, deflate, br
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 61
+Postman-Token: [Redacted]
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+ResponseBody: {"token":{"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoibWVobWV0eSIsIm5iZiI6MTc1ODUzMjU0MSwiZXhwIjoxNzU4NTMyNTQ2LCJpc3MiOiJ3d3cubXlhcGkuY29tIiwiYXVkIjoid3d3LmJpbG1lbW5lLmNvbSJ9.JY55kafuXdlbdZ3-0esDwXLEnwmlctmfb3xe6x9FAgc","accessTokenExpiration":"2025-09-22T09:15:46.1682863Z","refreshToken":"Ndgn67crnukwmksUT4XZI7mckkBaUcYR16SemvSumVc="}}
+Duration: 53.0415
+2025-09-22 12:15:41.196 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7143/api/auth/RefreshTokenLogin - 200 null application/json; charset=utf-8 59.0411ms
+2025-09-22 12:16:01.242 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7143/api/auth/RefreshTokenLogin - application/x-www-form-urlencoded 59
+2025-09-22 12:16:01.248 +03:00 [INF] Executing endpoint 'eCommerceAPI.API.Controllers.AuthController.RefreshTokenLogin (eCommerceAPI.API)'
+2025-09-22 12:16:01.249 +03:00 [INF] Route matched with {action = "RefreshTokenLogin", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RefreshTokenLogin(eCommerceAPI.Application.Features.AppUser.Commands.RefreshTokenLogin.RefreshTokenLoginCommandRequest) on controller eCommerceAPI.API.Controllers.AuthController (eCommerceAPI.API).
+2025-09-22 12:16:01.258 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__refreshToken_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."RefreshToken" = @__refreshToken_0 AND a."RefreshTokenEndDate" > now()
+LIMIT 1
+2025-09-22 12:16:01.399 +03:00 [INF] Executed action eCommerceAPI.API.Controllers.AuthController.RefreshTokenLogin (eCommerceAPI.API) in 147.1801ms
+2025-09-22 12:16:01.401 +03:00 [INF] Executed endpoint 'eCommerceAPI.API.Controllers.AuthController.RefreshTokenLogin (eCommerceAPI.API)'
+2025-09-22 12:16:01.474 +03:00 [INF] Request and Response:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/auth/RefreshTokenLogin
+Accept: */*
+Connection: keep-alive
+Host: localhost:7143
+User-Agent: PostmanRuntime/7.47.1
+Accept-Encoding: gzip, deflate, br
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 59
+Postman-Token: [Redacted]
+StatusCode: 200
+Duration: 226.1758
+2025-09-22 12:16:01.478 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+eCommerceAPI.Application.Exceptions.NotFoundUserException: User not found
+   at eCommerceAPI.Persistence.Services.AuthService.RefreshTokenLoginAsync(String refreshToken) in C:\Users\ahmet.ceylan\Desktop\ECommerce\eCommerceAPI\Infrastructure\eCommerceAPI.Persistence\Services\AuthService.cs:line 169
+   at eCommerceAPI.Application.Features.AppUser.Commands.RefreshTokenLogin.RefreshTokenLoginCommandHandler.Handle(RefreshTokenLoginCommandRequest request, CancellationToken cancellationToken) in C:\Users\ahmet.ceylan\Desktop\ECommerce\eCommerceAPI\Core\eCommerceAPI.Application\Features\AppUser\Commands\RefreshTokenLogin\RefreshTokenLoginCommandHandler.cs:line 24
+   at eCommerceAPI.API.Controllers.AuthController.RefreshTokenLogin(RefreshTokenLoginCommandRequest refreshTokenLoginCommandRequest) in C:\Users\ahmet.ceylan\Desktop\ECommerce\eCommerceAPI\Presentation\eCommerceAPI.API\Controllers\AuthController.cs:line 32
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<<Main>$>b__0_5>d.MoveNext() in C:\Users\ahmet.ceylan\Desktop\ECommerce\eCommerceAPI\Presentation\eCommerceAPI.API\Program.cs:line 132
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-09-22 12:16:01.489 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7143/api/auth/RefreshTokenLogin - 500 null text/plain; charset=utf-8 247.5089ms
+2025-09-22 12:16:05.328 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7143/api/auth/login - application/json 62
+2025-09-22 12:16:05.332 +03:00 [INF] Executing endpoint 'eCommerceAPI.API.Controllers.AuthController.Login (eCommerceAPI.API)'
+2025-09-22 12:16:05.334 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(eCommerceAPI.Application.Features.AppUser.Commands.LoginUser.LoginUserCommandRequest) on controller eCommerceAPI.API.Controllers.AuthController (eCommerceAPI.API).
+2025-09-22 12:16:05.341 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-09-22 12:16:05.535 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-09-22 12:16:05.558 +03:00 [INF] Executed DbCommand (19ms) [Parameters=[@p17='?', @p0='?' (DbType = Int32), @p1='?', @p18='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime), @p6='?', @p7='?', @p8='?', @p9='?', @p10='?', @p11='?' (DbType = Boolean), @p12='?', @p13='?' (DbType = DateTime), @p14='?', @p15='?' (DbType = Boolean), @p16='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "LockoutEnabled" = @p4, "LockoutEnd" = @p5, "NameSurname" = @p6, "NormalizedEmail" = @p7, "NormalizedUserName" = @p8, "PasswordHash" = @p9, "PhoneNumber" = @p10, "PhoneNumberConfirmed" = @p11, "RefreshToken" = @p12, "RefreshTokenEndDate" = @p13, "SecurityStamp" = @p14, "TwoFactorEnabled" = @p15, "UserName" = @p16
+WHERE "Id" = @p17 AND "ConcurrencyStamp" = @p18;
+2025-09-22 12:16:05.563 +03:00 [INF] Executing OkObjectResult, writing value of type 'eCommerceAPI.Application.Features.AppUser.Commands.LoginUser.LoginUserSuccessCommandResponse'.
+2025-09-22 12:16:05.565 +03:00 [INF] Executed action eCommerceAPI.API.Controllers.AuthController.Login (eCommerceAPI.API) in 228.4471ms
+2025-09-22 12:16:05.568 +03:00 [INF] Executed endpoint 'eCommerceAPI.API.Controllers.AuthController.Login (eCommerceAPI.API)'
+2025-09-22 12:16:05.570 +03:00 [INF] Request and Response:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/auth/login
+Accept: */*
+Connection: keep-alive
+Host: localhost:7143
+User-Agent: PostmanRuntime/7.47.1
+Accept-Encoding: gzip, deflate, br
+Content-Type: application/json
+Content-Length: 62
+Postman-Token: [Redacted]
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+RequestBody: {
+  "usernameOrEmail": "mehmety",
+  "password": "My123"
+}
+
+RequestBodyStatus: [Completed]
+ResponseBody: {"token":{"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoibWVobWV0eSIsIm5iZiI6MTc1ODUzMjU2NSwiZXhwIjoxNzU4NTMyNTgwLCJpc3MiOiJ3d3cubXlhcGkuY29tIiwiYXVkIjoid3d3LmJpbG1lbW5lLmNvbSJ9.zpHrZYLZabivS64G4nvXx2Mu2LXNShDILtz1xzHWhc0","accessTokenExpiration":"2025-09-22T09:16:20.5302684Z","refreshToken":"eOhAUoRerUYBgiJB9LHDWvbMuSaO1ltij4GcetykNcY="}}
+Duration: 238.1982
+2025-09-22 12:16:05.573 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7143/api/auth/login - 200 null application/json; charset=utf-8 245.1954ms
+2025-09-22 12:16:12.830 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7143/api/auth/RefreshTokenLogin - application/x-www-form-urlencoded 62
+2025-09-22 12:16:12.835 +03:00 [INF] Executing endpoint 'eCommerceAPI.API.Controllers.AuthController.RefreshTokenLogin (eCommerceAPI.API)'
+2025-09-22 12:16:12.836 +03:00 [INF] Route matched with {action = "RefreshTokenLogin", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RefreshTokenLogin(eCommerceAPI.Application.Features.AppUser.Commands.RefreshTokenLogin.RefreshTokenLoginCommandRequest) on controller eCommerceAPI.API.Controllers.AuthController (eCommerceAPI.API).
+2025-09-22 12:16:12.843 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__refreshToken_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."RefreshToken" = @__refreshToken_0 AND a."RefreshTokenEndDate" > now()
+LIMIT 1
+2025-09-22 12:16:12.975 +03:00 [INF] Executed action eCommerceAPI.API.Controllers.AuthController.RefreshTokenLogin (eCommerceAPI.API) in 136.8439ms
+2025-09-22 12:16:12.979 +03:00 [INF] Executed endpoint 'eCommerceAPI.API.Controllers.AuthController.RefreshTokenLogin (eCommerceAPI.API)'
+2025-09-22 12:16:13.048 +03:00 [INF] Request and Response:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/auth/RefreshTokenLogin
+Accept: */*
+Connection: keep-alive
+Host: localhost:7143
+User-Agent: PostmanRuntime/7.47.1
+Accept-Encoding: gzip, deflate, br
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 62
+Postman-Token: [Redacted]
+StatusCode: 200
+Duration: 213.8287
+2025-09-22 12:16:13.052 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+eCommerceAPI.Application.Exceptions.NotFoundUserException: User not found
+   at eCommerceAPI.Persistence.Services.AuthService.RefreshTokenLoginAsync(String refreshToken) in C:\Users\ahmet.ceylan\Desktop\ECommerce\eCommerceAPI\Infrastructure\eCommerceAPI.Persistence\Services\AuthService.cs:line 169
+   at eCommerceAPI.Application.Features.AppUser.Commands.RefreshTokenLogin.RefreshTokenLoginCommandHandler.Handle(RefreshTokenLoginCommandRequest request, CancellationToken cancellationToken) in C:\Users\ahmet.ceylan\Desktop\ECommerce\eCommerceAPI\Core\eCommerceAPI.Application\Features\AppUser\Commands\RefreshTokenLogin\RefreshTokenLoginCommandHandler.cs:line 24
+   at eCommerceAPI.API.Controllers.AuthController.RefreshTokenLogin(RefreshTokenLoginCommandRequest refreshTokenLoginCommandRequest) in C:\Users\ahmet.ceylan\Desktop\ECommerce\eCommerceAPI\Presentation\eCommerceAPI.API\Controllers\AuthController.cs:line 32
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Program.<>c.<<<Main>$>b__0_5>d.MoveNext() in C:\Users\ahmet.ceylan\Desktop\ECommerce\eCommerceAPI\Presentation\eCommerceAPI.API\Program.cs:line 132
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Microsoft.AspNetCore.HttpLogging.HttpLoggingMiddleware.InvokeInternal(HttpContext context, HttpLoggingOptions options, HttpLoggingAttribute loggingAttribute, HttpLoggingFields loggingFields)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-09-22 12:16:13.062 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7143/api/auth/RefreshTokenLogin - 500 null text/plain; charset=utf-8 232.0511ms
+2025-09-22 12:16:21.631 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7143/api/auth/login - application/json 62
+2025-09-22 12:16:21.635 +03:00 [INF] Executing endpoint 'eCommerceAPI.API.Controllers.AuthController.Login (eCommerceAPI.API)'
+2025-09-22 12:16:21.637 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(eCommerceAPI.Application.Features.AppUser.Commands.LoginUser.LoginUserCommandRequest) on controller eCommerceAPI.API.Controllers.AuthController (eCommerceAPI.API).
+2025-09-22 12:16:21.646 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-09-22 12:16:21.745 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-09-22 12:16:21.755 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@p17='?', @p0='?' (DbType = Int32), @p1='?', @p18='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime), @p6='?', @p7='?', @p8='?', @p9='?', @p10='?', @p11='?' (DbType = Boolean), @p12='?', @p13='?' (DbType = DateTime), @p14='?', @p15='?' (DbType = Boolean), @p16='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "LockoutEnabled" = @p4, "LockoutEnd" = @p5, "NameSurname" = @p6, "NormalizedEmail" = @p7, "NormalizedUserName" = @p8, "PasswordHash" = @p9, "PhoneNumber" = @p10, "PhoneNumberConfirmed" = @p11, "RefreshToken" = @p12, "RefreshTokenEndDate" = @p13, "SecurityStamp" = @p14, "TwoFactorEnabled" = @p15, "UserName" = @p16
+WHERE "Id" = @p17 AND "ConcurrencyStamp" = @p18;
+2025-09-22 12:16:21.759 +03:00 [INF] Executing OkObjectResult, writing value of type 'eCommerceAPI.Application.Features.AppUser.Commands.LoginUser.LoginUserSuccessCommandResponse'.
+2025-09-22 12:16:21.763 +03:00 [INF] Executed action eCommerceAPI.API.Controllers.AuthController.Login (eCommerceAPI.API) in 122.1039ms
+2025-09-22 12:16:21.765 +03:00 [INF] Executed endpoint 'eCommerceAPI.API.Controllers.AuthController.Login (eCommerceAPI.API)'
+2025-09-22 12:16:21.768 +03:00 [INF] Request and Response:
+Protocol: HTTP/1.1
+Method: POST
+Scheme: https
+PathBase: 
+Path: /api/auth/login
+Accept: */*
+Connection: keep-alive
+Host: localhost:7143
+User-Agent: PostmanRuntime/7.47.1
+Accept-Encoding: gzip, deflate, br
+Content-Type: application/json
+Content-Length: 62
+Postman-Token: [Redacted]
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+RequestBody: {
+  "usernameOrEmail": "mehmety",
+  "password": "My123"
+}
+
+RequestBodyStatus: [Completed]
+ResponseBody: {"token":{"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoibWVobWV0eSIsIm5iZiI6MTc1ODUzMjU4MSwiZXhwIjoxNzU4NTMyNTk2LCJpc3MiOiJ3d3cubXlhcGkuY29tIiwiYXVkIjoid3d3LmJpbG1lbW5lLmNvbSJ9.dGM6f_ETQQUm_eTT893bJYQFSbh_oIqIKmWOs35yK58","accessTokenExpiration":"2025-09-22T09:16:36.7412894Z","refreshToken":"h69PA6qWQC9C6gBpUc28xHOdvSwYrVYB8oHpVoBqYfM="}}
+Duration: 132.2431
+2025-09-22 12:16:21.770 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7143/api/auth/login - 200 null application/json; charset=utf-8 138.1437ms
+2025-09-22 12:16:32.105 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7143/api/auth/RefreshTokenLogin - application/x-www-form-urlencoded 59
+2025-09-22 12:16:32.109 +03:00 [INF] Executing endpoint 'eCommerceAPI.API.Controllers.AuthController.RefreshTokenLogin (eCommerceAPI.API)'
+2025-09-22 12:16:32.112 +03:00 [INF] Route matched with {action = "RefreshTokenLogin", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RefreshTokenLogin(eCommerceAPI.Application.Features.AppUser.Commands.RefreshTokenLogin.RefreshTokenLoginCommandRequest) on controller eCommerceAPI.API.Controllers.AuthController (eCommerceAPI.API).
+2025-09-22 12:16:32.121 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__refreshToken_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."RefreshToken" = @__refreshToken_0 AND a."RefreshTokenEndDate" > now()
+LIMIT 1
+2025-09-22 12:16:32.130 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."LockoutEnabled", a."LockoutEnd", a."NameSurname", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenEndDate", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-09-22 12:16:32.140 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@p17='?', @p0='?' (DbType = Int32), @p1='?', @p18='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTime), @p6='?', @p7='?', @p8='?', @p9='?', @p10='?', @p11='?' (DbType = Boolean), @p12='?', @p13='?' (DbType = DateTime), @p14='?', @p15='?' (DbType = Boolean), @p16='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "LockoutEnabled" = @p4, "LockoutEnd" = @p5, "NameSurname" = @p6, "NormalizedEmail" = @p7, "NormalizedUserName" = @p8, "PasswordHash" = @p9, "PhoneNumber" = @p10, "PhoneNumberConfirmed" = @p11, "RefreshToken" = @p12, "RefreshTokenEndDate" = @p13, "SecurityStamp" = @p14, "TwoFactorEnabled" = @p15, "UserName" = @p16
+WHERE "Id" = @p17 AND "ConcurrencyStamp" = @p18;
+2025-09-22 12:16:32.146 +03:00 [INF] Executing OkObjectResult, writing value of type 'eCommerceAPI.Application.Features.AppUser.Commands.RefreshTokenLogin.RefreshTokenLoginCommandResponse'.
+2025-09-22 12:16:32.149 +03:00 [INF] Executed action eCommerceAPI.API.Controllers.AuthController.RefreshTokenLogin (eCommerceAPI.API) in 34.3554ms
+2025-09-22 12:16:32.152 +03:00 [INF] Executed endpoint 'eCommerceAPI.API.Controllers.AuthController.RefreshTokenLogin (eCommerceAPI.API)'
+2025-09-22 12:16:32.155 +03:00 [INF] Request and Response:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: https
+PathBase: 
+Path: /api/auth/RefreshTokenLogin
+Accept: */*
+Connection: keep-alive
+Host: localhost:7143
+User-Agent: PostmanRuntime/7.47.1
+Accept-Encoding: gzip, deflate, br
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 59
+Postman-Token: [Redacted]
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+ResponseBody: {"token":{"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoibWVobWV0eSIsIm5iZiI6MTc1ODUzMjU5MiwiZXhwIjoxNzU4NTMyNTk3LCJpc3MiOiJ3d3cubXlhcGkuY29tIiwiYXVkIjoid3d3LmJpbG1lbW5lLmNvbSJ9.0DfaB5u5DFKhT4xnKEu7rPViW1rGk_Nygjz61EnU5sE","accessTokenExpiration":"2025-09-22T09:16:37.1267165Z","refreshToken":"x2pXjYJVCwMFJi/BtTI5ywdHrEYnwKANpsaY8Ov4YFY="}}
+Duration: 45.1803
+2025-09-22 12:16:32.157 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7143/api/auth/RefreshTokenLogin - 200 null application/json; charset=utf-8 52.1626ms
+2025-09-22 18:40:15.795 +03:00 [INF] User profile is available. Using 'C:\Users\ahmet.ceylan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-22 18:40:16.596 +03:00 [INF] Now listening on: https://localhost:7143
+2025-09-22 18:40:16.599 +03:00 [INF] Now listening on: http://localhost:5045
+2025-09-22 18:40:16.770 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-22 18:40:16.772 +03:00 [INF] Hosting environment: Development
+2025-09-22 18:40:16.774 +03:00 [INF] Content root path: C:\Users\ahmet.ceylan\Desktop\ECommerce\eCommerceAPI\Presentation\eCommerceAPI.API
+2025-09-22 18:40:20.075 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/index.html - null null
+2025-09-22 18:40:20.829 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/index.html - 200 null text/html;charset=utf-8 781.9525ms
+2025-09-22 18:40:21.143 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7143/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-22 18:40:21.143 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7143/_vs/browserLink - null null
+2025-09-22 18:40:21.213 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7143/_framework/aspnetcore-browser-refresh.js - 200 16517 application/javascript; charset=utf-8 70.8753ms
+2025-09-22 18:40:21.339 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7143/_vs/browserLink - 200 null text/javascript; charset=UTF-8 196.4224ms
+2025-09-22 18:40:21.535 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - null null
+2025-09-22 18:40:21.579 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7143/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 43.9345ms
