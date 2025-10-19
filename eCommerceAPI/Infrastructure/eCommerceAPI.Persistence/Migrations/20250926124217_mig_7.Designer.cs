@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using eCommerceAPI.Persistence.Contexts;
@@ -11,9 +12,11 @@ using eCommerceAPI.Persistence.Contexts;
 namespace eCommerceAPI.Persistence.Migrations
 {
     [DbContext(typeof(eCommerceAPIDbContext))]
-    partial class eCommerceAPIDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250926124217_mig_7")]
+    partial class mig_7
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -156,59 +159,6 @@ namespace eCommerceAPI.Persistence.Migrations
                     b.HasIndex("productImageFilesID");
 
                     b.ToTable("ProductProductImageFile");
-                });
-
-            modelBuilder.Entity("eCommerceAPI.Domain.Entities.Basket", b =>
-                {
-                    b.Property<Guid>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
-
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<DateTime>("UpdatedDate")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<string>("UserId")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.HasKey("ID");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("Baskets");
-                });
-
-            modelBuilder.Entity("eCommerceAPI.Domain.Entities.BasketItem", b =>
-                {
-                    b.Property<Guid>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
-
-                    b.Property<Guid>("BasketId")
-                        .HasColumnType("uuid");
-
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<Guid>("ProductId")
-                        .HasColumnType("uuid");
-
-                    b.Property<int>("Quantity")
-                        .HasColumnType("integer");
-
-                    b.Property<DateTime>("UpdatedDate")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.HasKey("ID");
-
-                    b.HasIndex("BasketId");
-
-                    b.HasIndex("ProductId");
-
-                    b.ToTable("BasketItems");
                 });
 
             modelBuilder.Entity("eCommerceAPI.Domain.Entities.Customer", b =>
@@ -370,6 +320,7 @@ namespace eCommerceAPI.Persistence.Migrations
             modelBuilder.Entity("eCommerceAPI.Domain.Entities.Order", b =>
                 {
                     b.Property<Guid>("ID")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
                     b.Property<string>("Address")
@@ -524,36 +475,6 @@ namespace eCommerceAPI.Persistence.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("eCommerceAPI.Domain.Entities.Basket", b =>
-                {
-                    b.HasOne("eCommerceAPI.Domain.Entities.Identity.AppUser", "User")
-                        .WithMany("Baskets")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("User");
-                });
-
-            modelBuilder.Entity("eCommerceAPI.Domain.Entities.BasketItem", b =>
-                {
-                    b.HasOne("eCommerceAPI.Domain.Entities.Basket", "Basket")
-                        .WithMany("BasketItems")
-                        .HasForeignKey("BasketId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("eCommerceAPI.Domain.Entities.Product", "Product")
-                        .WithMany("BasketItems")
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Basket");
-
-                    b.Navigation("Product");
-                });
-
             modelBuilder.Entity("eCommerceAPI.Domain.Entities.Order", b =>
                 {
                     b.HasOne("eCommerceAPI.Domain.Entities.Customer", "Customer")
@@ -562,38 +483,12 @@ namespace eCommerceAPI.Persistence.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("eCommerceAPI.Domain.Entities.Basket", "Basket")
-                        .WithOne("Order")
-                        .HasForeignKey("eCommerceAPI.Domain.Entities.Order", "ID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Basket");
-
                     b.Navigation("Customer");
-                });
-
-            modelBuilder.Entity("eCommerceAPI.Domain.Entities.Basket", b =>
-                {
-                    b.Navigation("BasketItems");
-
-                    b.Navigation("Order")
-                        .IsRequired();
                 });
 
             modelBuilder.Entity("eCommerceAPI.Domain.Entities.Customer", b =>
                 {
                     b.Navigation("Orders");
-                });
-
-            modelBuilder.Entity("eCommerceAPI.Domain.Entities.Identity.AppUser", b =>
-                {
-                    b.Navigation("Baskets");
-                });
-
-            modelBuilder.Entity("eCommerceAPI.Domain.Entities.Product", b =>
-                {
-                    b.Navigation("BasketItems");
                 });
 #pragma warning restore 612, 618
         }

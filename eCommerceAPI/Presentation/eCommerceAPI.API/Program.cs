@@ -23,6 +23,8 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddHttpContextAccessor(); // Clientten gelen request bilgilerine eriþmek için HttpContext nesnesini kullanabilmek için ve Dependency Injection ile istediðimiz yere enjekte edebilmek için ekliyoruz
+
 // Add services to the container.
 builder.Services.AddPersistenceServices();      // IoC Container'a ne eklenirse çalýþacak çünkü bu komutla çaðrýlýyor
 builder.Services.AddInfrastructureServices();   // Add infrastructure services

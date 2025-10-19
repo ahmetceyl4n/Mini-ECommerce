@@ -22,6 +22,21 @@ namespace eCommerceAPI.Persistence.Contexts
         public DbSet<Domain.Entities.File> Files { get; set; }
         public DbSet<ProductImageFile> ProductImageFiles { get; set; }
         public DbSet<InvoiceFile> InvoiceFiles { get; set; }
+        public DbSet<Basket> Baskets { get; set; }
+        public DbSet<BasketItem> BasketItems { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            base.OnModelCreating(builder); 
+
+            builder.Entity<Order>()
+                .HasKey(b => b.ID);
+
+            builder.Entity<Basket>()
+                .HasOne(b => b.Order)
+                .WithOne(b => b.Basket)
+                .HasForeignKey<Order>(p => p.ID);
+        }
 
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)       //Interceptor işlemi için bu metodu override ediyoruz. Interceptor veriyi database'e kaydedecekken araya girer ve eklemeler yapmamızı sağlar.
                                                                                                         //Yani örneğin bir ürün eklendiğinde otomatik olarak ekleme tarihi oluşturacak 

@@ -15,5 +15,7 @@ namespace eCommerceAPI.Domain.Entities
 
         public ICollection<Order> Orders { get; set; }       //Product'ın Order ile bire çok ilişkisi olduğu anlamına gelir. Karşılıklı tanımlanırsa çoka çok olur
         public ICollection<ProductImageFile> productImageFiles { get; set; }    // Product ile ProductImageFile arasında bire çok ilişkisi vardır, yani bir ürünün birden fazla resim dosyası olabilir
+
+        public ICollection<BasketItem> BasketItems { get; set; } // Product ile BasketItem arasında bire çok ilişkisi vardır, yani bir ürün birden fazla sepet öğesinde bulunabilir
     }
 }
